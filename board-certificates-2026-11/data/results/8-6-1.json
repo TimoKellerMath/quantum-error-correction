@@ -1,0 +1,102 @@
+{
+ "slug": "8-6-1",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "41bd6fbafc3ff8f81f888c1638b9ae019deeb68941e3409cd798162f51ffce77",
+ "n": 8,
+ "k": 6,
+ "claim": {
+  "X": 1,
+  "Z": 1
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/8-6-1.hx WORK/8-6-1.hz",
+    "rc": 0,
+    "wall": 0.001,
+    "output": {
+     "n": 8,
+     "k": 6,
+     "mX": 1,
+     "mZ": 1,
+     "rankX": 1,
+     "rankZ": 1,
+     "dX": 1,
+     "witX": [
+      4
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 0,
+     "candX": 0,
+     "secsX": 0.0,
+     "dZ": 1,
+     "witZ": [
+      0
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 0,
+     "candZ": 0,
+     "secsZ": 0.0,
+     "secs": 0.0
+    },
+    "dX": 1,
+    "dZ": 1,
+    "recheck": {
+     "X": {
+      "weight": 1,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 1,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/8-6-1.hx WORK/8-6-1.hz",
+    "rc": 0,
+    "wall": 0.001,
+    "output": {
+     "n": 8,
+     "k": 6,
+     "dX": 1,
+     "dZ": 1,
+     "witX": [
+      4
+     ],
+     "witZ": [
+      0
+     ],
+     "secs": 0.0
+    },
+    "dX": 1,
+    "dZ": 1,
+    "recheck": {
+     "X": {
+      "weight": 1,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 1,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 1,
+  "Z": 1
+ }
+}

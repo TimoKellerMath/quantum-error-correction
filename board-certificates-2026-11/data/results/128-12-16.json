@@ -1,0 +1,64 @@
+{
+ "slug": "128-12-16",
+ "category": "amp2-base",
+ "methods": [
+  "partial"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "7472ad1cfe54841095c147acb914bed3f449554528904e7b01d5621fc6a489fc",
+ "n": 128,
+ "k": 12,
+ "values": {
+  "d_lower": 14
+ },
+ "runs": {
+  "partial": [
+   {
+    "tool": "exactA",
+    "log": "amplify2/logs/cert/A_128-12-16_X_W12.log",
+    "parity": true,
+    "side": "X",
+    "W": 12,
+    "searched": 12,
+    "verdict": "none",
+    "nodes": 30003003,
+    "cpu": 428.33
+   },
+   {
+    "tool": "exactA",
+    "log": "amplify2/logs/cert/A_128-12-16_Z_W12.log",
+    "parity": true,
+    "side": "Z",
+    "W": 12,
+    "searched": 12,
+    "verdict": "none",
+    "nodes": 29095329,
+    "cpu": 409.55
+   },
+   {
+    "tool": "exactB",
+    "log": "amplify2/logs/cert/B_128-12-16_X_W12.log",
+    "parity": true,
+    "side": "X",
+    "W": 12,
+    "searched": 12,
+    "verdict": "none",
+    "nodes": 14723198,
+    "cpu": 284.5
+   },
+   {
+    "tool": "exactB",
+    "log": "amplify2/logs/cert/B_128-12-16_Z_W12.log",
+    "parity": true,
+    "side": "Z",
+    "W": 12,
+    "searched": 12,
+    "verdict": "none",
+    "nodes": 14657335,
+    "cpu": 272.22
+   }
+  ]
+ },
+ "source": "recorded by the tracks that found the bound (logs/tracks/); relabelled board matrices, seeds 1 (exactA) and 20261110 (exactB)"
+}

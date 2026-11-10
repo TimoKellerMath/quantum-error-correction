@@ -1,0 +1,12 @@
+# clean copy of the package, 2026-11-10T16:33:42+01:00
+# board: codes/ of upstream/main = 8042f9da64e0682b0dda58a25f02669e9ea422c3
+# make; python3 -B src/certify.py --board ../board --slug 100-5-4 749-155-3 185-64-5 904-12-36 708-24-24
+100-5-4      ok agrees_with_record=True values={"X": 5, "Z": 4} problems=[]
+144-12-12    ok agrees_with_record=True values={"X": 12, "Z": 12} problems=[]
+182-6-18     ok agrees_with_record=True values={"X": 18, "Z": 18} problems=[]
+185-64-5     ok agrees_with_record=True values={"X": 6, "Z": 5} problems=[]
+749-155-3    ok agrees_with_record=True values={"X": 3, "Z": 4} problems=[]
+708-24-24    ok agrees_with_record=True values={"X": 24, "Z": 24} problems=[]
+904-12-36    ok agrees_with_record=True values={"X": 36, "Z": 36} problems=[]
+# 7 entries, 7 ok, 0 failed, 0 long partial runs not rerun (--long); 3.9 s
+# wall 9.4 s (build and runs)

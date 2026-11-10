@@ -1,0 +1,182 @@
+{
+ "slug": "454-2-21",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "4f96136f6b88f23843d14ecd8b606359dde20d659b379cced5efeb5abf6506b6",
+ "n": 454,
+ "k": 2,
+ "claim": {
+  "X": 21,
+  "Z": 21
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/454-2-21.hx WORK/454-2-21.hz",
+    "rc": 0,
+    "wall": 0.002,
+    "output": {
+     "n": 454,
+     "k": 2,
+     "mX": 227,
+     "mZ": 227,
+     "rankX": 226,
+     "rankZ": 226,
+     "dX": 21,
+     "witX": [
+      0,
+      17,
+      34,
+      61,
+      78,
+      95,
+      122,
+      139,
+      156,
+      183,
+      200,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 228,
+     "candX": 8484,
+     "secsX": 0.0,
+     "dZ": 21,
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      277,
+      338,
+      399,
+      443
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 228,
+     "candZ": 8484,
+     "secsZ": 0.0,
+     "secs": 0.001
+    },
+    "dX": 21,
+    "dZ": 21,
+    "recheck": {
+     "X": {
+      "weight": 21,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 21,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/454-2-21.hx WORK/454-2-21.hz",
+    "rc": 0,
+    "wall": 0.005,
+    "output": {
+     "n": 454,
+     "k": 2,
+     "dX": 21,
+     "dZ": 21,
+     "witX": [
+      0,
+      27,
+      44,
+      71,
+      88,
+      105,
+      132,
+      149,
+      166,
+      193,
+      210,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237
+     ],
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      227,
+      288,
+      349,
+      410
+     ],
+     "secs": 0.004
+    },
+    "dX": 21,
+    "dZ": 21,
+    "recheck": {
+     "X": {
+      "weight": 21,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 21,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 21,
+  "Z": 21
+ }
+}

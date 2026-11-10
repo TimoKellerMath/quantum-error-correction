@@ -1,0 +1,18 @@
+towers/inst/cert/leaderL0                [[120,4,8]] 120-4-15(params only)
+towers/inst/cert/leaderL1                [[240,8,16]] 240-8-11(params only), 240-8-14(params only), 240-8-16(params only), 240-8-20(params only), 240-8-20-b(params only)
+towers/inst/cert/leaderL2                [[480,16,20]] 
+towers/inst/cert/r672L0                  [[168,10,10]] 168-10-14(params only), 168-10-18(params only), 168-10-8(params only)
+towers/inst/cert/r672L1                  [[336,20,16]] 336-20-16(SAME), 336-20-20(params only), 336-20-21(params only)
+towers/inst/cert/r600L0                  [[300,12,18]] 300-12-25(params only)
+towers/inst/cert/r504L0                  [[252,8,14]] 252-8-23(params only)
+towers/inst/cert/r720L0                  [[360,8,22]] 360-8-17(params only), 360-8-27(params only), 360-8-44(params only)
+anatomy/data/quot/720-16-36_K3_120       [[240,16,12]] 240-16-13(params only), 240-16-14(params only), 240-16-18(params only), 240-16-20(params only), 240-16-8(params only)
+anatomy/data/quot/600-16-30_K3_100       [[200,16,12]] 200-16-17(params only), 200-16-19(params only)
+anatomy/data/quot/540-12-28_K3_90        [[180,12,10]] 180-12-16(params only), 180-12-18(params only)
+anatomy/data/quot/480-8-30_K5_16         [[96,8,8]] 96-8-11(params only), 96-8-12(params only)
+anatomy/data/quot/288-16-16_K3_4         [[96,16,6]] 96-16-12(params only), 96-16-6(SAME)
+anatomy/data/quot/288-8-22_K3_6          [[96,8,8]] 96-8-11(params only), 96-8-12(params only)
+anatomy/data/quot/720-16-36_t2           [[360,8,20]] 360-8-17(params only), 360-8-27(params only), 360-8-44(params only)
+anatomy/data/quot/720-16-36_t180         [[360,8,22]] 360-8-17(params only), 360-8-27(params only), 360-8-44(params only)
+anatomy/data/quot/720-16-36_t182         [[360,8,22]] 360-8-17(params only), 360-8-27(params only), 360-8-44(params only)
+wall .757637425 s

@@ -1,0 +1,228 @@
+{
+ "slug": "126-18-14",
+ "category": "amp2-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "55fd4675ad781e3514238c0e6f98cd438d972474152853698220ea8c33316ee3",
+ "n": 126,
+ "k": 18,
+ "claim": {
+  "X": 14,
+  "Z": 14
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/126-18-14.hx WORK/126-18-14.hz --side X --W 13 --group WORK/126-18-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 3.474,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 646660,
+    "cpu": 3.44,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/126-18-14.hx WORK/126-18-14.hz --side X --W 13 --group WORK/126-18-14.gensB",
+    "rc": 0,
+    "wall": 1.7,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 252540,
+    "cpu": 1.69,
+    "generated": "1224394"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/126-18-14.hx WORK/126-18-14.hz --side X --W 14 --group WORK/126-18-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.687,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 130040,
+    "cpu": 0.68,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     18,
+     31,
+     40,
+     50,
+     54,
+     55,
+     58,
+     63,
+     95,
+     103,
+     104,
+     110
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/126-18-14.hx WORK/126-18-14.hz --side X --W 14 --group WORK/126-18-14.gensB",
+    "rc": 0,
+    "wall": 0.317,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 47269,
+    "cpu": 0.31,
+    "generated": "231468",
+    "word": [
+     0,
+     1,
+     18,
+     31,
+     40,
+     50,
+     54,
+     55,
+     58,
+     63,
+     95,
+     103,
+     104,
+     110
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/126-18-14.hx WORK/126-18-14.hz --side Z --W 13 --group WORK/126-18-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 3.123,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 637765,
+    "cpu": 3.11,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/126-18-14.hx WORK/126-18-14.hz --side Z --W 13 --group WORK/126-18-14.gensB",
+    "rc": 0,
+    "wall": 1.654,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 249120,
+    "cpu": 1.64,
+    "generated": "1210625"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/126-18-14.hx WORK/126-18-14.hz --side Z --W 14 --group WORK/126-18-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.279,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 50281,
+    "cpu": 0.28,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     5,
+     14,
+     16,
+     21,
+     36,
+     52,
+     57,
+     66,
+     82,
+     103,
+     121,
+     122
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/126-18-14.hx WORK/126-18-14.hz --side Z --W 14 --group WORK/126-18-14.gensB",
+    "rc": 0,
+    "wall": 0.129,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 18094,
+    "cpu": 0.13,
+    "generated": "92592",
+    "word": [
+     0,
+     1,
+     5,
+     14,
+     16,
+     21,
+     36,
+     52,
+     57,
+     66,
+     82,
+     103,
+     121,
+     122
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 14,
+  "Z": 14
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "slug": "40-24-4",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "193f168a8a9858054ce15e79b2dcb21e47d9b3e2c52cd93f705e31ecc108bf90",
+ "n": 40,
+ "k": 24,
+ "claim": {
+  "X": 4,
+  "Z": 4
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/40-24-4.hx WORK/40-24-4.hz --side X --W 3 --group WORK/40-24-4.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 3,
+    "searched": 2,
+    "nodes": 4,
+    "cpu": 0.0,
+    "jobs": "6",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/40-24-4.hx WORK/40-24-4.hz --side X --W 3 --group WORK/40-24-4.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 3,
+    "searched": 2,
+    "nodes": 4,
+    "cpu": 0.0,
+    "generated": "23"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/40-24-4.hx WORK/40-24-4.hz --side X --W 4 --group WORK/40-24-4.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 4,
+    "searched": 4,
+    "nodes": 4,
+    "cpu": 0.0,
+    "jobs": "6",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     3,
+     7
+    ],
+    "recheck": {
+     "weight": 4,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/40-24-4.hx WORK/40-24-4.hz --side X --W 4 --group WORK/40-24-4.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 4,
+    "searched": 4,
+    "nodes": 4,
+    "cpu": 0.0,
+    "generated": "7",
+    "word": [
+     0,
+     1,
+     3,
+     7
+    ],
+    "recheck": {
+     "weight": 4,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/40-24-4.hx WORK/40-24-4.hz --side Z --W 3 --group WORK/40-24-4.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 3,
+    "searched": 2,
+    "nodes": 4,
+    "cpu": 0.0,
+    "jobs": "6",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/40-24-4.hx WORK/40-24-4.hz --side Z --W 3 --group WORK/40-24-4.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 3,
+    "searched": 2,
+    "nodes": 4,
+    "cpu": 0.0,
+    "generated": "23"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/40-24-4.hx WORK/40-24-4.hz --side Z --W 4 --group WORK/40-24-4.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 4,
+    "searched": 4,
+    "nodes": 4,
+    "cpu": 0.0,
+    "jobs": "6",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     3,
+     7
+    ],
+    "recheck": {
+     "weight": 4,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/40-24-4.hx WORK/40-24-4.hz --side Z --W 4 --group WORK/40-24-4.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 4,
+    "searched": 4,
+    "nodes": 4,
+    "cpu": 0.0,
+    "generated": "7",
+    "word": [
+     0,
+     1,
+     3,
+     7
+    ],
+    "recheck": {
+     "weight": 4,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 4,
+  "Z": 4
+ }
+}

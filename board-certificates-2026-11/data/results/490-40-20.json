@@ -1,0 +1,48 @@
+{
+ "slug": "490-40-20",
+ "category": "amp1",
+ "methods": [
+  "amplified"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "bdd0222035bd18d7c159834fa86811c2c254b0ce53d5476888a7ebbe2b70e124",
+ "n": 490,
+ "k": 40,
+ "claim": {
+  "X": 20,
+  "Z": 20
+ },
+ "runs": {},
+ "audit": {
+  "N": 4,
+  "match": "qN+a",
+  "identical_rows": true,
+  "rowsp_equal": true,
+  "base": "102-20-10",
+  "detail": {
+   "rank_SX": 41,
+   "rank_HX": 41,
+   "rank_SX+HX": 41,
+   "m_SX": 41,
+   "rank_SZ": 41,
+   "rank_HZ": 41,
+   "rank_SZ+HZ": 41,
+   "m_SZ": 41,
+   "n_E": 490,
+   "n_rebuilt": 490,
+   "mX_E": 266,
+   "mX_rebuilt": 266,
+   "mZ_E": 266,
+   "mZ_rebuilt": 266,
+   "X_rows_equal": true,
+   "Z_rows_equal": true,
+   "rowsp_X_equal": true,
+   "rowsp_Z_equal": true
+  }
+ },
+ "values": {
+  "X": 20,
+  "Z": 20
+ }
+}

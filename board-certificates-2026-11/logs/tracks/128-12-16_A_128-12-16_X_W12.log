@@ -1,0 +1,12 @@
+# start 2026-11-10T14:07:34+01:00 host load: 6.50 5.67 5.20
+# cmd: bin/exactA 128-12-16_r1.hx 128-12-16_r1.hz --side X --W 12 --group 128-12-16_r1.gens --mode anchor
+exactA: side X, n=128, checks H_Z: 64 rows (0 dropped: empty or repeated), dual H_X: 64 rows (0 dropped)
+  check weights: 16^64; qubits in no check: 0
+  rank H_Z=58, rank H_X=58, k=12 (1 words per class), majority family 1824 sets (level 2)
+  parity: all-ones vector in rowsp H_Z, so every logical of this side has even weight
+  group: 3 generators from 128-12-16_r1.gens, preserving the rows of H_X and H_Z
+  mode anchor (Lemma 2.4): 8 qubit orbits, order index
+  W=12, searching weights <= 12
+RESULT side=X W=12 Weff=12 verdict=none nodes=30003003 leaves=0 wall=430.14 cpu=428.33 search=430.13 jobs=8 items=8 threads=1 mode=anchor
+CONCLUSION none of weight <= 12; d_X >= 14
+# exit 0 end 2026-11-10T14:14:44+01:00

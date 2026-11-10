@@ -1,0 +1,130 @@
+{
+ "slug": "830-146-8",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "7b71ffb24f8c49c136a53615da5221f88bbc91dc95d64a3a5c4660c615fc1a20",
+ "n": 830,
+ "k": 146,
+ "claim": {
+  "X": 8,
+  "Z": 8
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/830-146-8.hx WORK/830-146-8.hz",
+    "rc": 0,
+    "wall": 0.005,
+    "output": {
+     "n": 830,
+     "k": 146,
+     "mX": 288,
+     "mZ": 398,
+     "rankX": 287,
+     "rankZ": 397,
+     "dX": 8,
+     "witX": [
+      0,
+      2,
+      7,
+      8,
+      78,
+      108,
+      329,
+      415
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 399,
+     "candX": 323,
+     "secsX": 0.001,
+     "dZ": 8,
+     "witZ": [
+      0,
+      1,
+      9,
+      10,
+      62,
+      74,
+      202,
+      236
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 289,
+     "candZ": 1638,
+     "secsZ": 0.002,
+     "secs": 0.004
+    },
+    "dX": 8,
+    "dZ": 8,
+    "recheck": {
+     "X": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/830-146-8.hx WORK/830-146-8.hz",
+    "rc": 0,
+    "wall": 0.014,
+    "output": {
+     "n": 830,
+     "k": 146,
+     "dX": 8,
+     "dZ": 8,
+     "witX": [
+      3,
+      8,
+      9,
+      34,
+      79,
+      200,
+      248,
+      343
+     ],
+     "witZ": [
+      0,
+      1,
+      10,
+      17,
+      34,
+      74,
+      202,
+      236
+     ],
+     "secs": 0.013
+    },
+    "dX": 8,
+    "dZ": 8,
+    "recheck": {
+     "X": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 8,
+  "Z": 8
+ }
+}

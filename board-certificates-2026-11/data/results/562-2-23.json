@@ -1,0 +1,190 @@
+{
+ "slug": "562-2-23",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "93b769694bc35bb9e202a49f3c6e9059e5409e39fb8bd4acd0fa49e1b3ae7eac",
+ "n": 562,
+ "k": 2,
+ "claim": {
+  "X": 23,
+  "Z": 23
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/562-2-23.hx WORK/562-2-23.hz",
+    "rc": 0,
+    "wall": 0.003,
+    "output": {
+     "n": 562,
+     "k": 2,
+     "mX": 281,
+     "mZ": 281,
+     "rankX": 280,
+     "rankZ": 280,
+     "dX": 23,
+     "witX": [
+      1,
+      10,
+      19,
+      28,
+      37,
+      46,
+      55,
+      137,
+      146,
+      155,
+      164,
+      173,
+      182,
+      191,
+      395,
+      402,
+      409,
+      416,
+      423,
+      430,
+      437,
+      444,
+      451
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 282,
+     "candX": 13672,
+     "secsX": 0.001,
+     "dZ": 23,
+     "witZ": [
+      158,
+      165,
+      172,
+      179,
+      186,
+      193,
+      200,
+      207,
+      214,
+      282,
+      291,
+      300,
+      309,
+      318,
+      327,
+      418,
+      427,
+      436,
+      445,
+      454,
+      463,
+      472,
+      554
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 282,
+     "candZ": 13672,
+     "secsZ": 0.001,
+     "secs": 0.002
+    },
+    "dX": 23,
+    "dZ": 23,
+    "recheck": {
+     "X": {
+      "weight": 23,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 23,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/562-2-23.hx WORK/562-2-23.hz",
+    "rc": 0,
+    "wall": 0.008,
+    "output": {
+     "n": 562,
+     "k": 2,
+     "dX": 23,
+     "dZ": 23,
+     "witX": [
+      1,
+      83,
+      92,
+      101,
+      110,
+      119,
+      128,
+      137,
+      228,
+      237,
+      246,
+      255,
+      264,
+      273,
+      341,
+      348,
+      355,
+      362,
+      369,
+      376,
+      383,
+      390,
+      397
+     ],
+     "witZ": [
+      102,
+      109,
+      116,
+      123,
+      130,
+      137,
+      144,
+      151,
+      158,
+      362,
+      371,
+      380,
+      389,
+      398,
+      407,
+      416,
+      498,
+      507,
+      516,
+      525,
+      534,
+      543,
+      552
+     ],
+     "secs": 0.007
+    },
+    "dX": 23,
+    "dZ": 23,
+    "recheck": {
+     "X": {
+      "weight": 23,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 23,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 23,
+  "Z": 23
+ }
+}

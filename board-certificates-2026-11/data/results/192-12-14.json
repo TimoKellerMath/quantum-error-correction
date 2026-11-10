@@ -1,0 +1,228 @@
+{
+ "slug": "192-12-14",
+ "category": "amp2-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "0cb49557863090346a0ae01a7d5e81193ab532b39983ef61e513d6ec4f632799",
+ "n": 192,
+ "k": 12,
+ "claim": {
+  "X": 14,
+  "Z": 14
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/192-12-14.hx WORK/192-12-14.hz --side X --W 13 --group WORK/192-12-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.01,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 5869,
+    "cpu": 0.01,
+    "jobs": "8",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/192-12-14.hx WORK/192-12-14.hz --side X --W 13 --group WORK/192-12-14.gensB",
+    "rc": 0,
+    "wall": 0.013,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 5919,
+    "cpu": 0.01,
+    "generated": "18611"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/192-12-14.hx WORK/192-12-14.hz --side X --W 14 --group WORK/192-12-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 606,
+    "cpu": 0.0,
+    "jobs": "8",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     5,
+     12,
+     16,
+     20,
+     36,
+     38,
+     40,
+     64,
+     70,
+     94,
+     114,
+     130,
+     169
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/192-12-14.hx WORK/192-12-14.hz --side X --W 14 --group WORK/192-12-14.gensB",
+    "rc": 0,
+    "wall": 0.003,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 636,
+    "cpu": 0.0,
+    "generated": "2157",
+    "word": [
+     0,
+     5,
+     12,
+     16,
+     20,
+     36,
+     38,
+     40,
+     64,
+     70,
+     94,
+     114,
+     130,
+     169
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/192-12-14.hx WORK/192-12-14.hz --side Z --W 13 --group WORK/192-12-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.011,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 6717,
+    "cpu": 0.01,
+    "jobs": "8",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/192-12-14.hx WORK/192-12-14.hz --side Z --W 13 --group WORK/192-12-14.gensB",
+    "rc": 0,
+    "wall": 0.015,
+    "verdict": "none",
+    "parity": true,
+    "W": 13,
+    "searched": 12,
+    "nodes": 6403,
+    "cpu": 0.01,
+    "generated": "20587"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/192-12-14.hx WORK/192-12-14.hz --side Z --W 14 --group WORK/192-12-14.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 51,
+    "cpu": 0.0,
+    "jobs": "8",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     5,
+     10,
+     15,
+     16,
+     26,
+     67,
+     82,
+     89,
+     92,
+     123,
+     173,
+     178
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/192-12-14.hx WORK/192-12-14.hz --side Z --W 14 --group WORK/192-12-14.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 14,
+    "searched": 14,
+    "nodes": 57,
+    "cpu": 0.0,
+    "generated": "180",
+    "word": [
+     0,
+     1,
+     5,
+     10,
+     15,
+     16,
+     26,
+     67,
+     82,
+     89,
+     92,
+     123,
+     173,
+     178
+    ],
+    "recheck": {
+     "weight": 14,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 14,
+  "Z": 14
+ }
+}

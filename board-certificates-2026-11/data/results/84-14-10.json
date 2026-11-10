@@ -1,0 +1,212 @@
+{
+ "slug": "84-14-10",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "d987bad1e29a36061e9dfbf76e395bc766bf6c25729681430ffc830e7d9ba6e5",
+ "n": 84,
+ "k": 14,
+ "claim": {
+  "X": 10,
+  "Z": 10
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/84-14-10.hx WORK/84-14-10.hz --side X --W 9 --group WORK/84-14-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.004,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 831,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/84-14-10.hx WORK/84-14-10.hz --side X --W 9 --group WORK/84-14-10.gensB",
+    "rc": 0,
+    "wall": 0.003,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 501,
+    "cpu": 0.0,
+    "generated": "1780"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/84-14-10.hx WORK/84-14-10.hz --side X --W 10 --group WORK/84-14-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 115,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     2,
+     5,
+     26,
+     32,
+     43,
+     62,
+     63,
+     64,
+     81
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/84-14-10.hx WORK/84-14-10.hz --side X --W 10 --group WORK/84-14-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 58,
+    "cpu": 0.0,
+    "generated": "223",
+    "word": [
+     0,
+     2,
+     5,
+     26,
+     32,
+     43,
+     62,
+     63,
+     64,
+     81
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/84-14-10.hx WORK/84-14-10.hz --side Z --W 9 --group WORK/84-14-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.005,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 1187,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/84-14-10.hx WORK/84-14-10.hz --side Z --W 9 --group WORK/84-14-10.gensB",
+    "rc": 0,
+    "wall": 0.005,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 698,
+    "cpu": 0.0,
+    "generated": "3017"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/84-14-10.hx WORK/84-14-10.hz --side Z --W 10 --group WORK/84-14-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 70,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     7,
+     12,
+     18,
+     25,
+     34,
+     36,
+     43,
+     62,
+     75
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/84-14-10.hx WORK/84-14-10.hz --side Z --W 10 --group WORK/84-14-10.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 48,
+    "cpu": 0.0,
+    "generated": "196",
+    "word": [
+     0,
+     7,
+     12,
+     18,
+     25,
+     34,
+     36,
+     43,
+     62,
+     75
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 10,
+  "Z": 10
+ }
+}

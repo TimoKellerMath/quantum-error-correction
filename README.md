@@ -15,6 +15,10 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   distance is exactly twice the certified distance of their bases (with the proof), and two non-CSS stabilizer
   codes obtained by halving two-block codes along ZX-dualities, submitted to the qLDPC challenge board; data, a
   rebuild script, search programs and logs.
+- [`board-certificates-2026-11/`](board-certificates-2026-11/): exact minimum distances (and three intervals) of
+  163 entries of other authors on the qLDPC challenge board, and four corrected side values: four programs with
+  proofs of their methods, the distance argument for amplified codes, a driver that reruns everything from the
+  board's files, data and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

@@ -1,0 +1,196 @@
+{
+ "slug": "192-24-6",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "d49914bcc02d3ff643156f2b126d7df36b92f90981391b1a5e2344d92b6f59dc",
+ "n": 192,
+ "k": 24,
+ "claim": {
+  "X": 6,
+  "Z": 6
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/192-24-6.hx WORK/192-24-6.hz --side X --W 5 --group WORK/192-24-6.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 5,
+    "searched": 4,
+    "nodes": 2,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/192-24-6.hx WORK/192-24-6.hz --side X --W 5 --group WORK/192-24-6.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 5,
+    "searched": 4,
+    "nodes": 2,
+    "cpu": 0.0,
+    "generated": "5"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/192-24-6.hx WORK/192-24-6.hz --side X --W 6 --group WORK/192-24-6.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 6,
+    "searched": 6,
+    "nodes": 6,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     3,
+     6,
+     7,
+     26,
+     44
+    ],
+    "recheck": {
+     "weight": 6,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/192-24-6.hx WORK/192-24-6.hz --side X --W 6 --group WORK/192-24-6.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 6,
+    "searched": 6,
+    "nodes": 6,
+    "cpu": 0.0,
+    "generated": "6",
+    "word": [
+     0,
+     3,
+     6,
+     7,
+     26,
+     44
+    ],
+    "recheck": {
+     "weight": 6,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/192-24-6.hx WORK/192-24-6.hz --side Z --W 5 --group WORK/192-24-6.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 5,
+    "searched": 4,
+    "nodes": 2,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/192-24-6.hx WORK/192-24-6.hz --side Z --W 5 --group WORK/192-24-6.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 5,
+    "searched": 4,
+    "nodes": 2,
+    "cpu": 0.0,
+    "generated": "5"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/192-24-6.hx WORK/192-24-6.hz --side Z --W 6 --group WORK/192-24-6.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 6,
+    "searched": 6,
+    "nodes": 11,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     96,
+     103,
+     118,
+     119,
+     146,
+     150
+    ],
+    "recheck": {
+     "weight": 6,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/192-24-6.hx WORK/192-24-6.hz --side Z --W 6 --group WORK/192-24-6.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 6,
+    "searched": 6,
+    "nodes": 11,
+    "cpu": 0.0,
+    "generated": "30",
+    "word": [
+     96,
+     103,
+     118,
+     119,
+     146,
+     150
+    ],
+    "recheck": {
+     "weight": 6,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 6,
+  "Z": 6
+ }
+}

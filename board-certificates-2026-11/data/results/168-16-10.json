@@ -1,0 +1,212 @@
+{
+ "slug": "168-16-10",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "2ff8350e06ab96150f08459ba97f6eda1827bf91485f340d665f0c3047f16b73",
+ "n": 168,
+ "k": 16,
+ "claim": {
+  "X": 10,
+  "Z": 10
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/168-16-10.hx WORK/168-16-10.hz --side X --W 9 --group WORK/168-16-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 137,
+    "cpu": 0.0,
+    "jobs": "4",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/168-16-10.hx WORK/168-16-10.hz --side X --W 9 --group WORK/168-16-10.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 136,
+    "cpu": 0.0,
+    "generated": "407"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/168-16-10.hx WORK/168-16-10.hz --side X --W 10 --group WORK/168-16-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 14,
+    "cpu": 0.0,
+    "jobs": "4",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     11,
+     12,
+     22,
+     33,
+     34,
+     45,
+     59,
+     69,
+     70
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/168-16-10.hx WORK/168-16-10.hz --side X --W 10 --group WORK/168-16-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 14,
+    "cpu": 0.0,
+    "generated": "24",
+    "word": [
+     0,
+     11,
+     12,
+     22,
+     33,
+     34,
+     45,
+     59,
+     69,
+     70
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/168-16-10.hx WORK/168-16-10.hz --side Z --W 9 --group WORK/168-16-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 108,
+    "cpu": 0.0,
+    "jobs": "4",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/168-16-10.hx WORK/168-16-10.hz --side Z --W 9 --group WORK/168-16-10.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 100,
+    "cpu": 0.0,
+    "generated": "305"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/168-16-10.hx WORK/168-16-10.hz --side Z --W 10 --group WORK/168-16-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 93,
+    "cpu": 0.0,
+    "jobs": "4",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     9,
+     47,
+     48,
+     63,
+     101,
+     109,
+     124,
+     127,
+     152
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/168-16-10.hx WORK/168-16-10.hz --side Z --W 10 --group WORK/168-16-10.gensB",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 90,
+    "cpu": 0.0,
+    "generated": "319",
+    "word": [
+     0,
+     9,
+     47,
+     48,
+     63,
+     101,
+     109,
+     124,
+     127,
+     152
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 10,
+  "Z": 10
+ }
+}

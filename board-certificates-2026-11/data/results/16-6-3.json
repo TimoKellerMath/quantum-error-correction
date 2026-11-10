@@ -1,0 +1,184 @@
+{
+ "slug": "16-6-3",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "34137794b02f2b4a8ed55e070346188062bdbb154814da672628c3b99d63ccc0",
+ "n": 16,
+ "k": 6,
+ "claim": {
+  "X": 3,
+  "Z": 3
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/16-6-3.hx WORK/16-6-3.hz --side X --W 2 --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "W": 2,
+    "searched": 2,
+    "nodes": 5,
+    "cpu": 0.0,
+    "jobs": "16",
+    "mode": "anchor",
+    "parity": false
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/16-6-3.hx WORK/16-6-3.hz --side X --W 2",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "W": 2,
+    "searched": 2,
+    "nodes": 5,
+    "cpu": 0.0,
+    "generated": "13",
+    "parity": false
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/16-6-3.hx WORK/16-6-3.hz --side X --W 3 --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "W": 3,
+    "searched": 3,
+    "nodes": 3,
+    "cpu": 0.0,
+    "jobs": "16",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     5
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 3,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/16-6-3.hx WORK/16-6-3.hz --side X --W 3",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "W": 3,
+    "searched": 3,
+    "nodes": 3,
+    "cpu": 0.0,
+    "generated": "4",
+    "word": [
+     0,
+     1,
+     5
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 3,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/16-6-3.hx WORK/16-6-3.hz --side Z --W 2 --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "W": 2,
+    "searched": 2,
+    "nodes": 7,
+    "cpu": 0.0,
+    "jobs": "16",
+    "mode": "anchor",
+    "parity": false
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/16-6-3.hx WORK/16-6-3.hz --side Z --W 2",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "W": 2,
+    "searched": 2,
+    "nodes": 7,
+    "cpu": 0.0,
+    "generated": "13",
+    "parity": false
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/16-6-3.hx WORK/16-6-3.hz --side Z --W 3 --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "W": 3,
+    "searched": 3,
+    "nodes": 3,
+    "cpu": 0.0,
+    "jobs": "16",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     1,
+     7
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 3,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/16-6-3.hx WORK/16-6-3.hz --side Z --W 3",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "W": 3,
+    "searched": 3,
+    "nodes": 3,
+    "cpu": 0.0,
+    "generated": "4",
+    "word": [
+     0,
+     1,
+     7
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 3,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 3,
+  "Z": 3
+ }
+}

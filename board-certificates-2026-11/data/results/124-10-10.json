@@ -1,0 +1,212 @@
+{
+ "slug": "124-10-10",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "b824916524f0d831ca37a67afcc296da13004b6dd523e5c978fd88f3ac5b7fe2",
+ "n": 124,
+ "k": 10,
+ "claim": {
+  "X": 10,
+  "Z": 10
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/124-10-10.hx WORK/124-10-10.hz --side X --W 9 --group WORK/124-10-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 132,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/124-10-10.hx WORK/124-10-10.hz --side X --W 9 --group WORK/124-10-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 120,
+    "cpu": 0.0,
+    "generated": "402"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/124-10-10.hx WORK/124-10-10.hz --side X --W 10 --group WORK/124-10-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 14,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     4,
+     12,
+     24,
+     44,
+     52,
+     104,
+     108,
+     109,
+     111
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/124-10-10.hx WORK/124-10-10.hz --side X --W 10 --group WORK/124-10-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 13,
+    "cpu": 0.0,
+    "generated": "29",
+    "word": [
+     0,
+     4,
+     12,
+     24,
+     44,
+     52,
+     104,
+     108,
+     109,
+     111
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/124-10-10.hx WORK/124-10-10.hz --side Z --W 9 --group WORK/124-10-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.002,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 193,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/124-10-10.hx WORK/124-10-10.hz --side Z --W 9 --group WORK/124-10-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 175,
+    "cpu": 0.0,
+    "generated": "599"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/124-10-10.hx WORK/124-10-10.hz --side Z --W 10 --group WORK/124-10-10.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 59,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     2,
+     3,
+     6,
+     7,
+     8,
+     10,
+     12,
+     59,
+     118
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/124-10-10.hx WORK/124-10-10.hz --side Z --W 10 --group WORK/124-10-10.gensB",
+    "rc": 0,
+    "wall": 0.001,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 54,
+    "cpu": 0.0,
+    "generated": "148",
+    "word": [
+     0,
+     2,
+     3,
+     6,
+     7,
+     8,
+     10,
+     12,
+     59,
+     118
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 10,
+  "Z": 10
+ }
+}

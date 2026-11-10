@@ -1,0 +1,64 @@
+{
+ "slug": "672-20-32",
+ "category": "tower",
+ "methods": [
+  "partial"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "9d3add707a3e78ddeae7801df269007f7a0ae9c6d2cecdafdf3f39c0637b1a82",
+ "n": 672,
+ "k": 20,
+ "values": {
+  "d_lower": 26
+ },
+ "runs": {
+  "partial": [
+   {
+    "tool": "exactA",
+    "log": "anatomy/data/cost/A_672_X_W25.log",
+    "parity": true,
+    "side": "X",
+    "W": 25,
+    "searched": 24,
+    "verdict": "none",
+    "nodes": 67028390,
+    "cpu": 201.86
+   },
+   {
+    "tool": "exactA",
+    "log": "anatomy/data/cost/A_672_Z_W25.log",
+    "parity": true,
+    "side": "Z",
+    "W": 25,
+    "searched": 24,
+    "verdict": "none",
+    "nodes": 59984343,
+    "cpu": 205.22
+   },
+   {
+    "tool": "exactB",
+    "log": "anatomy/data/cost/B_672_X_W25.log",
+    "parity": true,
+    "side": "X",
+    "W": 25,
+    "searched": 24,
+    "verdict": "none",
+    "nodes": 65398210,
+    "cpu": 247.01
+   },
+   {
+    "tool": "exactB",
+    "log": "anatomy/data/cost/B_672_Z_W25.log",
+    "parity": true,
+    "side": "Z",
+    "W": 25,
+    "searched": 24,
+    "verdict": "none",
+    "nodes": 59684662,
+    "cpu": 229.44
+   }
+  ]
+ },
+ "source": "recorded by the tracks that found the bound (logs/tracks/); board matrices"
+}

@@ -1,0 +1,48 @@
+{
+ "slug": "782-36-12",
+ "category": "amp1",
+ "methods": [
+  "amplified"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "2e8ab7740700ae1300b3a770d6c784e9e5784ea1a824cc9735945026a8a58247",
+ "n": 782,
+ "k": 36,
+ "claim": {
+  "X": 16,
+  "Z": 12
+ },
+ "runs": {},
+ "audit": {
+  "N": 4,
+  "match": "qN+a",
+  "identical_rows": true,
+  "rowsp_equal": true,
+  "base": "160-18-6",
+  "detail": {
+   "rank_SX": 63,
+   "rank_HX": 63,
+   "rank_SX+HX": 63,
+   "m_SX": 63,
+   "rank_SZ": 79,
+   "rank_HZ": 79,
+   "rank_SZ+HZ": 79,
+   "m_SZ": 79,
+   "n_E": 782,
+   "n_rebuilt": 782,
+   "mX_E": 412,
+   "mX_rebuilt": 412,
+   "mZ_E": 476,
+   "mZ_rebuilt": 476,
+   "X_rows_equal": true,
+   "Z_rows_equal": true,
+   "rowsp_X_equal": true,
+   "rowsp_Z_equal": true
+  }
+ },
+ "values": {
+  "X": 16,
+  "Z": 12
+ }
+}

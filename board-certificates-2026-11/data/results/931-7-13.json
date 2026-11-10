@@ -1,0 +1,150 @@
+{
+ "slug": "931-7-13",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "b9cddd541ad1bf11cd85c2aaf2664954345795c0a40eaaf7ed3e933c1ba32a89",
+ "n": 931,
+ "k": 7,
+ "claim": {
+  "X": 13,
+  "Z": 13
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/931-7-13.hx WORK/931-7-13.hz",
+    "rc": 0,
+    "wall": 0.005,
+    "output": {
+     "n": 931,
+     "k": 7,
+     "mX": 462,
+     "mZ": 462,
+     "rankX": 462,
+     "rankZ": 462,
+     "dX": 13,
+     "witX": [
+      0,
+      52,
+      104,
+      156,
+      208,
+      260,
+      312,
+      367,
+      422,
+      477,
+      532,
+      587,
+      642
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 463,
+     "candX": 7132,
+     "secsX": 0.001,
+     "dZ": 13,
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 463,
+     "candZ": 7034,
+     "secsZ": 0.001,
+     "secs": 0.003
+    },
+    "dX": 13,
+    "dZ": 13,
+    "recheck": {
+     "X": {
+      "weight": 13,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 13,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/931-7-13.hx WORK/931-7-13.hz",
+    "rc": 0,
+    "wall": 0.007,
+    "output": {
+     "n": 931,
+     "k": 7,
+     "dX": 13,
+     "dZ": 13,
+     "witX": [
+      0,
+      52,
+      104,
+      156,
+      208,
+      260,
+      312,
+      367,
+      422,
+      477,
+      532,
+      587,
+      642
+     ],
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "secs": 0.006
+    },
+    "dX": 13,
+    "dZ": 13,
+    "recheck": {
+     "X": {
+      "weight": 13,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 13,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 13,
+  "Z": 13
+ }
+}

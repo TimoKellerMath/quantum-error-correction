@@ -1,0 +1,13 @@
+exactA: side X, n=672, checks H_Z: 336 rows (0 dropped: empty or repeated), dual H_X: 336 rows (0 dropped)
+  check weights: 6^336; qubits in no check: 0
+  rank H_Z=326, rank H_X=326, k=20 (1 words per class), majority family 2352 sets (level 2)
+  parity: all-ones vector in rowsp H_Z, so every logical of this side has even weight
+  group: 3 generators from 672-20-32.gens, preserving the rows of H_X and H_Z
+  mode anchor (Lemma 2.4): 4 qubit orbits, order index
+  W=25, searching weights <= 24
+RESULT side=X W=25 Weff=24 verdict=none nodes=67028390 leaves=0 wall=203.19 cpu=201.86 search=203.19 jobs=4 items=4 threads=1 mode=anchor
+CONCLUSION none of weight <= 25; d_X >= 26
+
+real	3m23,195s
+user	3m21,749s
+sys	0m0,110s

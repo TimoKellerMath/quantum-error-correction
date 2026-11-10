@@ -1,0 +1,110 @@
+{
+ "slug": "40-11-2",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "c06fa4fc3fdf5ce011368394a43fa23792b68fc6187917f48fef9c5096a9f174",
+ "n": 40,
+ "k": 11,
+ "claim": {
+  "X": 4,
+  "Z": 2
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/40-11-2.hx WORK/40-11-2.hz",
+    "rc": 0,
+    "wall": 0.001,
+    "output": {
+     "n": 40,
+     "k": 11,
+     "mX": 14,
+     "mZ": 15,
+     "rankX": 14,
+     "rankZ": 15,
+     "dX": 4,
+     "witX": [
+      1,
+      6,
+      13,
+      17
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 16,
+     "candX": 1,
+     "secsX": 0.0,
+     "dZ": 2,
+     "witZ": [
+      4,
+      37
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 1,
+     "candZ": 1,
+     "secsZ": 0.0,
+     "secs": 0.0
+    },
+    "dX": 4,
+    "dZ": 2,
+    "recheck": {
+     "X": {
+      "weight": 4,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 2,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/40-11-2.hx WORK/40-11-2.hz",
+    "rc": 0,
+    "wall": 0.001,
+    "output": {
+     "n": 40,
+     "k": 11,
+     "dX": 4,
+     "dZ": 2,
+     "witX": [
+      2,
+      5,
+      8,
+      15
+     ],
+     "witZ": [
+      4,
+      37
+     ],
+     "secs": 0.0
+    },
+    "dX": 4,
+    "dZ": 2,
+    "recheck": {
+     "X": {
+      "weight": 4,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 2,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 4,
+  "Z": 2
+ }
+}

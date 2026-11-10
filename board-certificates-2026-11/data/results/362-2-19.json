@@ -1,0 +1,174 @@
+{
+ "slug": "362-2-19",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "7c91e9fb99a87ed81259bb4d629af657df8040d833b37b3dc0c8c98a5448c7b1",
+ "n": 362,
+ "k": 2,
+ "claim": {
+  "X": 19,
+  "Z": 19
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/362-2-19.hx WORK/362-2-19.hz",
+    "rc": 0,
+    "wall": 0.003,
+    "output": {
+     "n": 362,
+     "k": 2,
+     "mX": 181,
+     "mZ": 181,
+     "rankX": 180,
+     "rankZ": 180,
+     "dX": 19,
+     "witX": [
+      0,
+      19,
+      38,
+      57,
+      76,
+      95,
+      114,
+      133,
+      152,
+      171,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 182,
+     "candX": 8317,
+     "secsX": 0.0,
+     "dZ": 19,
+     "witZ": [
+      0,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      182,
+      201,
+      220,
+      239,
+      258,
+      277,
+      296,
+      315,
+      334
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 182,
+     "candZ": 8317,
+     "secsZ": 0.0,
+     "secs": 0.001
+    },
+    "dX": 19,
+    "dZ": 19,
+    "recheck": {
+     "X": {
+      "weight": 19,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 19,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/362-2-19.hx WORK/362-2-19.hz",
+    "rc": 0,
+    "wall": 0.004,
+    "output": {
+     "n": 362,
+     "k": 2,
+     "dX": 19,
+     "dZ": 19,
+     "witX": [
+      0,
+      29,
+      48,
+      67,
+      86,
+      105,
+      124,
+      143,
+      162,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191
+     ],
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      181,
+      200,
+      219,
+      238,
+      257,
+      276,
+      295,
+      314,
+      333,
+      352
+     ],
+     "secs": 0.003
+    },
+    "dX": 19,
+    "dZ": 19,
+    "recheck": {
+     "X": {
+      "weight": 19,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 19,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 19,
+  "Z": 19
+ }
+}

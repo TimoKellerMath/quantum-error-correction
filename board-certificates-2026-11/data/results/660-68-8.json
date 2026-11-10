@@ -1,0 +1,134 @@
+{
+ "slug": "660-68-8",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "edd90931932e02b2f942af06c6f620d568002400d6ae867a735d9dcfc75ce0a0",
+ "n": 660,
+ "k": 68,
+ "claim": {
+  "X": 10,
+  "Z": 8
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/660-68-8.hx WORK/660-68-8.hz",
+    "rc": 0,
+    "wall": 0.004,
+    "output": {
+     "n": 660,
+     "k": 68,
+     "mX": 264,
+     "mZ": 330,
+     "rankX": 263,
+     "rankZ": 329,
+     "dX": 10,
+     "witX": [
+      0,
+      3,
+      4,
+      19,
+      21,
+      60,
+      65,
+      159,
+      173,
+      313
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 331,
+     "candX": 2463,
+     "secsX": 0.001,
+     "dZ": 8,
+     "witZ": [
+      0,
+      5,
+      9,
+      24,
+      56,
+      73,
+      148,
+      309
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 265,
+     "candZ": 1394,
+     "secsZ": 0.001,
+     "secs": 0.003
+    },
+    "dX": 10,
+    "dZ": 8,
+    "recheck": {
+     "X": {
+      "weight": 10,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/660-68-8.hx WORK/660-68-8.hz",
+    "rc": 0,
+    "wall": 0.012,
+    "output": {
+     "n": 660,
+     "k": 68,
+     "dX": 10,
+     "dZ": 8,
+     "witX": [
+      0,
+      3,
+      4,
+      19,
+      21,
+      60,
+      65,
+      159,
+      173,
+      313
+     ],
+     "witZ": [
+      0,
+      5,
+      9,
+      24,
+      56,
+      73,
+      148,
+      309
+     ],
+     "secs": 0.011
+    },
+    "dX": 10,
+    "dZ": 8,
+    "recheck": {
+     "X": {
+      "weight": 10,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 8,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 10,
+  "Z": 8
+ }
+}

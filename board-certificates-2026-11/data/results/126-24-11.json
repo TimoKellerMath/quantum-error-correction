@@ -1,0 +1,216 @@
+{
+ "slug": "126-24-11",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "430f3d105a17db129518de6b03bda6f4c5b4dfba88a3640910011c13151a6ceb",
+ "n": 126,
+ "k": 24,
+ "claim": {
+  "X": 11,
+  "Z": 11
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/126-24-11.hx WORK/126-24-11.hz --side X --W 10 --group WORK/126-24-11.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.054,
+    "verdict": "none",
+    "W": 10,
+    "searched": 10,
+    "nodes": 12129,
+    "cpu": 0.05,
+    "jobs": "2",
+    "mode": "anchor",
+    "parity": false
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/126-24-11.hx WORK/126-24-11.hz --side X --W 10 --group WORK/126-24-11.gensB",
+    "rc": 0,
+    "wall": 0.033,
+    "verdict": "none",
+    "W": 10,
+    "searched": 10,
+    "nodes": 5713,
+    "cpu": 0.03,
+    "generated": "28000",
+    "parity": false
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/126-24-11.hx WORK/126-24-11.hz --side X --W 11 --group WORK/126-24-11.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.004,
+    "verdict": "found",
+    "W": 11,
+    "searched": 11,
+    "nodes": 524,
+    "cpu": 0.0,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     4,
+     6,
+     29,
+     32,
+     36,
+     40,
+     87,
+     102,
+     112,
+     114
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 11,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/126-24-11.hx WORK/126-24-11.hz --side X --W 11 --group WORK/126-24-11.gensB",
+    "rc": 0,
+    "wall": 0.003,
+    "verdict": "found",
+    "W": 11,
+    "searched": 11,
+    "nodes": 254,
+    "cpu": 0.0,
+    "generated": "1303",
+    "word": [
+     0,
+     4,
+     6,
+     29,
+     32,
+     36,
+     40,
+     87,
+     102,
+     112,
+     114
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 11,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/126-24-11.hx WORK/126-24-11.hz --side Z --W 10 --group WORK/126-24-11.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.042,
+    "verdict": "none",
+    "W": 10,
+    "searched": 10,
+    "nodes": 10375,
+    "cpu": 0.04,
+    "jobs": "2",
+    "mode": "anchor",
+    "parity": false
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/126-24-11.hx WORK/126-24-11.hz --side Z --W 10 --group WORK/126-24-11.gensB",
+    "rc": 0,
+    "wall": 0.025,
+    "verdict": "none",
+    "W": 10,
+    "searched": 10,
+    "nodes": 4858,
+    "cpu": 0.02,
+    "generated": "21792",
+    "parity": false
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/126-24-11.hx WORK/126-24-11.hz --side Z --W 11 --group WORK/126-24-11.gens --mode anchor",
+    "rc": 0,
+    "wall": 0.02,
+    "verdict": "found",
+    "W": 11,
+    "searched": 11,
+    "nodes": 4452,
+    "cpu": 0.02,
+    "jobs": "2",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     3,
+     27,
+     45,
+     64,
+     65,
+     70,
+     81,
+     95,
+     96,
+     102
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 11,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/126-24-11.hx WORK/126-24-11.hz --side Z --W 11 --group WORK/126-24-11.gensB",
+    "rc": 0,
+    "wall": 0.011,
+    "verdict": "found",
+    "W": 11,
+    "searched": 11,
+    "nodes": 1907,
+    "cpu": 0.01,
+    "generated": "8743",
+    "word": [
+     0,
+     3,
+     27,
+     45,
+     64,
+     65,
+     70,
+     81,
+     95,
+     96,
+     102
+    ],
+    "parity": false,
+    "recheck": {
+     "weight": 11,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 11,
+  "Z": 11
+ }
+}

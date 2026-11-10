@@ -1,0 +1,18 @@
+# start 2026-11-10T14:05:16+01:00 host load: 7.03 5.11 4.96
+# cmd: bin/exactB 128-12-16.hx 128-12-16.hz --side X --W 12 --group 128-12-16.gens
+cmd: bin/exactB 128-12-16.hx 128-12-16.hz --side X --W 12 --group 128-12-16.gens
+exactB: 128-12-16.hx 128-12-16.hz side X: n=128 k=12 | A (H_Z): m=64 rank=58 weights 16..16, qubit degrees 8..8 | B (H_X): m=64 rank=58 weights 16..16
+parity: all-ones vector in rowsp H_Z, so every logical of this side has even weight
+group: 2 generators from 128-12-16.gens verified (each maps rowsp H_X and rowsp H_Z into themselves); 8 orbits, sizes 16 16 16 16 16 16 16 16
+search: W=12 (searched 12), bound 3, majority family 2 (1824 members, weight <= 32), threads 1, split depth -1, runs 8
+  run 0: anchor 0, excluded 0, nodes 11383999, 230.917 s
+  run 1: anchor 1, excluded 16, nodes 2297743, 39.422 s
+  run 2: anchor 2, excluded 32, nodes 926922, 14.239 s
+  run 3: anchor 3, excluded 48, nodes 104318, 1.096 s
+  run 4: anchor 4, excluded 64, nodes 9618, 0.086 s
+  run 5: anchor 8, excluded 80, nodes 595, 0.005 s
+  run 6: anchor 11, excluded 96, nodes 3, 0.000 s
+  run 7: anchor 28, excluded 112, nodes 0, 0.000 s
+RESULT side=X W=12 searched=12 found=none nodes=14723198 generated=95354918 leaves=0 wall=285.76 cpu=284.50 setup=0.00 threads=1
+CONCLUSION: no nontrivial X-logical of weight <= 12, d_X >= 14 (parity)
+# exit 0 end 2026-11-10T14:10:02+01:00

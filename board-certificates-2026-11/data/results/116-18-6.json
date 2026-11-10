@@ -1,0 +1,48 @@
+{
+ "slug": "116-18-6",
+ "category": "amp1",
+ "methods": [
+  "amplified"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "54b4cf483715dddf9848e72fb6f6ab5a06259d3f224c68b01f8c9e90bd744d7d",
+ "n": 116,
+ "k": 18,
+ "claim": {
+  "X": 6,
+  "Z": 6
+ },
+ "runs": {},
+ "audit": {
+  "N": 4,
+  "match": "qN+a",
+  "identical_rows": true,
+  "rowsp_equal": true,
+  "base": "25-9-3",
+  "detail": {
+   "rank_SX": 8,
+   "rank_HX": 8,
+   "rank_SX+HX": 8,
+   "m_SX": 8,
+   "rank_SZ": 8,
+   "rank_HZ": 8,
+   "rank_SZ+HZ": 8,
+   "m_SZ": 8,
+   "n_E": 116,
+   "n_rebuilt": 116,
+   "mX_E": 57,
+   "mX_rebuilt": 57,
+   "mZ_E": 57,
+   "mZ_rebuilt": 57,
+   "X_rows_equal": true,
+   "Z_rows_equal": true,
+   "rowsp_X_equal": true,
+   "rowsp_Z_equal": true
+  }
+ },
+ "values": {
+  "X": 6,
+  "Z": 6
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "slug": "400-2-20",
+ "category": "graphlike",
+ "methods": [
+  "graphlike"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "06a3d657a8a83fd9e7646b766549a40ae12bf1d63046334105477a1f42d59397",
+ "n": 400,
+ "k": 2,
+ "claim": {
+  "X": 20,
+  "Z": 20
+ },
+ "runs": {
+  "graphlike": {
+   "graphlike_A": {
+    "cmd": "bin/graphlike_A WORK/400-2-20.hx WORK/400-2-20.hz",
+    "rc": 0,
+    "wall": 0.003,
+    "output": {
+     "n": 400,
+     "k": 2,
+     "mX": 200,
+     "mZ": 200,
+     "rankX": 199,
+     "rankZ": 199,
+     "dX": 20,
+     "witX": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ],
+     "verX": true,
+     "lcheckX": true,
+     "bfsX": 201,
+     "candX": 9841,
+     "secsX": 0.0,
+     "dZ": 20,
+     "witZ": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+     ],
+     "verZ": true,
+     "lcheckZ": true,
+     "bfsZ": 201,
+     "candZ": 9841,
+     "secsZ": 0.0,
+     "secs": 0.001
+    },
+    "dX": 20,
+    "dZ": 20,
+    "recheck": {
+     "X": {
+      "weight": 20,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 20,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   },
+   "graphlike_B": {
+    "cmd": "bin/graphlike_B WORK/400-2-20.hx WORK/400-2-20.hz",
+    "rc": 0,
+    "wall": 0.006,
+    "output": {
+     "n": 400,
+     "k": 2,
+     "dX": 20,
+     "dZ": 20,
+     "witX": [
+      1,
+      21,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      320,
+      340,
+      360,
+      380
+     ],
+     "witZ": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      320,
+      340,
+      360,
+      380
+     ],
+     "secs": 0.004
+    },
+    "dX": 20,
+    "dZ": 20,
+    "recheck": {
+     "X": {
+      "weight": 20,
+      "in_ker": true,
+      "nontrivial": true
+     },
+     "Z": {
+      "weight": 20,
+      "in_ker": true,
+      "nontrivial": true
+     }
+    }
+   }
+  }
+ },
+ "values": {
+  "X": 20,
+  "Z": 20
+ }
+}

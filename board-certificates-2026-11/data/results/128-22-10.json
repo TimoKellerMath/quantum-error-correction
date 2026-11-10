@@ -1,0 +1,212 @@
+{
+ "slug": "128-22-10",
+ "category": "amp1-base",
+ "methods": [
+  "exact"
+ ],
+ "ok": true,
+ "problems": [],
+ "checks_sha256": "4892eedfe043ca3150d917a1fabb9f02ab5a20e9d25fce7fbf13a801dc39dfc5",
+ "n": 128,
+ "k": 22,
+ "claim": {
+  "X": 10,
+  "Z": 10
+ },
+ "runs": {
+  "exact": [
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/128-22-10.hx WORK/128-22-10.hz --side X --W 9 --mode anchor",
+    "rc": 0,
+    "wall": 0.033,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 15776,
+    "cpu": 0.03,
+    "jobs": "128",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/128-22-10.hx WORK/128-22-10.hz --side X --W 9",
+    "rc": 0,
+    "wall": 0.039,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 13063,
+    "cpu": 0.04,
+    "generated": "48275"
+   },
+   {
+    "tool": "exactA",
+    "side": "X",
+    "cmd": "bin/exactA WORK/128-22-10.hx WORK/128-22-10.hz --side X --W 10 --mode anchor",
+    "rc": 0,
+    "wall": 0.006,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 1668,
+    "cpu": 0.0,
+    "jobs": "128",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     15,
+     18,
+     45,
+     54,
+     59,
+     69,
+     73,
+     80,
+     114
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "X",
+    "cmd": "bin/exactB WORK/128-22-10.hx WORK/128-22-10.hz --side X --W 10",
+    "rc": 0,
+    "wall": 0.005,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 1170,
+    "cpu": 0.0,
+    "generated": "5128",
+    "word": [
+     0,
+     15,
+     18,
+     45,
+     54,
+     59,
+     69,
+     73,
+     80,
+     114
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/128-22-10.hx WORK/128-22-10.hz --side Z --W 9 --mode anchor",
+    "rc": 0,
+    "wall": 0.031,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 16424,
+    "cpu": 0.03,
+    "jobs": "128",
+    "mode": "anchor"
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/128-22-10.hx WORK/128-22-10.hz --side Z --W 9",
+    "rc": 0,
+    "wall": 0.038,
+    "verdict": "none",
+    "parity": true,
+    "W": 9,
+    "searched": 8,
+    "nodes": 13659,
+    "cpu": 0.04,
+    "generated": "49157"
+   },
+   {
+    "tool": "exactA",
+    "side": "Z",
+    "cmd": "bin/exactA WORK/128-22-10.hx WORK/128-22-10.hz --side Z --W 10 --mode anchor",
+    "rc": 0,
+    "wall": 0.012,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 4786,
+    "cpu": 0.01,
+    "jobs": "128",
+    "mode": "anchor",
+    "recheck_ker": "ok",
+    "recheck_nontrivial": "ok",
+    "word": [
+     0,
+     27,
+     32,
+     63,
+     83,
+     85,
+     95,
+     100,
+     106,
+     121
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   },
+   {
+    "tool": "exactB",
+    "side": "Z",
+    "cmd": "bin/exactB WORK/128-22-10.hx WORK/128-22-10.hz --side Z --W 10",
+    "rc": 0,
+    "wall": 0.013,
+    "verdict": "found",
+    "parity": true,
+    "W": 10,
+    "searched": 10,
+    "nodes": 3558,
+    "cpu": 0.01,
+    "generated": "14368",
+    "word": [
+     0,
+     27,
+     32,
+     63,
+     83,
+     85,
+     95,
+     100,
+     106,
+     121
+    ],
+    "recheck": {
+     "weight": 10,
+     "in_ker": true,
+     "nontrivial": true
+    }
+   }
+  ]
+ },
+ "values": {
+  "X": 10,
+  "Z": 10
+ }
+}
