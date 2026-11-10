@@ -1,0 +1,2 @@
+code codes/gross_c4.code n 72 r 72 L 12 h 4 passes 16: 84965491 Paulis of weight <= 4, largest key group 3, groups with distinct labels 0, cpu 24.8 s
+RESULT: no nontrivial logical of Pauli weight <= 8, hence d >= 9

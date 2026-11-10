@@ -1,0 +1,227 @@
+start 2026-11-10T14:08:58+01:00
+cmd: ./bin/isd codes/B510_c0.code 1000000 101 0.0 isd_out/B510_t0_Q
+n 255, rank S 247, k 8, dim N(S) 263, trials 1000000, seed 101, fracB 0.00
+trial 1: new best weight 28 (cpu 0.0 s)
+trial 11: new best weight 24 (cpu 0.0 s)
+trial 2782: new best weight 23 (cpu 1.4 s)
+trial 4619: new best weight 22 (cpu 2.3 s)
+trial 10000: best 22, cpu 5.2 s
+trial 20000: best 22, cpu 10.4 s
+trial 30000: best 22, cpu 15.6 s
+trial 40000: best 22, cpu 20.5 s
+trial 50000: best 22, cpu 25.4 s
+trial 60000: best 22, cpu 30.1 s
+trial 70000: best 22, cpu 34.7 s
+trial 80000: best 22, cpu 39.3 s
+trial 90000: best 22, cpu 44.2 s
+trial 100000: best 22, cpu 49.1 s
+trial 110000: best 22, cpu 54.0 s
+trial 120000: best 22, cpu 58.8 s
+trial 130000: best 22, cpu 63.4 s
+trial 140000: best 22, cpu 67.7 s
+trial 150000: best 22, cpu 72.2 s
+trial 160000: best 22, cpu 77.0 s
+trial 170000: best 22, cpu 81.8 s
+trial 180000: best 22, cpu 87.1 s
+trial 190000: best 22, cpu 92.4 s
+trial 200000: best 22, cpu 98.7 s
+trial 210000: best 22, cpu 104.7 s
+trial 220000: best 22, cpu 110.2 s
+trial 230000: best 22, cpu 115.6 s
+trial 240000: best 22, cpu 120.5 s
+trial 250000: best 22, cpu 125.2 s
+trial 260000: best 22, cpu 131.0 s
+trial 270000: best 22, cpu 137.1 s
+trial 280000: best 22, cpu 142.3 s
+trial 290000: best 22, cpu 147.5 s
+trial 300000: best 22, cpu 152.6 s
+trial 310000: best 22, cpu 158.0 s
+trial 320000: best 22, cpu 163.1 s
+trial 330000: best 22, cpu 168.1 s
+trial 340000: best 22, cpu 173.0 s
+trial 350000: best 22, cpu 177.7 s
+trial 360000: best 22, cpu 182.8 s
+trial 370000: best 22, cpu 187.9 s
+trial 380000: best 22, cpu 192.7 s
+trial 390000: best 22, cpu 197.6 s
+trial 400000: best 22, cpu 202.5 s
+trial 410000: best 22, cpu 207.6 s
+trial 420000: best 22, cpu 212.7 s
+trial 430000: best 22, cpu 217.6 s
+trial 440000: best 22, cpu 222.4 s
+trial 450000: best 22, cpu 227.3 s
+trial 460000: best 22, cpu 232.3 s
+trial 470000: best 22, cpu 236.8 s
+trial 480000: best 22, cpu 241.6 s
+trial 490000: best 22, cpu 246.5 s
+trial 500000: best 22, cpu 251.3 s
+trial 510000: best 22, cpu 256.1 s
+trial 520000: best 22, cpu 260.9 s
+trial 530000: best 22, cpu 265.5 s
+trial 540000: best 22, cpu 270.1 s
+trial 550000: best 22, cpu 274.7 s
+trial 560000: best 22, cpu 279.2 s
+trial 570000: best 22, cpu 283.4 s
+trial 580000: best 22, cpu 287.6 s
+trial 590000: best 22, cpu 292.2 s
+trial 600000: best 22, cpu 296.8 s
+trial 610000: best 22, cpu 301.5 s
+trial 620000: best 22, cpu 306.8 s
+trial 630000: best 22, cpu 311.5 s
+trial 640000: best 22, cpu 316.2 s
+trial 650000: best 22, cpu 321.1 s
+trial 660000: best 22, cpu 326.0 s
+trial 670000: best 22, cpu 331.2 s
+trial 680000: best 22, cpu 336.1 s
+trial 690000: best 22, cpu 341.5 s
+trial 700000: best 22, cpu 346.2 s
+trial 710000: best 22, cpu 350.5 s
+trial 720000: best 22, cpu 354.8 s
+trial 730000: best 22, cpu 359.1 s
+trial 740000: best 22, cpu 363.4 s
+trial 750000: best 22, cpu 367.6 s
+trial 760000: best 22, cpu 372.4 s
+trial 770000: best 22, cpu 376.7 s
+trial 780000: best 22, cpu 381.0 s
+trial 790000: best 22, cpu 385.8 s
+trial 800000: best 22, cpu 390.4 s
+trial 810000: best 22, cpu 395.6 s
+trial 820000: best 22, cpu 400.6 s
+trial 830000: best 22, cpu 405.5 s
+trial 840000: best 22, cpu 410.5 s
+trial 850000: best 22, cpu 415.8 s
+trial 860000: best 22, cpu 420.7 s
+trial 870000: best 22, cpu 425.7 s
+trial 880000: best 22, cpu 431.2 s
+trial 890000: best 22, cpu 436.2 s
+trial 900000: best 22, cpu 441.2 s
+trial 910000: best 22, cpu 446.2 s
+trial 920000: best 22, cpu 451.1 s
+trial 930000: best 22, cpu 456.2 s
+trial 940000: best 22, cpu 461.2 s
+trial 950000: best 22, cpu 466.3 s
+trial 960000: best 22, cpu 471.3 s
+trial 970000: best 22, cpu 476.4 s
+trial 980000: best 22, cpu 481.5 s
+trial 990000: best 22, cpu 486.3 s
+trial 1000000: best 22, cpu 491.0 s
+DONE trials 1000000 cpu 491.0 s (0.491 ms/trial); best weight 22 first reached at trial 4619
+weight 22: distinct 97, hits 313, mean hits 3.23, first hit trial 4619
+weight 23: distinct 652, hits 1108, mean hits 1.70, first hit trial 2782
+weight 24: distinct 10881, hits 14042, mean hits 1.29, first hit trial 11
+end 2026-11-10T14:17:12+01:00
+cmd: ./bin/isd codes/B510_c0.code 1000000 202 1.0 isd_out/B510_t0_B
+n 255, rank S 247, k 8, dim N(S) 263, trials 1000000, seed 202, fracB 1.00
+trial 1: new best weight 45 (cpu 0.0 s)
+trial 5: new best weight 37 (cpu 0.0 s)
+trial 9: new best weight 33 (cpu 0.0 s)
+trial 13: new best weight 27 (cpu 0.0 s)
+trial 66: new best weight 26 (cpu 0.0 s)
+trial 392: new best weight 24 (cpu 0.2 s)
+trial 5024: new best weight 23 (cpu 2.4 s)
+trial 10000: best 23, cpu 4.8 s
+trial 13941: new best weight 22 (cpu 6.7 s)
+trial 20000: best 22, cpu 9.6 s
+trial 30000: best 22, cpu 14.6 s
+trial 40000: best 22, cpu 19.6 s
+trial 50000: best 22, cpu 24.6 s
+trial 60000: best 22, cpu 29.5 s
+trial 70000: best 22, cpu 34.5 s
+trial 80000: best 22, cpu 39.4 s
+trial 90000: best 22, cpu 44.4 s
+trial 100000: best 22, cpu 49.7 s
+trial 110000: best 22, cpu 54.5 s
+trial 120000: best 22, cpu 60.0 s
+trial 130000: best 22, cpu 64.7 s
+trial 140000: best 22, cpu 69.5 s
+trial 150000: best 22, cpu 74.2 s
+trial 160000: best 22, cpu 79.0 s
+trial 170000: best 22, cpu 83.8 s
+trial 180000: best 22, cpu 88.7 s
+trial 190000: best 22, cpu 93.5 s
+trial 200000: best 22, cpu 98.7 s
+trial 210000: best 22, cpu 104.0 s
+trial 220000: best 22, cpu 109.2 s
+trial 230000: best 22, cpu 114.5 s
+trial 240000: best 22, cpu 119.8 s
+trial 250000: best 22, cpu 125.1 s
+trial 260000: best 22, cpu 130.5 s
+trial 270000: best 22, cpu 136.3 s
+trial 280000: best 22, cpu 141.6 s
+trial 290000: best 22, cpu 146.9 s
+trial 300000: best 22, cpu 152.3 s
+trial 310000: best 22, cpu 157.6 s
+trial 320000: best 22, cpu 162.9 s
+trial 330000: best 22, cpu 168.0 s
+trial 340000: best 22, cpu 173.3 s
+trial 350000: best 22, cpu 178.6 s
+trial 360000: best 22, cpu 183.9 s
+trial 370000: best 22, cpu 189.6 s
+trial 380000: best 22, cpu 195.0 s
+trial 390000: best 22, cpu 200.3 s
+trial 400000: best 22, cpu 205.8 s
+trial 410000: best 22, cpu 211.7 s
+trial 420000: best 22, cpu 217.4 s
+trial 430000: best 22, cpu 223.2 s
+trial 440000: best 22, cpu 228.9 s
+trial 450000: best 22, cpu 234.4 s
+trial 460000: best 22, cpu 240.2 s
+trial 470000: best 22, cpu 246.2 s
+trial 480000: best 22, cpu 251.6 s
+trial 490000: best 22, cpu 256.5 s
+trial 500000: best 22, cpu 262.1 s
+trial 510000: best 22, cpu 267.4 s
+trial 520000: best 22, cpu 272.4 s
+trial 530000: best 22, cpu 277.3 s
+trial 540000: best 22, cpu 282.3 s
+trial 550000: best 22, cpu 287.3 s
+trial 560000: best 22, cpu 292.3 s
+trial 570000: best 22, cpu 297.2 s
+trial 580000: best 22, cpu 302.3 s
+trial 590000: best 22, cpu 307.3 s
+trial 600000: best 22, cpu 312.3 s
+trial 610000: best 22, cpu 317.4 s
+trial 620000: best 22, cpu 322.5 s
+trial 630000: best 22, cpu 328.4 s
+trial 640000: best 22, cpu 334.0 s
+trial 650000: best 22, cpu 339.3 s
+trial 660000: best 22, cpu 344.4 s
+trial 670000: best 22, cpu 349.8 s
+trial 680000: best 22, cpu 355.0 s
+trial 690000: best 22, cpu 360.4 s
+trial 700000: best 22, cpu 365.8 s
+trial 710000: best 22, cpu 371.2 s
+trial 720000: best 22, cpu 376.5 s
+trial 730000: best 22, cpu 381.4 s
+trial 740000: best 22, cpu 386.3 s
+trial 750000: best 22, cpu 391.2 s
+trial 760000: best 22, cpu 397.1 s
+trial 770000: best 22, cpu 402.1 s
+trial 780000: best 22, cpu 407.4 s
+trial 790000: best 22, cpu 412.7 s
+trial 800000: best 22, cpu 417.9 s
+trial 810000: best 22, cpu 423.0 s
+trial 820000: best 22, cpu 428.7 s
+trial 830000: best 22, cpu 434.1 s
+trial 840000: best 22, cpu 439.4 s
+trial 850000: best 22, cpu 444.8 s
+trial 860000: best 22, cpu 450.5 s
+trial 870000: best 22, cpu 456.2 s
+trial 880000: best 22, cpu 462.2 s
+trial 890000: best 22, cpu 468.3 s
+trial 900000: best 22, cpu 474.6 s
+trial 910000: best 22, cpu 480.6 s
+trial 920000: best 22, cpu 487.0 s
+trial 930000: best 22, cpu 493.2 s
+trial 940000: best 22, cpu 499.2 s
+trial 950000: best 22, cpu 505.1 s
+trial 960000: best 22, cpu 511.0 s
+trial 970000: best 22, cpu 517.1 s
+trial 980000: best 22, cpu 523.2 s
+trial 990000: best 22, cpu 529.4 s
+trial 1000000: best 22, cpu 535.6 s
+DONE trials 1000000 cpu 535.6 s (0.536 ms/trial); best weight 22 first reached at trial 13941
+weight 22: distinct 30, hits 35, mean hits 1.17, first hit trial 13941
+weight 23: distinct 102, hits 110, mean hits 1.08, first hit trial 5024
+weight 24: distinct 1225, hits 1251, mean hits 1.02, first hit trial 392
+end 2026-11-10T14:26:10+01:00

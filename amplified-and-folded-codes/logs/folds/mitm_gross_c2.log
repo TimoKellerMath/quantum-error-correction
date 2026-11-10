@@ -1,0 +1,5 @@
+code codes/gross_c2.code n 72 r 72 L 12 h 4 passes 16: 84965491 Paulis of weight <= 4, largest key group 4, groups with distinct labels 140, cpu 25.4 s
+RESULT: d = 8 exactly; 4 distinct nontrivial logicals of weight 8 (as Pauli operators mod phase)
+witness 0: X37 X38 X40 X41 Y43 Y44 Y46 Y47 
+witness 1: Z9 Y16 Y25 Z33 Z42 Y49 Y64 Z66 
+witness 2: Z6 Y13 Y28 Z30 Z45 Y52 Y61 Z69 

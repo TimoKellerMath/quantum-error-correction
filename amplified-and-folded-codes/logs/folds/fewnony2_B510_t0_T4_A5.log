@@ -1,0 +1,12 @@
+start 2026-11-10T14:55:56+01:00
+cmd: ./bin/fewnony2 codes/B510_c0.code 4 5   (anchor: translations h -> h+5m are automorphisms, logs/aut_orbits_B510.log)
+n 255 r 255 L 16: rank(A+B) 244, dim ker(A+B) 11, dim leftker 11, T 4, anchor bound 5
+t=0: subsets 1, solvable 1, min weight 81 (34 elements of that weight), recheck: commutes 1, label nonzero, weight 81; cpu 0.0 s
+  witness t=0: Y0,Y1,Y2,Y5,Y6,Y10,Y11,Y12,Y15,Y19,Y20,Y26,Y27,Y29,Y30,Y31,Y36,Y42,Y44,Y46,Y50,Y52,Y55,Y59,Y69,Y75,Y76,Y85,Y86,Y87,Y90,Y91,Y95,Y96,Y97,Y100,Y104,Y105,Y111,Y112,Y114,Y115,Y116,Y121,Y127,Y129,Y131,Y135,Y137,Y140,Y144,Y154,Y160,Y161,Y170,Y171,Y172,Y175,Y176,Y180,Y181,Y182,Y185,Y189,Y190,Y196,Y197,Y199,Y200,Y201,Y206,Y212,Y214,Y216,Y220,Y222,Y225,Y229,Y239,Y245,Y246,
+t=1: subsets 5, solvable 0, no nontrivial logical, cpu 0.0 s
+t=2: subsets 1260, solvable 452, min weight 59 (2 elements of that weight), recheck: commutes 1, label nonzero, weight 59; cpu 0.0 s
+  witness t=2: Z0,Y2,Y4,Y6,Y10,Y19,Y21,Y26,Y29,Y31,Y32,Y36,Y39,Y45,Y51,Z55,Y56,Y67,Y74,Y76,Y77,Y81,Y85,Y87,Y101,Y102,Y104,Y106,Y110,Y121,Y126,Y127,Y131,Y132,Y134,Y136,Y151,Y155,Y157,Y161,Y166,Y169,Y172,Y179,Y181,Y182,Y189,Y192,Y200,Y201,Y204,Y211,Y225,Y227,Y229,Y231,Y234,Y246,Y251,
+t=3: subsets 158135, solvable 0, no nontrivial logical, cpu 0.0 s
+t=4: subsets 13178755, solvable 3714151, min weight 36 (4 elements of that weight), recheck: commutes 1, label nonzero, weight 36; cpu 47.4 s
+  witness t=4: X4,X9,Y14,Y15,Y25,Y34,Y40,Y44,Y45,Y56,Y64,Y70,Y75,X84,Y86,Y90,Y91,Y92,Y96,Y100,Y112,Y121,Y122,Y126,Y131,Y142,Y161,Y177,X184,Y197,Y204,Y207,Y224,Y227,Y234,Y254,
+end 2026-11-10T14:56:44+01:00

@@ -1,0 +1,31 @@
+cmd: ./bin/fewnony2 codes/test513.code 5
+n 5 r 4 L 2: rank(A+B) 4, dim ker(A+B) 1, dim leftker 0, T 5, anchor bound 0
+t=0: subsets 1, solvable 1, min weight 5 (1 elements of that weight), recheck: commutes 1, label nonzero, weight 5; cpu 0.0 s
+  witness t=0: Y0,Y1,Y2,Y3,Y4,
+t=1: subsets 5, solvable 5, min weight 3 (10 elements of that weight), recheck: commutes 1, label nonzero, weight 3; cpu 0.0 s
+  witness t=1: X0,Y2,Y3,
+t=2: subsets 10, solvable 10, min weight 3 (10 elements of that weight), recheck: commutes 1, label nonzero, weight 3; cpu 0.0 s
+  witness t=2: Z0,Z1,Y3,
+t=3: subsets 10, solvable 10, min weight 3 (10 elements of that weight), recheck: commutes 1, label nonzero, weight 3; cpu 0.0 s
+  witness t=3: Z0,X1,Z2,
+t=4: subsets 5, solvable 5, min weight 5 (5 elements of that weight), recheck: commutes 1, label nonzero, weight 5; cpu 0.0 s
+  witness t=4: Z0,X1,X2,Z3,Y4,
+t=5: subsets 1, solvable 1, min weight 5 (2 elements of that weight), recheck: commutes 1, label nonzero, weight 5; cpu 0.0 s
+  witness t=5: X0,X1,X2,X3,X4,
+cmd: ./bin/fewnony2 codes/gross_c4.code 4
+n 72 r 72 L 12: rank(A+B) 56, dim ker(A+B) 16, dim leftker 16, T 4, anchor bound 0
+t=0: subsets 1, solvable 1, min weight 12 (12 elements of that weight), recheck: commutes 1, label nonzero, weight 12; cpu 0.0 s
+  witness t=0: Y1,Y8,Y15,Y17,Y22,Y26,Y39,Y46,Y48,Y53,Y59,Y61,
+t=1: subsets 72, solvable 0, no nontrivial logical, cpu 0.0 s
+t=2: subsets 2556, solvable 0, no nontrivial logical, cpu 0.0 s
+t=3: subsets 59640, solvable 0, no nontrivial logical, cpu 0.0 s
+t=4: subsets 1028790, solvable 2718, min weight 12 (12 elements of that weight), recheck: commutes 1, label nonzero, weight 12; cpu 0.5 s
+  witness t=4: Z0,X3,Y4,Y5,Y15,Y21,Y41,Y44,Y49,Z55,Y57,Z58,
+cmd: ./bin/fewnony2 codes/B510_c0.code 3
+n 255 r 255 L 16: rank(A+B) 244, dim ker(A+B) 11, dim leftker 11, T 3, anchor bound 0
+t=0: subsets 1, solvable 1, min weight 81 (34 elements of that weight), recheck: commutes 1, label nonzero, weight 81; cpu 0.0 s
+  witness t=0: Y0,Y1,Y2,Y5,Y6,Y10,Y11,Y12,Y15,Y19,Y20,Y26,Y27,Y29,Y30,Y31,Y36,Y42,Y44,Y46,Y50,Y52,Y55,Y59,Y69,Y75,Y76,Y85,Y86,Y87,Y90,Y91,Y95,Y96,Y97,Y100,Y104,Y105,Y111,Y112,Y114,Y115,Y116,Y121,Y127,Y129,Y131,Y135,Y137,Y140,Y144,Y154,Y160,Y161,Y170,Y171,Y172,
+t=1: subsets 255, solvable 0, no nontrivial logical, cpu 0.0 s
+t=2: subsets 32385, solvable 11577, min weight 59 (51 elements of that weight), recheck: commutes 1, label nonzero, weight 59; cpu 0.1 s
+  witness t=2: Z0,Y2,Y4,Y6,Y10,Y19,Y21,Y26,Y29,Y31,Y32,Y36,Y39,Y45,Y51,Z55,Y56,Y67,Y74,Y76,Y77,Y81,Y85,Y87,Y101,Y102,Y104,Y106,Y110,Y121,Y126,Y127,Y131,Y132,Y134,Y136,Y151,Y155,Y157,Y161,Y166,Y169,Y172,Y179,Y181,Y182,Y189,Y192,Y200,Y201,Y204,Y211,Y225,Y227,Y22
+t=3: subsets 2731135, solvable 0, no nontrivial logical, cpu 0.1 s

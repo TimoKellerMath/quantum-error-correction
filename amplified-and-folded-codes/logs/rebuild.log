@@ -1,0 +1,101 @@
+PASS base 180-20-11: CSS, k = 20 by ranks, witnesses of weight 11/11 are nontrivial logicals; certificate: certs/180-20-11.json at 8042f9da64e0: d = 11, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 880-40-22 (base 180-20-11, N = 4): retained base rows independent and spanning (80 of 90 X-checks, 80 of 90 Z-checks)
+PASS 880-40-22 (base 180-20-11, N = 4): rebuilt check matrices equal data/codes/880-40-22.json row by row
+PASS 880-40-22 (base 180-20-11, N = 4): CSS condition H_X H_Z^T = 0
+PASS 880-40-22 (base 180-20-11, N = 4): n = 880 = (N+1) n_base - k_base, k = 40 = (N-2) k_base (ranks 420, 420)
+PASS 880-40-22 (base 180-20-11, N = 4): check weight w = 8 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 7/7/11
+PASS 880-40-22 (base 180-20-11, N = 4): witnesses u (x) (e_0 + e_1) of weight 22/22 are nontrivial logicals; d = 2 d_base = 22 by Proposition 4
+PASS 880-40-22 (base 180-20-11, N = 4): Tanner graph connected
+INFO 880-40-22: checks_sha256 7e2f3fe2c845119ba842967804794aefbf70d7e6280d617ea3f39d7d029df743
+PASS base 186-64-6: CSS, k = 64 by ranks, witnesses of weight 6/6 are nontrivial logicals; certificate: certs/186-64-6.json at 8042f9da64e0: d = 6, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 866-128-12 (base 186-64-6, N = 4): retained base rows independent and spanning (61 of 62 X-checks, 61 of 62 Z-checks)
+PASS 866-128-12 (base 186-64-6, N = 4): rebuilt check matrices equal data/codes/866-128-12.json row by row
+PASS 866-128-12 (base 186-64-6, N = 4): CSS condition H_X H_Z^T = 0
+PASS 866-128-12 (base 186-64-6, N = 4): n = 866 = (N+1) n_base - k_base, k = 128 = (N-2) k_base (ranks 369, 369)
+PASS 866-128-12 (base 186-64-6, N = 4): check weight w = 7 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 6/6/10
+PASS 866-128-12 (base 186-64-6, N = 4): witnesses u (x) (e_0 + e_1) of weight 12/12 are nontrivial logicals; d = 2 d_base = 12 by Proposition 4
+PASS 866-128-12 (base 186-64-6, N = 4): Tanner graph connected
+INFO 866-128-12: checks_sha256 b10629d70984cc42022f3a6df4ce63d19d39f2969070a653c5061265fe40974b
+PASS base 126-20-11: CSS, k = 20 by ranks, witnesses of weight 11/11 are nontrivial logicals; certificate: certs/126-20-11.json at 8042f9da64e0: d = 11, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 610-40-22 (base 126-20-11, N = 4): retained base rows independent and spanning (53 of 63 X-checks, 53 of 63 Z-checks)
+PASS 610-40-22 (base 126-20-11, N = 4): rebuilt check matrices equal data/codes/610-40-22.json row by row
+PASS 610-40-22 (base 126-20-11, N = 4): CSS condition H_X H_Z^T = 0
+PASS 610-40-22 (base 126-20-11, N = 4): n = 610 = (N+1) n_base - k_base, k = 40 = (N-2) k_base (ranks 285, 285)
+PASS 610-40-22 (base 126-20-11, N = 4): check weight w = 9 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 8/8/12
+PASS 610-40-22 (base 126-20-11, N = 4): witnesses u (x) (e_0 + e_1) of weight 22/22 are nontrivial logicals; d = 2 d_base = 22 by Proposition 4
+PASS 610-40-22 (base 126-20-11, N = 4): Tanner graph connected
+INFO 610-40-22: checks_sha256 5b7c36c90ac7cbe46502077db441f62c762cd04ea510424689885eb3f755f274
+PASS base 144-24-12: CSS, k = 24 by ranks, witnesses of weight 12/12 are nontrivial logicals; certificate: certs/144-24-12.json at 8042f9da64e0: d = 12, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 696-48-24 (base 144-24-12, N = 4): retained base rows independent and spanning (60 of 72 X-checks, 60 of 72 Z-checks)
+PASS 696-48-24 (base 144-24-12, N = 4): rebuilt check matrices equal data/codes/696-48-24.json row by row
+PASS 696-48-24 (base 144-24-12, N = 4): CSS condition H_X H_Z^T = 0
+PASS 696-48-24 (base 144-24-12, N = 4): n = 696 = (N+1) n_base - k_base, k = 48 = (N-2) k_base (ranks 324, 324)
+PASS 696-48-24 (base 144-24-12, N = 4): check weight w = 10 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 9/9/13
+PASS 696-48-24 (base 144-24-12, N = 4): witnesses u (x) (e_0 + e_1) of weight 24/24 are nontrivial logicals; d = 2 d_base = 24 by Proposition 4
+PASS 696-48-24 (base 144-24-12, N = 4): Tanner graph connected
+INFO 696-48-24: checks_sha256 935cd7800d53b93204e438c8e6d8038f2c68c0ddad942dd66361020e12986f28
+PASS base 126-24-11: CSS, k = 24 by ranks, witnesses of weight 11/11 are nontrivial logicals; certificate: certs/126-24-11.json at 8042f9da64e0: d = 11, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 606-48-22 (base 126-24-11, N = 4): retained base rows independent and spanning (51 of 63 X-checks, 51 of 63 Z-checks)
+PASS 606-48-22 (base 126-24-11, N = 4): rebuilt check matrices equal data/codes/606-48-22.json row by row
+PASS 606-48-22 (base 126-24-11, N = 4): CSS condition H_X H_Z^T = 0
+PASS 606-48-22 (base 126-24-11, N = 4): n = 606 = (N+1) n_base - k_base, k = 48 = (N-2) k_base (ranks 279, 279)
+PASS 606-48-22 (base 126-24-11, N = 4): check weight w = 10 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 9/9/13
+PASS 606-48-22 (base 126-24-11, N = 4): witnesses u (x) (e_0 + e_1) of weight 22/22 are nontrivial logicals; d = 2 d_base = 22 by Proposition 4
+PASS 606-48-22 (base 126-24-11, N = 4): Tanner graph connected
+INFO 606-48-22: checks_sha256 3831447383fc8dbe0179e408c0a1a10bdfd7dd32aa6cbdf603953279083407b5
+PASS base 96-16-12: CSS, k = 16 by ranks, witnesses of weight 12/12 are nontrivial logicals; certificate: certs/96-16-12.json at 8042f9da64e0: d = 12, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 656-64-24 (base 96-16-12, N = 6): retained base rows independent and spanning (40 of 48 X-checks, 40 of 48 Z-checks)
+PASS 656-64-24 (base 96-16-12, N = 6): rebuilt check matrices equal data/codes/656-64-24.json row by row
+PASS 656-64-24 (base 96-16-12, N = 6): CSS condition H_X H_Z^T = 0
+PASS 656-64-24 (base 96-16-12, N = 6): n = 656 = (N+1) n_base - k_base, k = 64 = (N-2) k_base (ranks 296, 296)
+PASS 656-64-24 (base 96-16-12, N = 6): check weight w = 11 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 10/10/16
+PASS 656-64-24 (base 96-16-12, N = 6): witnesses u (x) (e_0 + e_1) of weight 24/24 are nontrivial logicals; d = 2 d_base = 24 by Proposition 4
+PASS 656-64-24 (base 96-16-12, N = 6): Tanner graph connected
+INFO 656-64-24: checks_sha256 a41dab499b3835f3b6ed982d042ce980a71c8fd91c24cd0a59cd58908ba27f23
+PASS base 90-12-12: CSS, k = 12 by ranks, witnesses of weight 12/12 are nontrivial logicals; certificate: certs/90-12-12.json at 8042f9da64e0: d = 12, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 618-48-24 (base 90-12-12, N = 6): retained base rows independent and spanning (39 of 45 X-checks, 39 of 45 Z-checks)
+PASS 618-48-24 (base 90-12-12, N = 6): rebuilt check matrices equal data/codes/618-48-24.json row by row
+PASS 618-48-24 (base 90-12-12, N = 6): CSS condition H_X H_Z^T = 0
+PASS 618-48-24 (base 90-12-12, N = 6): n = 618 = (N+1) n_base - k_base, k = 48 = (N-2) k_base (ranks 285, 285)
+PASS 618-48-24 (base 90-12-12, N = 6): check weight w = 11 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 10/10/16
+PASS 618-48-24 (base 90-12-12, N = 6): witnesses u (x) (e_0 + e_1) of weight 24/24 are nontrivial logicals; d = 2 d_base = 24 by Proposition 4
+PASS 618-48-24 (base 90-12-12, N = 6): Tanner graph connected
+INFO 618-48-24: checks_sha256 a9b068f379681b8e39f953195fa8dcc856c3684871506a85e77ef45fc5030732
+PASS base 90-14-11: CSS, k = 14 by ranks, witnesses of weight 11/11 are nontrivial logicals; certificate: certs/90-14-11.json at 8042f9da64e0: d = 11, d_exact True, X UNSAT, Z UNSAT, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 616-56-22 (base 90-14-11, N = 6): retained base rows independent and spanning (38 of 45 X-checks, 38 of 45 Z-checks)
+PASS 616-56-22 (base 90-14-11, N = 6): rebuilt check matrices equal data/codes/616-56-22.json row by row
+PASS 616-56-22 (base 90-14-11, N = 6): CSS condition H_X H_Z^T = 0
+PASS 616-56-22 (base 90-14-11, N = 6): n = 616 = (N+1) n_base - k_base, k = 56 = (N-2) k_base (ranks 280, 280)
+PASS 616-56-22 (base 90-14-11, N = 6): check weight w = 12 = max(w_X + 1, w_Z + 1, N + q_Z, N + q_X) (Lemma 2(2)); largest qubit degree X/Z/total 10/10/16
+PASS 616-56-22 (base 90-14-11, N = 6): witnesses u (x) (e_0 + e_1) of weight 22/22 are nontrivial logicals; d = 2 d_base = 22 by Proposition 4
+PASS 616-56-22 (base 90-14-11, N = 6): Tanner graph connected
+INFO 616-56-22: checks_sha256 a8c5fb9c81a64ceb07fb884c5822d0674b8d8e9ead129f538a5c0db9f16664a5
+PASS 72-6-9-s (fold of 144-12-12): parent rebuilt, CSS, n = 144, k = 12 = 2k
+PASS 72-6-9-s (fold of 144-12-12): Psi is a fixed-point-free involution mapping the set of X-check supports onto the set of Z-check supports
+PASS 72-6-9-s (fold of 144-12-12): rebuilt generators equal data/codes/72-6-9-s.json generator by generator
+PASS 72-6-9-s (fold of 144-12-12): isotropic
+PASS 72-6-9-s (fold of 144-12-12): rank S = 66, k = 6
+INFO 72-6-9-s: generator weights [6], 0 Y factors in the generators, 0 generators with a Y
+PASS 72-6-9-s (fold of 144-12-12): witness commutes with S, lies outside S, Pauli weight 9 = d
+PASS 72-6-9-s (fold of 144-12-12): all 24 words of data/witnesses/72-6-9-s.json are nontrivial logicals of Pauli weight 9
+PASS 72-6-9-s (fold of 144-12-12): generator-level LC-CSS test infeasible (odd cycle through qubit 2 (generators 0, 54)); condition (i) holds for every generator (dimensions [1]), so by Lemma 9 no local Clifford makes the code CSS
+PASS 72-6-9-s (fold of 144-12-12): instances/gross_c4.code and .json: generators as above, 12 logical representatives commuting with S and independent modulo S
+INFO 72-6-9-s: checks_sha256 ba31c28452ea82a7ff8e2784cc76954acae48be69bbe3e2d11bcd60ac75616fb
+PASS 255-8-22 (fold of 510-16-26): parent rebuilt, CSS, n = 510, k = 16 = 2k
+PASS 255-8-22 (fold of 510-16-26): Psi is a fixed-point-free involution mapping the set of X-check supports onto the set of Z-check supports
+PASS 255-8-22 (fold of 510-16-26): rebuilt generators equal data/codes/255-8-22.json generator by generator
+PASS 255-8-22 (fold of 510-16-26): isotropic
+PASS 255-8-22 (fold of 510-16-26): rank S = 247, k = 8
+INFO 255-8-22: generator weights [5, 6], 51 Y factors in the generators, 51 generators with a Y
+PASS 255-8-22 (fold of 510-16-26): witness commutes with S, lies outside S, Pauli weight 22 = d
+PASS 255-8-22 (fold of 510-16-26): all 102 words of data/witnesses/255-8-22.json are nontrivial logicals of Pauli weight 22
+PASS 255-8-22 (fold of 510-16-26): generator-level LC-CSS test infeasible (qubit 2 carries X, Y and Z); condition (i) holds for every generator (dimensions [1]), so by Lemma 9 no local Clifford makes the code CSS
+PASS 255-8-22 (fold of 510-16-26): instances/B510_c0.code and .json: generators as above, 16 logical representatives commuting with S and independent modulo S
+PASS 255-8-22 (fold of 510-16-26): the translation h -> h + 5 maps the generator set onto itself
+PASS 255-8-22 (fold of 510-16-26): the multiplier h -> 101 h maps the generator set onto itself
+INFO 255-8-22: checks_sha256 2f6c9aa86e23c94ca72172ac8bd3949a04c83ca9c06939d1fe92bfab809ba3ef
+PASS gross fold c = (0, 0) (Psi(1,h) = (2, c - h)): rebuilt, equal to instances/gross_c0.code, k = 6; the 4 words of data/witnesses/gross_c0_d6.json are nontrivial of weight 6
+PASS gross fold c = (0, 1) (Psi(1,h) = (2, c - h)): rebuilt, equal to instances/gross_c1.code, k = 6
+PASS gross fold c = (1, 0) (Psi(1,h) = (2, c - h)): rebuilt, equal to instances/gross_c2.code, k = 6
+PASS gross fold c = (1, 1) (Psi(1,h) = (2, c - h)): rebuilt, equal to instances/gross_c3.code, k = 6
+RESULT: all checks passed

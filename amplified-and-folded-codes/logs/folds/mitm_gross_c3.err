@@ -1,0 +1,16 @@
+pass 1/16: 5309112 records, cumulative 1.6 s
+pass 2/16: 5311149 records, cumulative 3.2 s
+pass 3/16: 5311107 records, cumulative 4.7 s
+pass 4/16: 5318219 records, cumulative 6.3 s
+pass 5/16: 5304857 records, cumulative 7.8 s
+pass 6/16: 5312420 records, cumulative 9.4 s
+pass 7/16: 5311039 records, cumulative 10.9 s
+pass 8/16: 5307884 records, cumulative 12.4 s
+pass 9/16: 5311859 records, cumulative 14.0 s
+pass 10/16: 5308829 records, cumulative 15.5 s
+pass 11/16: 5308580 records, cumulative 17.0 s
+pass 12/16: 5305946 records, cumulative 18.6 s
+pass 13/16: 5312280 records, cumulative 20.1 s
+pass 14/16: 5310263 records, cumulative 21.7 s
+pass 15/16: 5314420 records, cumulative 23.2 s
+pass 16/16: 5307527 records, cumulative 24.8 s

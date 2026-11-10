@@ -1,0 +1,20 @@
+cmd: python3 -I check.py codes/B510_c0.json wit isd_out/B510_t0_Q2.words 22
+checked 99 words
+0
+cmd: python3 -I c2_stats.py codes/B510_c0.json 255 8 isd_out/B510_t0_Q.words:1e6:Q isd_out/B510_t0_Q2.words:1e6:Q isd_out/B510_t0_B.words:1e6:B
+102 affine automorphisms; minimum weight over all runs: 22
+isd_out/B510_t0_Q.words (N=1e+06, mode Q) weight 22: distinct 97, hits 313, <n> 3.23, first hit 4619, f1 17, f2 16, Chao1 106.0
+isd_out/B510_t0_Q.words (N=1e+06, mode Q) weight 23: distinct 652, hits 1108, <n> 1.70, first hit 2782, f1 346, f2 197, Chao1 955.8
+isd_out/B510_t0_Q.words (N=1e+06, mode Q) weight 24: distinct 10881, hits 14042, <n> 1.29, first hit 11, f1 8258, f2 2161, Chao1 26659.5
+isd_out/B510_t0_Q2.words (N=1e+06, mode Q) weight 22: distinct 99, hits 312, <n> 3.15, first hit 4100, f1 13, f2 30, Chao1 101.8
+isd_out/B510_t0_Q2.words (N=1e+06, mode Q) weight 23: distinct 645, hits 1126, <n> 1.75, first hit 821, f1 326, f2 200, Chao1 910.7
+isd_out/B510_t0_Q2.words (N=1e+06, mode Q) weight 24: distinct 10804, hits 14094, <n> 1.30, first hit 49, f1 8104, f2 2195, Chao1 25764.1
+isd_out/B510_t0_B.words (N=1e+06, mode B) weight 22: distinct 30, hits 35, <n> 1.17, first hit 13941, f1 25, f2 5, Chao1 92.5
+isd_out/B510_t0_B.words (N=1e+06, mode B) weight 23: distinct 102, hits 110, <n> 1.08, first hit 5024, f1 95, f2 6, Chao1 854.1
+isd_out/B510_t0_B.words (N=1e+06, mode B) weight 24: distinct 1225, hits 1251, <n> 1.02, first hit 392, f1 1199, f2 26, Chao1 28871.2
+union of mode-Q runs (N=2e+06) weight 22: distinct 102, hits 625, <n> 6.13, f1 2, f2 4, Chao1 102.5
+all runs: 102 distinct words of weight 22 in 2 orbits; per orbit (words found, mode-Q hits): (51, 286), (51, 339)
+observed exposure per word and trial at weight 22: 3.064e-06; model 7.823e-06; calibration 0.392
+horizon w*(N=2e+06, M=1): model 24, calibrated 22
+horizon w*(N=2e+06, M=51): model 29, calibrated 28
+horizon w*(N=2e+06, M=102): model 30, calibrated 29

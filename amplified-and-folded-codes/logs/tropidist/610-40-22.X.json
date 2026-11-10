@@ -1,0 +1,121 @@
+{
+ "method": "ours_pipeline",
+ "version": null,
+ "config": {
+  "symmetry": 1,
+  "cover": 1,
+  "collapse": 1,
+  "lift": 1,
+  "window": 1,
+  "k_coll": 3,
+  "k_table": 2,
+  "kmax": 40,
+  "kmin": 1,
+  "table_gb": 0,
+  "dp": 2,
+  "dp_fast": 10,
+  "dp_head": -1,
+  "deepen": 1
+ },
+ "instance": "610-40-22.X.H",
+ "variant": "full",
+ "rows": 338,
+ "cols": 610,
+ "obs": 40,
+ "threads": 1,
+ "time_limit": 600.0,
+ "status": "timeout",
+ "lower_bound": 20,
+ "upper_bound": null,
+ "witness": null,
+ "witness_ok": null,
+ "seconds": 600.03,
+ "trace": [
+  {
+   "t": 0.061,
+   "lb": 1
+  },
+  {
+   "t": 0.666,
+   "lb": 2
+  },
+  {
+   "t": 0.668,
+   "lb": 3
+  },
+  {
+   "t": 0.671,
+   "lb": 4
+  },
+  {
+   "t": 0.674,
+   "lb": 5
+  },
+  {
+   "t": 0.676,
+   "lb": 6
+  },
+  {
+   "t": 0.679,
+   "lb": 7
+  },
+  {
+   "t": 0.683,
+   "lb": 8
+  },
+  {
+   "t": 0.692,
+   "lb": 9
+  },
+  {
+   "t": 0.714,
+   "lb": 10
+  },
+  {
+   "t": 0.762,
+   "lb": 11
+  },
+  {
+   "t": 0.87,
+   "lb": 12
+  },
+  {
+   "t": 1.114,
+   "lb": 13
+  },
+  {
+   "t": 1.69,
+   "lb": 14
+  },
+  {
+   "t": 3.123,
+   "lb": 15
+  },
+  {
+   "t": 6.703,
+   "lb": 16
+  },
+  {
+   "t": 16.097,
+   "lb": 17
+  },
+  {
+   "t": 40.1,
+   "lb": 18
+  },
+  {
+   "t": 102.333,
+   "lb": 19
+  },
+  {
+   "t": 266.935,
+   "lb": 20
+  }
+ ],
+ "peak_rss_mb": 74.6,
+ "truth": null,
+ "truth_kind": "unknown",
+ "notes": "{\"dp\": {\"main\": {\"columns\": 610, \"cut_rank\": 175, \"decision\": \"search (the DP does not fit or is too slow)\", \"estimate_seconds\": 0.512, \"fits\": false, \"peak_bits\": 175, \"predicted_seconds\": null, \"queries\": 40, \"work\": null}}, \"kernel_threads\": 1, \"mode\": \"code instance: plain weight-bounded search (as ours.py)\", \"stages\": {\"plain\": {\"cols\": 610, \"rows\": 338, \"runs\": [{\"K\": 1, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0017852783203125, \"status\": \"exhausted\"}, {\"K\": 2, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.001817464828491211, \"status\": \"exhausted\"}, {\"K\": 3, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0023534297943115234, \"status\": \"exhausted\"}, {\"K\": 4, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0023641586303710938, \"status\": \"exhausted\"}, {\"K\": 5, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0022470951080322266, \"status\": \"exhausted\"}, {\"K\": 6, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.00258636474609375, \"status\": \"exhausted\"}, {\"K\": 7, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0041348934173583984, \"status\": \"exhausted\"}, {\"K\": 8, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.008738517761230469, \"status\": \"exhausted\"}, {\"K\": 9, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.021216869354248047, \"status\": \"exhausted\"}, {\"K\": 10, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.04714822769165039, \"status\": \"exhausted\"}, {\"K\": 11, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.10754942893981934, \"status\": \"exhausted\"}, {\"K\": 12, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.24410438537597656, \"status\": \"exhausted\"}, {\"K\": 13, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.5749173164367676, \"status\": \"exhausted\"}, {\"K\": 14, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 1.4319469928741455, \"status\": \"exhausted\"}, {\"K\": 15, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 3.5799527168273926, \"status\": \"exhausted\"}, {\"K\": 16, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 9.39322280883789, \"status\": \"exhausted\"}, {\"K\": 17, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 24.001245737075806, \"status\": \"exhausted\"}, {\"K\": 18, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 62.23264217376709, \"status\": \"exhausted\"}, {\"K\": 19, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 164.60089755058289, \"status\": \"exhausted\"}, {\"K\": 20, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 333.06580090522766, \"status\": \"timeout\"}]}}, \"stop_reason\": \"whole-run wall-time limit reached\", \"table_budget_gib\": 1.0}",
+ "value_only": false,
+ "agrees_with_truth": null
+}

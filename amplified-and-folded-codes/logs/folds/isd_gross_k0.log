@@ -1,0 +1,17 @@
+n 72, rank S 66, k 6, dim N(S) 78, trials 100000, seed 20261110, fracB 0.30
+trial 1: new best weight 10 (cpu 0.0 s)
+trial 3: new best weight 9 (cpu 0.0 s)
+trial 10000: best 9, cpu 0.5 s
+trial 20000: best 9, cpu 0.9 s
+trial 30000: best 9, cpu 1.4 s
+trial 40000: best 9, cpu 1.8 s
+trial 50000: best 9, cpu 2.2 s
+trial 60000: best 9, cpu 2.6 s
+trial 70000: best 9, cpu 3.0 s
+trial 80000: best 9, cpu 3.4 s
+trial 90000: best 9, cpu 3.9 s
+trial 100000: best 9, cpu 4.3 s
+DONE trials 100000 cpu 4.3 s (0.043 ms/trial); best weight 9 first reached at trial 3
+weight 9: distinct 24, hits 38109, mean hits 1587.88, first hit trial 3
+weight 10: distinct 216, hits 155484, mean hits 719.83, first hit trial 1
+weight 11: distinct 864, hits 255107, mean hits 295.26, first hit trial 1

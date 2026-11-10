@@ -1,0 +1,50 @@
+2026-11-10T14:01:30+01:00
+cmd: ulimit -t 6000; magma -b magma/gross_k0_mindist.m
+Length 72 Dimension 6
+max generator weight 6 1
+Quantum GF(2)-Additive code over GF(4) of length 72 with 78 generators.
+Lower Bound: 1, Upper Bound: 72
+Constructed 2 distinct generator matrices
+Total Ranks:     39  39 
+Relative Ranks:  39  33 
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+Time Taken: 0.01
+Starting search for low weight codewords... (reset timings)
+Enumerating using 1 generator at a time:
+     New codeword identified of weight 21, time 0.00
+     New codeword identified of weight 10, time 0.00
+     Impurity detected of weight 6, time 0.00
+     New codeword identified of weight 9, time 0.00
+   Completed Matrix  1:  lower =  2, upper =  9. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  2, upper =  9. Elapsed: 0.00s
+Termination predicted with 7 generators at matrix 1
+Enumerating using 2 generators at a time:
+   Completed Matrix  1:  lower =  3, upper =  9. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  3, upper =  9. Elapsed: 0.00s
+Termination predicted with 7 generators at matrix 1
+Enumerating using 3 generators at a time:
+   Completed Matrix  1:  lower =  4, upper =  9. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  4, upper =  9. Elapsed: 0.00s
+Termination predicted with 7 generators at matrix 1
+Enumerating using 4 generators at a time:
+   Completed Matrix  1:  lower =  5, upper =  9. Elapsed: 0.06s
+   Completed Matrix  2:  lower =  5, upper =  9. Elapsed: 0.13s
+Termination predicted with 7 generators at matrix 1
+Enumerating using 5 generators at a time:
+   Completed Matrix  1:  lower =  6, upper =  9. Elapsed: 1.50s
+   Completed Matrix  2:  lower =  6, upper =  9. Elapsed: 2.77s
+Termination predicted at 366 s (6m 6s) with 7 generators at matrix 1
+Enumerating using 6 generators at a time:
+   Completed Matrix  1:  lower =  7, upper =  9. Elapsed: 25.96s
+   Completed Matrix  2:  lower =  8, upper =  9. Elapsed: 49.63s
+Termination predicted at 380 s (6m 20s) with 7 generators at matrix 1
+Enumerating using 7 generators at a time:
+   Completed Matrix  1:  lower =  9, upper =  9. Elapsed: 411.06s
+Computation complete 
+Final Results: lower = 9, upper = 9,
+Total CPU time: 411.06, real time: 412.446
+MinimumDistance = 9 cputime 411.070
+bash time: real 412,473 s, user 410,988 s, sys 0,103 s
+exit 0
+2026-11-10T14:08:22+01:00

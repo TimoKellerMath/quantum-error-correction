@@ -1,0 +1,24 @@
+cmd: ./bin/mitm codes/test513.code 2 4
+code codes/test513.code n 5 r 4 L 2 h 2 passes 4: 106 Paulis of weight <= 2, largest key group 7, groups with distinct labels 15, cpu 0.0 s
+RESULT: d = 3 exactly; 30 distinct nontrivial logicals of weight 3 (as Pauli operators mod phase)
+witness 0: Y0 Z2 Z3 
+witness 1: X0 Z1 Z4 
+witness 2: Z0 X1 Z2 
+cmd: ./bin/mitm codes/test_13-1-5.code 3 4
+code codes/test_13-1-5.code n 13 r 12 L 2 h 3 passes 4: 8464 Paulis of weight <= 3, largest key group 7, groups with distinct labels 1963, cpu 0.0 s
+RESULT: d = 5 exactly; 156 distinct nontrivial logicals of weight 5 (as Pauli operators mod phase)
+witness 0: Z2 Z5 Y8 Z10 Y12 
+witness 1: X8 X9 Z10 X11 X12 
+witness 2: Y0 Z3 Z6 Y9 Z11 
+cmd: ./bin/mitm codes/test_17-1-7.code 4 4
+code codes/test_17-1-7.code n 17 r 16 L 2 h 4 passes 4: 212416 Paulis of weight <= 4, largest key group 8, groups with distinct labels 59925, cpu 0.1 s
+RESULT: d = 7 exactly; 1224 distinct nontrivial logicals of weight 7 (as Pauli operators mod phase)
+witness 0: Z1 Z4 Z7 Y9 Z12 Z13 Y16 
+witness 1: Z1 Z3 Z5 X8 X9 Z11 Y16 
+witness 2: Z1 Z8 Y10 Z11 Z13 Z15 Y16 
+cmd: ./bin/mitm codes/test_21-1-7.code 4 4
+code codes/test_21-1-7.code n 21 r 20 L 2 h 4 passes 4: 522649 Paulis of weight <= 4, largest key group 5, groups with distinct labels 62503, cpu 0.2 s
+RESULT: d = 7 exactly; 423 distinct nontrivial logicals of weight 7 (as Pauli operators mod phase)
+witness 0: Z1 Z2 Z3 Z4 X10 Z13 X16 
+witness 1: Z2 Z3 Z4 Z5 X11 Z14 X17 
+witness 2: Z3 Z4 Z5 Z6 X12 Z15 X18 

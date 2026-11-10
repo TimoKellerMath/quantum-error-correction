@@ -1,0 +1,15 @@
+cmd: python3 -I check.py codes/B510_c0.json aut
+102 affine automorphisms (mu, u, global Hadamard): [(1, 0, 0), (1, 5, 0), (1, 10, 0), (1, 15, 0), (1, 20, 0), (1, 25, 0), (1, 30, 0), (1, 35, 0), (1, 40, 0), (1, 45, 0), (1, 50, 0), (1, 55, 0)] ...
+multipliers: [(1, 0), (101, 0)]
+
+real	0m6,533s
+user	0m6,485s
+sys	0m0,006s
+cmd: python3 -I check.py codes/B510_c0.json orbits isd_out/B510_t0_Q.words 22
+weight 22: 97 distinct words in 2 orbits under 102 affine automorphisms
+  orbit 0: size 51, words found 48, hits 144
+  orbit 1: size 51, words found 49, hits 169
+cmd: python3 -I check.py codes/B510_c0.json orbits isd_out/B510_t0_B.words 22
+weight 22: 30 distinct words in 2 orbits under 102 affine automorphisms
+  orbit 0: size 51, words found 17, hits 21
+  orbit 1: size 51, words found 13, hits 14

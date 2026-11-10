@@ -11,6 +11,10 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   {8,8} and {6,6} in M. Conder's lists and one from a double cover of a {4,5} map, with exact minimum distances
   (three programs of ours with proofs of their methods, and tropidist), submitted to the qLDPC challenge board;
   data, programs and logs.
+- [`amplified-and-folded-codes/`](amplified-and-folded-codes/): eight distance-amplified CSS codes whose
+  distance is exactly twice the certified distance of their bases (with the proof), and two non-CSS stabilizer
+  codes obtained by halving two-block codes along ZX-dualities, submitted to the qLDPC challenge board; data, a
+  rebuild script, search programs and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

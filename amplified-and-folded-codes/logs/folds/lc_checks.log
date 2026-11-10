@@ -1,0 +1,44 @@
+cmd: python3 -I check.py codes/gross_c4.json lc
+n 72 generators 72 rank 66
+generator level: feasible=False; qubits carrying X, Y and Z among the generators: 0 []; first parity conflict (qubit, gen, gen): (2, 38, 54)
+condition (i): dims of S restricted into generator supports: [1] (all 1 means (i) holds)
+VERDICT: not locally Clifford equivalent to CSS (group level)
+cmd: python3 -I lc_cert.py codes/gross_c4.json
+selftest: Steane in a random local Clifford frame feasible=True (expect True); [[5,1,3]] feasible=False (expect False)
+odd cycle certificate (2 edges, parity 1):
+  gen 0 and gen 55 share qubit 2: X vs Z -> different
+  gen 55 and gen 0 share qubit 1: X vs X -> same
+cmd: python3 -I check.py codes/B510_c0.json lc
+n 255 generators 255 rank 247
+generator level: feasible=False; qubits carrying X, Y and Z among the generators: 51 [2, 7, 12, 17, 22, 27, 32, 37, 42, 47]; first parity conflict (qubit, gen, gen): (33, 212, 222)
+condition (i): dims of S restricted into generator supports: [1] (all 1 means (i) holds)
+VERDICT: not locally Clifford equivalent to CSS (group level)
+cmd: python3 -I lc_cert.py codes/B510_c0.json
+selftest: Steane in a random local Clifford frame feasible=True (expect True); [[5,1,3]] feasible=False (expect False)
+odd cycle certificate (4 edges, parity 1):
+  gen 0 and gen 36 share qubit 204: Z vs Z -> same
+  gen 36 and gen 62 share qubit 62: X vs Y -> different
+  gen 62 and gen 26 share qubit 128: Z vs Z -> same
+  gen 26 and gen 0 share qubit 26: X vs X -> same
+cmd: python3 -I check.py codes/board_72-6-8-b.json lc
+n 72 generators 66 rank 66
+generator level: feasible=False; qubits carrying X, Y and Z among the generators: 6 [0, 31, 34, 36, 39, 67]; first parity conflict (qubit, gen, gen): (7, 54, 60)
+condition (i): dims of S restricted into generator supports: [1] (all 1 means (i) holds)
+VERDICT: not locally Clifford equivalent to CSS (group level)
+cmd: python3 -I lc_cert.py codes/board_72-6-8-b.json
+selftest: Steane in a random local Clifford frame feasible=True (expect True); [[5,1,3]] feasible=False (expect False)
+odd cycle certificate (3 edges, parity 1):
+  gen 0 and gen 3 share qubit 1: X vs Z -> different
+  gen 3 and gen 9 share qubit 64: Z vs Z -> same
+  gen 9 and gen 0 share qubit 67: Z vs Z -> same
+cmd: python3 -I check.py codes/gross_c1.json lc
+n 72 generators 72 rank 66
+generator level: feasible=False; qubits carrying X, Y and Z among the generators: 8 [0, 3, 31, 34, 36, 39, 67, 70]; first parity conflict (qubit, gen, gen): (7, 54, 60)
+condition (i): dims of S restricted into generator supports: [1] (all 1 means (i) holds)
+VERDICT: not locally Clifford equivalent to CSS (group level)
+cmd: python3 -I lc_cert.py codes/gross_c1.json
+selftest: Steane in a random local Clifford frame feasible=True (expect True); [[5,1,3]] feasible=False (expect False)
+odd cycle certificate (3 edges, parity 1):
+  gen 0 and gen 3 share qubit 1: X vs Z -> different
+  gen 3 and gen 9 share qubit 64: Z vs Z -> same
+  gen 9 and gen 0 share qubit 67: Z vs Z -> same

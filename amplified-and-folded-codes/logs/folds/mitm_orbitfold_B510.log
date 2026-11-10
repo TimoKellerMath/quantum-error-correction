@@ -1,0 +1,9 @@
+cmd: ./bin/mitm codes/B510_c0_orb5.code 3 4   (orbit fold, Pauli weight = orbit size x orbit weight)
+code codes/B510_c0_orb5.code n 5 r 5 L 16 h 3 passes 4: 376 Paulis of weight <= 3, largest key group 16, groups with distinct labels 0, cpu 0.0 s
+RESULT: no nontrivial logical of Pauli weight <= 6, hence d >= 7
+cmd: ./bin/mitm codes/B510_c0_orb15.code 7 16   (orbit fold, Pauli weight = orbit size x orbit weight)
+code codes/B510_c0_orb15.code n 15 r 15 L 16 h 7 passes 16: 18575560 Paulis of weight <= 7, largest key group 806, groups with distinct labels 0, cpu 11.2 s
+RESULT: no nontrivial logical of Pauli weight <= 14, hence d >= 15
+cmd: ./bin/mitm codes/B510_c0_orb85.code 4 32   (orbit fold, Pauli weight = orbit size x orbit weight)
+code codes/B510_c0_orb85.code n 85 r 77 L 16 h 4 passes 32: 166706761 Paulis of weight <= 4, largest key group 3, groups with distinct labels 0, cpu 124.6 s
+RESULT: no nontrivial logical of Pauli weight <= 8, hence d >= 9
