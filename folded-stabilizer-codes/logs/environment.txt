@@ -1,0 +1,7 @@
+2026-11-10T19:23:48+01:00
+Linux 7.2.15-zen1-1-zen x86_64
+Python 3.14.10
+cc (GCC) 16.2.1 20260810
+GNU Make 4.4.1
+Magma V2.30-1
+GAP 4.16.1-dirty built on reproducible

@@ -1,0 +1,91 @@
+PASS parent 120-18-12: rebuilt from G = Z/2 x Z/2 x Z/3 x Z/5, F_A, F_B; CSS, n = 120, k = 18 by ranks
+PASS parent 120-18-12: the board's checks (data/parents/120-18-12.json), relabelled by GAP's Elements(SmallGroup(60,13)) (C30 x C2), exponents with respect to IndependentGeneratorsOfAbelianGroup (logs/gap_elements.log), equal the rebuilt X- and Z-checks as sets of rows
+PASS parent 120-18-12: the board's witnesses, relabelled, are nontrivial logicals of weight 12/12; certificate: certs/120-18-12.json at 8042f9da64e0: d = 12, d_exact True, solver 'tropidist b03ec2d4077f (arXiv:2611.08247) exhaustive search', verification level 'solver'
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): Psi_c is a fixed-point-free involution mapping the X-check supports onto the Z-check supports
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): Sigma is the first block; the rebuilt generators equal data/codes/60-9-8.json generator by generator
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): the generators are the mirror code Z(A + g) X(B - g) with A = c - F_B, B = F_A (Remark 5)
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): isotropic
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): rank 51, k = 9 = k(parent) / 2
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): generator weights {7: 12, 8: 48} (w = 8), 12 Y factors in 12 generators, qubit degree at most 8
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): the witness commutes with S, lies outside S, Pauli weight 8 = d
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): all 6 words of data/witnesses/60-9-8.json are nontrivial logicals of Pauli weight 8
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): lambda maps each of them to a nontrivial Z-logical of the parent of weight 2y + t (Lemma 4)
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): the board's generator-level test finds no single-qubit Cliffords making every generator pure (qubit 3 carries X, Y and Z)
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): 60 of 60 generators satisfy condition (i) of Lemma 6, and already for these the parity system has no solution (qubit 3 carries X, Y and Z); so no product of single-qubit Cliffords maps the stabilizer group onto a CSS group
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): the board's connectivity rules: Tanner graph connected, stabilizer group in one block
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): instances/60-9-8.txt holds these generators
+PASS 60-9-8 (fold of 120-18-12, c = (1, 0, 0, 0)): magma/60-9-8.m holds these generators
+INFO 60-9-8: checks_sha256 a0e26737393414dc6756d575630e52648cfe90c7fccf6568a07b3ac8b7a6e859
+PASS parent 112-12-8: rebuilt from G = Z/28 x Z/2, F_A, F_B; CSS, n = 112, k = 12 by ranks
+PASS parent 112-12-8: the board's checks (data/parents/112-12-8.json), relabelled by the board's numbering (i, j) -> 2i + j of Z/28 x Z/2, equal the rebuilt X- and Z-checks as sets of rows
+PASS parent 112-12-8: the board's witnesses, relabelled, are nontrivial logicals of weight 8/8; certificate: certs/112-12-8.json at 8042f9da64e0: d = 8, d_exact True, solver 'scipy/HiGHS MILP', verification level 'proof_log'
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): Psi_c is a fixed-point-free involution mapping the X-check supports onto the Z-check supports
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): Sigma is the first block; the rebuilt generators equal data/codes/56-6-8-s.json generator by generator
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): the generators are the mirror code Z(A + g) X(B - g) with A = c - F_B, B = F_A (Remark 5)
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): isotropic
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): rank 50, k = 6 = k(parent) / 2
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): generator weights {6: 56} (w = 6), 0 Y factors in 0 generators, qubit degree at most 6
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): the witness commutes with S, lies outside S, Pauli weight 8 = d
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): all 397 words of data/witnesses/56-6-8-s.json are nontrivial logicals of Pauli weight 8
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): lambda maps each of them to a nontrivial Z-logical of the parent of weight 2y + t (Lemma 4)
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): the board's generator-level test finds no single-qubit Cliffords making every generator pure (an odd cycle closes at qubit 4 with generators 1 and 6)
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): 56 of 56 generators satisfy condition (i) of Lemma 6, and already for these the parity system has no solution (an odd cycle closes at qubit 4 with generators 1 and 6); so no product of single-qubit Cliffords maps the stabilizer group onto a CSS group
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): the board's connectivity rules: Tanner graph connected, stabilizer group in one block
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): instances/56-6-8-s.txt holds these generators
+PASS 56-6-8-s (fold of 112-12-8, c = (0, 1)): magma/56-6-8-s.m holds these generators
+INFO 56-6-8-s: checks_sha256 bc2729950555ece6bf2e9777560899864c5a317cce4cc69ec56bea109f19aa78
+PASS parent 64-18-8: rebuilt from G = Z/2 x Z/4 x Z/4, F_A, F_B; CSS, n = 64, k = 18 by ranks
+PASS parent 64-18-8: the board's checks (data/parents/64-18-8.json), relabelled by GAP's Elements(SmallGroup(32,21)) (C4 x C4 x C2), exponents with respect to IndependentGeneratorsOfAbelianGroup (logs/gap_elements.log), equal the rebuilt X- and Z-checks as sets of rows
+PASS parent 64-18-8: the board's witnesses, relabelled, are nontrivial logicals of weight 8/8; certificate: certs/64-18-8.json at 8042f9da64e0: d = 8, d_exact True, solver 'CryptoMiniSat 5.14.7 SAT', verification level 'proof_log'
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): Psi_c is a fixed-point-free involution mapping the X-check supports onto the Z-check supports
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): Sigma is the first block; the rebuilt generators equal data/codes/32-9-6.json generator by generator
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): the generators are the mirror code Z(A + g) X(B - g) with A = c - F_B, B = F_A (Remark 5)
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): isotropic
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): rank 23, k = 9 = k(parent) / 2
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): generator weights {8: 32} (w = 8), 0 Y factors in 0 generators, qubit degree at most 8
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): the witness commutes with S, lies outside S, Pauli weight 6 = d
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): all 384 words of data/witnesses/32-9-6.json are nontrivial logicals of Pauli weight 6
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): lambda maps each of them to a nontrivial Z-logical of the parent of weight 2y + t (Lemma 4)
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): the board's generator-level test finds no single-qubit Cliffords making every generator pure (an odd cycle closes at qubit 2 with generators 2 and 22)
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): 32 of 32 generators satisfy condition (i) of Lemma 6, and already for these the parity system has no solution (an odd cycle closes at qubit 2 with generators 2 and 22); so no product of single-qubit Cliffords maps the stabilizer group onto a CSS group
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): the board's connectivity rules: Tanner graph connected, stabilizer group in one block
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): instances/32-9-6.txt holds these generators
+PASS 32-9-6 (fold of 64-18-8, c = (1, 1, 0)): magma/32-9-6.m holds these generators
+INFO 32-9-6: checks_sha256 6749feb8fa75d0e4aafa6c49b644aea537bfbc45b980fc0442e55ae12426ff0f
+PASS parent 96-12-9: rebuilt from G = Z/3 x Z/4 x Z/4, F_A, F_B; CSS, n = 96, k = 12 by ranks
+PASS parent 96-12-9: the board's checks (data/parents/96-12-9.json), relabelled by GAP's Elements(SmallGroup(48,20)) (C12 x C4), exponents with respect to IndependentGeneratorsOfAbelianGroup (logs/gap_elements.log), equal the rebuilt X- and Z-checks as sets of rows
+PASS parent 96-12-9: the board's witnesses, relabelled, are nontrivial logicals of weight 9/9; certificate: certs/96-12-9.json at 8042f9da64e0: d = 9, d_exact True, solver 'CryptoMiniSat 5.14 SAT', verification level 'proof_log'
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): Psi_c is a fixed-point-free involution mapping the X-check supports onto the Z-check supports
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): Sigma is the first block; the rebuilt generators equal data/codes/48-6-8-s.json generator by generator
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): the generators are the mirror code Z(A + g) X(B - g) with A = c - F_B, B = F_A (Remark 5)
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): isotropic
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): rank 42, k = 6 = k(parent) / 2
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): generator weights {6: 16, 7: 32} (w = 7), 16 Y factors in 16 generators, qubit degree at most 7
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): the witness commutes with S, lies outside S, Pauli weight 8 = d
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): all 70 words of data/witnesses/48-6-8-s.json are nontrivial logicals of Pauli weight 8
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): lambda maps each of them to a nontrivial Z-logical of the parent of weight 2y + t (Lemma 4)
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): the board's generator-level test finds no single-qubit Cliffords making every generator pure (qubit 4 carries X, Y and Z)
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): 48 of 48 generators satisfy condition (i) of Lemma 6, and already for these the parity system has no solution (qubit 4 carries X, Y and Z); so no product of single-qubit Cliffords maps the stabilizer group onto a CSS group
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): the board's connectivity rules: Tanner graph connected, stabilizer group in one block
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): instances/48-6-8-s.txt holds these generators
+PASS 48-6-8-s (fold of 96-12-9, c = (0, 1, 0)): magma/48-6-8-s.m holds these generators
+INFO 48-6-8-s: checks_sha256 4eee8fabd880ef6dcf76d013714ea55876bb7d908ab78ba3b7b353a1ec139303
+PASS parent 66-4-10: rebuilt from G = Z/3 x Z/11, F_A, F_B; CSS, n = 66, k = 4 by ranks
+PASS parent 66-4-10: the board's checks (data/parents/66-4-10.json), relabelled by GAP's Elements(SmallGroup(33,1)) (C33), exponents with respect to IndependentGeneratorsOfAbelianGroup (logs/gap_elements.log), equal the rebuilt X- and Z-checks as sets of rows
+PASS parent 66-4-10: the board's witnesses, relabelled, are nontrivial logicals of weight 10/10; certificate: certs/66-4-10.json at 8042f9da64e0: d = 10, d_exact True, solver 'CryptoMiniSat 5.14 SAT', verification level 'proof_log'
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): Psi_c is a fixed-point-free involution mapping the X-check supports onto the Z-check supports
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): Sigma is the first block; the rebuilt generators equal data/codes/33-2-7.json generator by generator
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): the generators are the mirror code Z(A + g) X(B - g) with A = c - F_B, B = F_A (Remark 5)
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): isotropic
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): rank 31, k = 2 = k(parent) / 2
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): generator weights {4: 1, 5: 7, 6: 25} (w = 6), 9 Y factors in 8 generators, qubit degree at most 6
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): the witness commutes with S, lies outside S, Pauli weight 7 = d
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): all 29 words of data/witnesses/33-2-7.json are nontrivial logicals of Pauli weight 7
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): lambda maps each of them to a nontrivial Z-logical of the parent of weight 2y + t (Lemma 4)
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): the board's generator-level test finds no single-qubit Cliffords making every generator pure (qubit 0 carries X, Y and Z)
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): 33 of 33 generators satisfy condition (i) of Lemma 6, and already for these the parity system has no solution (qubit 0 carries X, Y and Z); so no product of single-qubit Cliffords maps the stabilizer group onto a CSS group
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): the board's connectivity rules: Tanner graph connected, stabilizer group in one block
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): instances/33-2-7.txt holds these generators
+PASS 33-2-7 (fold of 66-4-10, c = (0, 0)): magma/33-2-7.m holds these generators
+INFO 33-2-7: checks_sha256 57d2f12cc5028e3a92dc65471245efc33055ab2d7dc7b373abe59a01c46c263e
+RESULT: all checks passed

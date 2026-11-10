@@ -1,0 +1,2 @@
+n=33 rank=31 k=2 a=4 b=3 table=152164 queries=3466684 matches=168962 stab_hits=15233 logical_hits=1 cpu=0.06
+FOUND weight 7: X 0 1 10 11 15 16 30 | Z 1 11 15

@@ -23,6 +23,10 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   `[[480,16,26]]` over C12 x Dic5 with exact distance (two exhaustive search programs with the proofs of their
   completeness) and two distance-amplified codes `[[860,130,10]]` and `[[463,34,12]]` with exact distances,
   submitted to the qLDPC challenge board; data, programs, a rebuild script and logs.
+- [`folded-stabilizer-codes/`](folded-stabilizer-codes/): five non-CSS stabilizer codes, folds of two-block
+  entries of the qLDPC challenge board along ZX-dualities (mirror codes in the sense of Khesin and Lu), with
+  exact distances (tropidist, a meet-in-the-middle search and Magma), submitted to the board; data, a rebuild
+  script, the search program and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

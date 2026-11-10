@@ -1,0 +1,44 @@
+Magma V2.30-1
+code: 48 6
+Quantum GF(2)-Additive code over GF(4) of length 48 with 54 generators.
+Lower Bound: 1, Upper Bound: 48
+Constructed 2 distinct generator matrices
+Total Ranks:     27  27 
+Relative Ranks:  27  21 
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+Time Taken: 0.01
+Starting search for low weight codewords... (reset timings)
+Enumerating using 1 generator at a time:
+     New codeword identified of weight 20, time 0.00
+     New codeword identified of weight 14, time 0.00
+     New codeword identified of weight 12, time 0.00
+     New codeword identified of weight 8, time 0.00
+     Impurity detected of weight 7, time 0.00
+     Impurity detected of weight 6, time 0.00
+   Completed Matrix  1:  lower =  2, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  2, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 2 generators at a time:
+   Completed Matrix  1:  lower =  3, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  3, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 3 generators at a time:
+   Completed Matrix  1:  lower =  4, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  4, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 4 generators at a time:
+   Completed Matrix  1:  lower =  5, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  5, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 5 generators at a time:
+   Completed Matrix  1:  lower =  6, upper =  8. Elapsed: 0.12s
+   Completed Matrix  2:  lower =  6, upper =  8. Elapsed: 0.23s
+Termination predicted at 3 s with 6 generators at matrix 2
+Enumerating using 6 generators at a time:
+   Completed Matrix  1:  lower =  7, upper =  8. Elapsed: 1.44s
+   Completed Matrix  2:  lower =  8, upper =  8. Elapsed: 2.66s
+Computation complete 
+Final Results: lower = 8, upper = 8,
+Total CPU time: 2.66, real time: 2.677
+MinimumDistance: 8 cputime: 2.670

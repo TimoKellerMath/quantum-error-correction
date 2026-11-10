@@ -1,0 +1,50 @@
+Magma V2.30-1
+code: 60 9
+Quantum GF(2)-Additive code over GF(4) of length 60 with 69 generators.
+Lower Bound: 1, Upper Bound: 60
+Constructed 2 distinct generator matrices
+Total Ranks:     35  35 
+Relative Ranks:  35  25 
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 )
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 2 )
+Time Taken: 0.00
+Starting search for low weight codewords... (reset timings)
+Enumerating using 1 generator at a time:
+     New codeword identified of weight 21, time 0.00
+     New codeword identified of weight 18, time 0.00
+     New codeword identified of weight 15, time 0.00
+     New codeword identified of weight 13, time 0.00
+   Completed Matrix  1:  lower =  2, upper = 13. Elapsed: 0.00s
+     New codeword identified of weight 12, time 0.00
+   Completed Matrix  2:  lower =  2, upper = 12. Elapsed: 0.00s
+Termination predicted with 10 generators at matrix 2
+Enumerating using 2 generators at a time:
+     New codeword identified of weight 11, time 0.00
+     Discarding non-contributing rank 25 matrix
+     New Total Ranks:     35 
+     New Relative Ranks:  35 
+   Completed Matrix  1:  lower =  3, upper = 11. Elapsed: 0.00s
+Termination predicted with 10 generators at matrix 1
+Enumerating using 3 generators at a time:
+     New codeword identified of weight 10, time 0.00
+     Impurity detected of weight 8, time 0.00
+     New codeword identified of weight 9, time 0.00
+     Impurity detected of weight 7, time 0.00
+   Completed Matrix  1:  lower =  4, upper =  9. Elapsed: 0.00s
+Termination predicted with 8 generators at matrix 1
+Enumerating using 4 generators at a time:
+     New codeword identified of weight 8, time 0.01
+   Completed Matrix  1:  lower =  5, upper =  8. Elapsed: 0.03s
+Termination predicted with 7 generators at matrix 1
+Enumerating using 5 generators at a time:
+   Completed Matrix  1:  lower =  6, upper =  8. Elapsed: 0.44s
+Termination predicted at 82 s (1m 22s) with 7 generators at matrix 1
+Enumerating using 6 generators at a time:
+   Completed Matrix  1:  lower =  7, upper =  8. Elapsed: 6.37s
+Termination predicted at 78 s (1m 18s) with 7 generators at matrix 1
+Enumerating using 7 generators at a time:
+   Completed Matrix  1:  lower =  8, upper =  8. Elapsed: 79.03s
+Computation complete 
+Final Results: lower = 8, upper = 8,
+Total CPU time: 79.03, real time: 79.516
+MinimumDistance: 8 cputime: 79.050

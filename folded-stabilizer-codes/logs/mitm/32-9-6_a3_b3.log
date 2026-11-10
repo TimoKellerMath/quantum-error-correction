@@ -1,0 +1,2 @@
+n=32 rank=23 k=9 a=3 b=3 table=138481 queries=138481 matches=146161 stab_hits=0 logical_hits=1 cpu=0.02
+FOUND weight 6: X 0 13 20 25 | Z 1 13 20 24

@@ -1,0 +1,46 @@
+Magma V2.30-1
+code: 56 6
+Quantum GF(2)-Additive code over GF(4) of length 56 with 62 generators.
+Lower Bound: 1, Upper Bound: 56
+Constructed 2 distinct generator matrices
+Total Ranks:     31  31 
+Relative Ranks:  31  25 
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+(4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 )
+Time Taken: 0.01
+Starting search for low weight codewords... (reset timings)
+Enumerating using 1 generator at a time:
+     New codeword identified of weight 17, time 0.00
+     New codeword identified of weight 16, time 0.00
+     New codeword identified of weight 13, time 0.00
+     New codeword identified of weight 12, time 0.00
+     Impurity detected of weight 6, time 0.00
+     New codeword identified of weight 10, time 0.00
+     New codeword identified of weight 9, time 0.00
+     New codeword identified of weight 8, time 0.00
+   Completed Matrix  1:  lower =  2, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  2, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 2 generators at a time:
+   Completed Matrix  1:  lower =  3, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  3, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 3 generators at a time:
+   Completed Matrix  1:  lower =  4, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  4, upper =  8. Elapsed: 0.00s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 4 generators at a time:
+   Completed Matrix  1:  lower =  5, upper =  8. Elapsed: 0.00s
+   Completed Matrix  2:  lower =  5, upper =  8. Elapsed: 0.03s
+Termination predicted with 6 generators at matrix 2
+Enumerating using 5 generators at a time:
+   Completed Matrix  1:  lower =  6, upper =  8. Elapsed: 0.26s
+   Completed Matrix  2:  lower =  6, upper =  8. Elapsed: 0.49s
+Termination predicted at 6 s with 6 generators at matrix 2
+Enumerating using 6 generators at a time:
+   Completed Matrix  1:  lower =  7, upper =  8. Elapsed: 3.50s
+   Completed Matrix  2:  lower =  8, upper =  8. Elapsed: 6.50s
+Computation complete 
+Final Results: lower = 8, upper = 8,
+Total CPU time: 6.50, real time: 6.526
+MinimumDistance: 8 cputime: 6.510
