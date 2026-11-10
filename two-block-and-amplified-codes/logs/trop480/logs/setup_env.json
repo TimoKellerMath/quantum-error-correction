@@ -1,0 +1,15 @@
+{
+ "cc": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+ "cpu": "AMD EPYC 7713 64-Core Processor",
+ "cpu_count": 256,
+ "executable": "~/trop480/.venv/bin/python",
+ "hostname": "lovelace",
+ "libc": "glibc 2.39",
+ "machine": "x86_64",
+ "numpy": "1.26.4",
+ "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+ "python": "3.12.3",
+ "stim": "1.16.0",
+ "stim_ok": true,
+ "usable_cpus": 256
+}

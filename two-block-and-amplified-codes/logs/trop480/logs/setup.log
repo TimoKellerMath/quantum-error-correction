@@ -1,0 +1,26 @@
+== trop480 setup: 2026-11-10T11:49:46-05:00 on lovelace, Linux x86_64, 256 cores
+package files: match SHA256SUMS
+tropidist: commit b03ec2d4077f287f89f97b5c2c16ce5ce17c2c58 unpacked into ~/trop480/tropidist (tarball sha256 60525583a8c86a289981df4fba685e845f84108f3adf79391eccdc3c6d50c641)
+python: created .venv (python3 -m venv --system-site-packages)
+python: ~/trop480/.venv/bin/python 3.12.3
+packages: {"python": "3.12.3", "executable": "~/trop480/.venv/bin/python", "numpy": "1.26.4", "stim": null, "stim_ok": false}
+installing with pip into .venv: stim>=1.15
+Collecting stim>=1.15
+  Using cached stim-1.16.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.4 kB)
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (from stim>=1.15) (1.26.4)
+Using cached stim-1.16.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (5.3 MB)
+Installing collected packages: stim
+Successfully installed stim-1.16.0
+packages now: {"python": "3.12.3", "executable": "~/trop480/.venv/bin/python", "numpy": "1.26.4", "stim": "1.16.0", "stim_ok": true}
+cc: cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+OpenMP: ok (test program ran 2 threads)
+kernels: libgmitm.so and libviterbi.so built; OpenMP threads with OMP_NUM_THREADS=2: 2 2
+distance 6, certified (exact, 0.2 s); record in ~/trop480/logs/smoke_72-12-6.X.json
+smoke test side X: wall 0.42 s
+72-12-6 side X: status exact, bounds 6..6, 0.235 s, threads 2 (kernel 2), kmin 1, mode: code instance: plain weight-bounded search (as ours.py); vector: weight 6, in kernel True, outside row space True, pairs with L True
+distance 6, certified (exact, 0.2 s); record in ~/trop480/logs/smoke_72-12-6.Z.json
+smoke test side Z: wall 0.34 s
+72-12-6 side Z: status exact, bounds 6..6, 0.206 s, threads 2 (kernel 2), kmin 1, mode: code instance: plain weight-bounded search (as ours.py); vector: weight 6, in kernel True, outside row space True, pairs with L True
+environment: logs/setup_env.json
+setup: ALL PASSED
+next: bash run.sh 16 172800    (threads per side, time limit in seconds; at most 32 threads in all)

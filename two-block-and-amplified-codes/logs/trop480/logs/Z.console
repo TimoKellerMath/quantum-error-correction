@@ -1,0 +1,4 @@
+side Z: start 2026-11-10T11:50:42-05:00 on lovelace, 16 threads, time limit 172800 s, kmin 1
+command (cwd ~/trop480/tropidist): ~/trop480/.venv/bin/python -m cdist --matrices ~/trop480/in/480-16-26.Z.H.mtx ~/trop480/in/480-16-26.Z.L.mtx --threads 16 --time-limit 172800 --out ~/trop480/rec_Z.json
+distance 26, certified (exact, 5473.8 s); record in ~/trop480/rec_Z.json
+side Z: end 2026-11-10T13:21:57-05:00, exit code 0, wall 5475 s

@@ -382,3 +382,7 @@ Lin and Pryadko (arXiv:2306.16400), the amplification that of [LGCE26]; the base
 github.com/unitaryfoundation/qldpc-challenge (commit `8042f9da`), which is licensed under the Apache License 2.0;
 everything else is under the MIT license of this repository. tropidist is by Cheng, Guo and Pan (arXiv:2611.08247);
 nauty is by McKay and Piperno.
+
+## tropidist certificate of [[480,16,26]]
+
+`logs/trop480/` holds an exact tropidist certification of d_X = d_Z = 26 for [[480,16,26]] (board commit b03ec2d4077f of tropidist, 16 threads per side, 5185 s and 5474 s), on a qubit relabelling of the board entry; `logs/trop480/README.md` explains the relabelling and `logs/trop480/check_perm.py` checks it.

@@ -1,0 +1,165 @@
+{
+ "codes": {
+  "480-16-26": {
+   "L_X_rows_in_kernel_of_own": true,
+   "L_Z_rows_in_kernel_of_own": true,
+   "all_ones_in_rowsp_HX": true,
+   "all_ones_in_rowsp_HZ": true,
+   "col_weights_X": [
+    3
+   ],
+   "col_weights_Z": [
+    3
+   ],
+   "commute": true,
+   "k": 16,
+   "mX": 240,
+   "mZ": 240,
+   "n": 480,
+   "ok": true,
+   "pairing_X_spans": 16,
+   "pairing_Z_spans": 16,
+   "rankX": 232,
+   "rankZ": 232,
+   "row_weights": [
+    6
+   ],
+   "witness_X": {
+    "in_kernel": true,
+    "ok": true,
+    "outside_rowspace": true,
+    "pairs": true,
+    "support": [
+     11,
+     12,
+     35,
+     56,
+     63,
+     97,
+     118,
+     123,
+     133,
+     194,
+     216,
+     231,
+     239,
+     240,
+     253,
+     261,
+     285,
+     303,
+     328,
+     336,
+     346,
+     359,
+     389,
+     391,
+     417,
+     471
+    ],
+    "weight": 26
+   },
+   "witness_Z": {
+    "in_kernel": true,
+    "ok": true,
+    "outside_rowspace": true,
+    "pairs": true,
+    "support": [
+     8,
+     27,
+     104,
+     116,
+     139,
+     150,
+     172,
+     195,
+     208,
+     217,
+     220,
+     238,
+     288,
+     307,
+     312,
+     328,
+     362,
+     369,
+     381,
+     386,
+     432,
+     451,
+     454,
+     460,
+     465,
+     477
+    ],
+    "weight": 26
+   }
+  },
+  "72-12-6": {
+   "L_X_rows_in_kernel_of_own": true,
+   "L_Z_rows_in_kernel_of_own": true,
+   "all_ones_in_rowsp_HX": true,
+   "all_ones_in_rowsp_HZ": true,
+   "col_weights_X": [
+    3
+   ],
+   "col_weights_Z": [
+    3
+   ],
+   "commute": true,
+   "k": 12,
+   "mX": 36,
+   "mZ": 36,
+   "n": 72,
+   "ok": true,
+   "pairing_X_spans": 12,
+   "pairing_Z_spans": 12,
+   "rankX": 30,
+   "rankZ": 30,
+   "row_weights": [
+    6
+   ],
+   "witness_X": {
+    "in_kernel": true,
+    "ok": true,
+    "outside_rowspace": true,
+    "pairs": true,
+    "support": [
+     48,
+     52,
+     66,
+     67,
+     68,
+     71
+    ],
+    "weight": 6
+   },
+   "witness_Z": {
+    "in_kernel": true,
+    "ok": true,
+    "outside_rowspace": true,
+    "pairs": true,
+    "support": [
+     2,
+     16,
+     24,
+     40,
+     48,
+     62
+    ],
+    "weight": 6
+   }
+  }
+ },
+ "convention": "css-sides: side X: H = H_Z, L = Z-logical representatives (ker H_X / rowsp H_Z); side Z: H = H_X, L = X-logical representatives (ker H_Z / rowsp H_X)",
+ "sha256": {
+  "480-16-26.X.H.mtx": "9932e21017026cf11c396639ac5e0e16f0113da5479d5eecc1a118d4aba52674",
+  "480-16-26.X.L.mtx": "bd23bcf42a65dfd1f1bddf174949125daa8b7b9a1ccf57d358ace36f5f2a0e65",
+  "480-16-26.Z.H.mtx": "90e00e4b5ba0fd87781d674785275a934cfb65051c1b3041439e763dc84302cf",
+  "480-16-26.Z.L.mtx": "defa906f9cf1ea4f1338602a3edeff212f24b52a7064fd5180841a255a1145b7",
+  "72-12-6.X.H.mtx": "c7a2488d19d26199cfbad23af4a5ae2ad5060fd03f832c2cce2476e2d1f985a6",
+  "72-12-6.X.L.mtx": "4066e1ec8c54b9b19b1b6aff8b09da4096f1c0d2399312084639e29fbb7c4b21",
+  "72-12-6.Z.H.mtx": "0a52dd096d7e4e393b3c9e0edaf91093d3d06abdfd63a70b498c73a2c5b9ad2e",
+  "72-12-6.Z.L.mtx": "b8b84ae8f479efa65812ed44f414f3f8b743aacfc92953f732e23e24e26d08b9"
+ }
+}

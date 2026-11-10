@@ -1,0 +1,35 @@
+{
+ "cdist_pid": 3617355,
+ "command": [
+  "~/trop480/.venv/bin/python",
+  "-m",
+  "cdist",
+  "--matrices",
+  "~/trop480/in/480-16-26.X.H.mtx",
+  "~/trop480/in/480-16-26.X.L.mtx",
+  "--threads",
+  "16",
+  "--time-limit",
+  "172800",
+  "--out",
+  "~/trop480/rec_X.json"
+ ],
+ "cwd": "~/trop480/tropidist",
+ "end": "2026-11-10T13:17:08-05:00",
+ "exit_code": 0,
+ "host": "lovelace",
+ "inputs_sha256": {
+  "480-16-26.X.H.mtx": "9932e21017026cf11c396639ac5e0e16f0113da5479d5eecc1a118d4aba52674",
+  "480-16-26.X.L.mtx": "bd23bcf42a65dfd1f1bddf174949125daa8b7b9a1ccf57d358ace36f5f2a0e65"
+ },
+ "kmin": 1,
+ "nproc_all": 256,
+ "pgid": 3617279,
+ "runner_pid": 3617279,
+ "side": "X",
+ "start": "2026-11-10T11:50:41-05:00",
+ "threads": 16,
+ "time_limit": 172800,
+ "tropidist_commit": "b03ec2d4077f287f89f97b5c2c16ce5ce17c2c58",
+ "wall_seconds": 5187
+}
