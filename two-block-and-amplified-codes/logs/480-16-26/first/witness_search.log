@@ -1,0 +1,7 @@
+w 480 16 232 232 | Z 26 31 31 496 | X 26 16 16 398 | | 26 26 21.11
+side Z: weight 26 (rbc 26), in ker: True, outside rowsp: True
+side X: weight 26 (rbc 26), in ker: True, outside rowsp: True
+
+real	0m21,430s
+user	0m21,313s
+sys	0m0,017s

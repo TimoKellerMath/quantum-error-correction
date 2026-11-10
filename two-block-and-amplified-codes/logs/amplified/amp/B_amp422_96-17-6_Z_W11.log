@@ -1,0 +1,11 @@
+# start 2026-11-10T14:12:29+01:00 host load: 6.70 6.23 5.56
+# cmd: bin/exactB cand/amp422_96-17-6.hx cand/amp422_96-17-6.hz --side Z --W 11 --group inst/B/amp422_96-17-6.gens
+cmd: bin/exactB cand/amp422_96-17-6.hx cand/amp422_96-17-6.hz --side Z --W 11 --group inst/B/amp422_96-17-6.gens
+exactB: cand/amp422_96-17-6.hx cand/amp422_96-17-6.hz side Z: n=463 k=34 | A (H_X): m=252 rank=213 weights 5..7, qubit degrees 2..6 | B (H_Z): m=256 rank=216 weights 5..7
+parity: all-ones vector not in rowsp H_X
+group: 3 generators from inst/B/amp422_96-17-6.gens verified (each maps rowsp H_X and rowsp H_Z into themselves); 175 orbits, sizes 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 ...
+search: W=11 (searched 11), bound 3, majority family 2 (2825 members, weight <= 14), threads 1, split depth -1, runs 175
+  runs with most nodes: run 8 (anchor 32) 1137; run 0 (anchor 0) 1056; run 3 (anchor 12) 1021; run 13 (anchor 52) 973; run 24 (anchor 96) 964; first tenth of the runs: 58.7% of the nodes
+RESULT side=Z W=11 searched=11 found=none nodes=18823 generated=60182 leaves=0 wall=0.05 cpu=0.05 setup=0.00 threads=1
+CONCLUSION: no nontrivial Z-logical of weight <= 11, d_Z >= 12
+# exit 0 end 2026-11-10T14:12:29+01:00

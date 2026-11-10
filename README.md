@@ -19,6 +19,10 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   163 entries of other authors on the qLDPC challenge board, and four corrected side values: four programs with
   proofs of their methods, the distance argument for amplified codes, a driver that reruns everything from the
   board's files, data and logs.
+- [`two-block-and-amplified-codes/`](two-block-and-amplified-codes/): a weight-six two-block group algebra code
+  `[[480,16,26]]` over C12 x Dic5 with exact distance (two exhaustive search programs with the proofs of their
+  completeness) and two distance-amplified codes `[[860,130,10]]` and `[[463,34,12]]` with exact distances,
+  submitted to the qLDPC challenge board; data, programs, a rebuild script and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

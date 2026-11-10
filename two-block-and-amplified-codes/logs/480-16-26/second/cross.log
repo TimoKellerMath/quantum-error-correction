@@ -1,0 +1,13 @@
+G: order 240, IdentifyGroup <240, 40>, GroupName C12*C5:C4; <x,y>: order 20, IdentifyGroup <20, 1>, GroupName C5:C4
+G = <z> x <x,y>: true; |Z(G)| = 24
+Magma rows = Python rows (inst/c480.hx, .hz): X true, Z true
+rank H_X = 232, rank H_Z = 232, k = 16, H_X H_Z^T = 0: true, all-ones in rowsp H_X: true, in rowsp H_Z: true
+construction and ranks: 0.080 s
+Tanner group: order 240 (on qubits 240), 3 generators, orbit sizes: qubits [ 240, 240 ], X-checks [ 240 ], Z-checks [ 240 ]
+Tanner group on qubits: IdentifyGroup <240, 123>, GroupName C3:(C5:OD16), isomorphic to G: false
+qubit orbits (0-based least elements): [ 0, 1 ]
+Tanner group: 0.030 s
+
+real	0m0,137s
+user	0m0,113s
+sys	0m0,017s

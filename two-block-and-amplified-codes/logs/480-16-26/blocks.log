@@ -1,0 +1,14 @@
+G: order 240, IdentifyGroup <240, 40>; <x,y>: order 20, IdentifyGroup <20, 1>; G = <z> x <x,y>: true
+rows from Magma's multiplication = instances/c480.hx, .hz (row by row): true, true
+rank H_X = 232, rank H_Z = 232, k = 16, H_X H_Z^T = 0: true
+h0 = 8, h2 = 8, k = h0 + h2 = 16
+9 absolutely irreducible modules over GF(16), dimensions [ 1, 1, 1, 2, 2, 2, 2, 2, 2 ]
+simple module 6: dimension 2, kappa(a) = 1, kappa(b) = 1, Cartan entry c_ii = 8, c_ij = 0 for j <> i: true
+simple module 7: dimension 2, kappa(a) = 1, kappa(b) = 1, Cartan entry c_ii = 8, c_ij = 0 for j <> i: true
+simple modules with kappa(a) > 0: 2; with kappa(b) > 0: 2
+k_ss = 4 <= h0, h2 <= k_C/2, k_ss <= k = 16 <= k_C = 32
+time 0.370 s
+
+real	0m0,388s
+user	0m0,371s
+sys	0m0,014s

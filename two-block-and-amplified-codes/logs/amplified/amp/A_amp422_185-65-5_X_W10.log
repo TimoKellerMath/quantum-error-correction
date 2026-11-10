@@ -1,0 +1,13 @@
+# start 2026-11-10T14:12:29+01:00 host load: 6.70 6.23 5.56
+# cmd: bin/exactA cand/amp422_185-65-5.hx cand/amp422_185-65-5.hz --side X --W 10 --group inst/A/amp422_185-65-5.gens --mode anchor
+exactA: side X, n=860, checks H_Z: 425 rows (0 dropped: empty or repeated), dual H_X: 425 rows (0 dropped)
+  check weights: 5^10 6^175 7^240; qubits in no check: 0
+  rank H_Z=365, rank H_X=365, k=130 (3 words per class), majority family 3825 sets (level 2)
+  parity: all-ones vector not in rowsp H_Z, so no parity reduction
+  group: 3 generators from inst/A/amp422_185-65-5.gens, preserving the rows of H_X and H_Z
+  mode anchor (Lemma 2.4): 305 qubit orbits, order index
+  W=10, searching weights <= 10
+RESULT side=X W=10 Weff=10 verdict=found weight=10 nodes=161 leaves=1 wall=0.00 cpu=0.00 search=0.00 jobs=305 items=305 threads=1 mode=anchor found=1 recheck_ker=ok recheck_nontrivial=ok
+WORD 10 : 0 1 264 265 356 357 460 461 488 489
+CONCLUSION d_X <= 10
+# exit 0 end 2026-11-10T14:12:29+01:00

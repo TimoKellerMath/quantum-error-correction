@@ -1,0 +1,6 @@
+group: {'order': 240, 'associative': True, 'x^5=1': True, 'y^4=1': True, 'z^12=1': True, 'orders z,x,y': [12, 5, 4], 'y x y^-1 = x^-1': True, 'z central': True, 'normal form = word': True, '|Z(G)|': 24, '|<x,y>|': 20, 'involutions in <x,y>': [2], '<z> meets <x,y> trivially': True}
+code: {'row weights X,Z': [[6], [6]], 'column weights X,Z': [[3], [3]], 'column weights per block X': [[3], [3]], 'H_X H_Z^T = 0': True, 'rank H_X': 232, 'rank H_Z': 232, 'k': 16, 'distinct rows X,Z': [240, 240], 'sum of rows of H_X = 1': True, 'sum of rows of H_Z = 1': True, 'rank [H_X;1] = rank H_X': True, 'rank [H_Z;1] = rank H_Z': True, '#LX, #LZ': [16, 16], 'rank of pairing LX x LZ': 16}
+comparison: {'rep H_X rows = own H_X rows (index map of code.json)': True, 'rep H_Z rows = own H_Z rows': True, 'rep rows: count X, Z': [240, 240], 'code.json a, b indices map to own supports': True}
+witness side Z (rep c480_16.wZ): {'weight': 26, 'in kernel': True, 'outside other row space': True, 'pairs nontrivially with a logical of the other type': True}
+witness side X (rep c480_16.wX): {'weight': 26, 'in kernel': True, 'outside other row space': True, 'pairs nontrivially with a logical of the other type': True}
+written: inst/c480.{hx,hz}, inst/c480v.{hx,hz,perm,wX,wZ}, tropidist/in/c480.{Z,X}.{H,L}.mtx, logs/build.json

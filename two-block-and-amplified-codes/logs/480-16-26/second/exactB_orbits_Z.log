@@ -1,0 +1,13 @@
+cmd: ./bin/exactB inst/c480v.hx inst/c480v.hz --side Z --W 24 --group inst/c480v.gensB
+exactB: inst/c480v.hx inst/c480v.hz side Z: n=480 k=16 | A (H_X): m=240 rank=232 weights 6..6, qubit degrees 3..3 | B (H_Z): m=240 rank=232 weights 6..6
+parity: all-ones vector in rowsp H_X, so every logical of this side has even weight
+group: 3 generators from inst/c480v.gensB verified (each maps rowsp H_X and rowsp H_Z into themselves); 2 orbits, sizes 240 240
+search: W=24 (searched 24), bound 3, majority family 2 (1680 members, weight <= 12), threads 1, split depth -1, runs 2
+  run 0: anchor 0, excluded 0, nodes 122359168, 269.953 s
+  run 1: anchor 1, excluded 240, nodes 1933, 0.001 s
+RESULT side=Z W=24 searched=24 found=none nodes=122361101 generated=401362852 leaves=0 wall=269.95 cpu=268.71 setup=0.00 threads=1
+CONCLUSION: no nontrivial Z-logical of weight <= 24, d_Z >= 26 (parity)
+
+real	4m29,958s
+user	4m28,488s
+sys	0m0,221s

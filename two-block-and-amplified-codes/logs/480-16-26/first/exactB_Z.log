@@ -1,0 +1,9 @@
+cmd: bin/exactB c480_16.hx c480_16.hz --side Z --W 25 --group c480_16.gensB
+exactB: c480_16.hx c480_16.hz side Z: n=480 k=16 | A (H_X): m=240 rank=232 weights 6..6, qubit degrees 3..3 | B (H_Z): m=240 rank=232 weights 6..6
+parity: all-ones vector in rowsp H_X, so every logical of this side has even weight
+group: 4 generators from c480_16.gensB verified (each maps rowsp H_X and rowsp H_Z into themselves); 2 orbits, sizes 240 240
+search: W=25 (searched 24) by parity, bound 3, majority family 2 (1680 members, weight <= 12), threads 1, split depth -1, runs 2
+  run 0: anchor 0, excluded 0, nodes 110403003, 350.991 s
+  run 1: anchor 120, excluded 240, nodes 1863, 0.002 s
+RESULT side=Z W=25 searched=24 found=none nodes=110404866 generated=361634524 leaves=0 wall=350.99 cpu=348.96 setup=0.00 threads=1
+CONCLUSION: no nontrivial Z-logical of weight <= 25, d_Z >= 26 (parity)

@@ -1,0 +1,4 @@
+3 generators, each a permutation mapping the X-rows and the Z-rows of inst/c480v onto themselves
+orbit of size 240: least element 0 = own 117 (block 1: z^5 x^4 y^1, rep index 178); qubits per block [120, 120]; block-1 elements with even y-exponent: 0
+orbit of size 240: least element 1 = own 208 (block 1: z^10 x^2 y^0, rep index 104); qubits per block [120, 120]; block-1 elements with even y-exponent: 120
+rep anchor 0 (block 1, identity) lies in orbit 1 of the relabelled instance; rep anchor 120 (block 1, y) in orbit 0

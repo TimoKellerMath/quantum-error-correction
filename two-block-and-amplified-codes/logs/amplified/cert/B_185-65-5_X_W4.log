@@ -1,0 +1,11 @@
+# start 2026-11-10T14:00:27+01:00 host load: 2.27 3.13 4.53
+# cmd: bin/exactB inst/B/185-65-5.hx inst/B/185-65-5.hz --side X --W 4 --group inst/B/185-65-5.gens
+cmd: bin/exactB inst/B/185-65-5.hx inst/B/185-65-5.hz --side X --W 4 --group inst/B/185-65-5.gens
+exactB: inst/B/185-65-5.hx inst/B/185-65-5.hz side X: n=185 k=65 | A (H_Z): m=60 rank=60 weights 6..6, qubit degrees 1..2 | B (H_X): m=60 rank=60 weights 6..6
+parity: all-ones vector not in rowsp H_Z
+group: 0 generators from inst/B/185-65-5.gens verified (each maps rowsp H_X and rowsp H_Z into themselves); 185 orbits, sizes 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ...
+search: W=4 (searched 4), bound 3, majority family 2 (235 members, weight <= 12), threads 1, split depth -1, runs 185
+  runs with most nodes: run 3 (anchor 3) 31; run 18 (anchor 18) 29; run 22 (anchor 22) 21; run 73 (anchor 73) 15; run 82 (anchor 82) 15; first tenth of the runs: 29.2% of the nodes
+RESULT side=X W=4 searched=4 found=none nodes=638 generated=1947 leaves=0 wall=0.00 cpu=0.00 setup=0.00 threads=1
+CONCLUSION: no nontrivial X-logical of weight <= 4, d_X >= 5
+# exit 0 end 2026-11-10T14:00:27+01:00

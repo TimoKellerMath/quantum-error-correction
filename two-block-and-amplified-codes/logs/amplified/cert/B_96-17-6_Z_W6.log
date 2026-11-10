@@ -1,0 +1,12 @@
+# start 2026-11-10T14:00:27+01:00 host load: 2.27 3.13 4.53
+# cmd: bin/exactB inst/B/96-17-6.hx inst/B/96-17-6.hz --side Z --W 6 --group inst/B/96-17-6.gens
+cmd: bin/exactB inst/B/96-17-6.hx inst/B/96-17-6.hz --side Z --W 6 --group inst/B/96-17-6.gens
+exactB: inst/B/96-17-6.hx inst/B/96-17-6.hz side Z: n=96 k=17 | A (H_X): m=39 rank=39 weights 6..6, qubit degrees 1..3 | B (H_Z): m=40 rank=40 weights 6..6
+parity: all-ones vector not in rowsp H_X
+group: 0 generators from inst/B/96-17-6.gens verified (each maps rowsp H_X and rowsp H_Z into themselves); 96 orbits, sizes 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ...
+search: W=6 (searched 6), bound 3, majority family 2 (236 members, weight <= 12), threads 1, split depth -1, runs 96
+  runs with most nodes: run 0 (anchor 0) 7; run 1 (anchor 1) 0; run 2 (anchor 2) 0; run 3 (anchor 3) 0; run 4 (anchor 4) 0; first tenth of the runs: 100.0% of the nodes
+RESULT side=Z W=6 searched=6 found=yes nodes=7 generated=13 leaves=1 wall=0.00 cpu=0.00 setup=0.00 threads=1
+WORD weight=6 syndrome=zero rowsp-test=nontrivial : 0 9 12 14 46 54
+CONCLUSION: d_Z <= 6
+# exit 0 end 2026-11-10T14:00:27+01:00

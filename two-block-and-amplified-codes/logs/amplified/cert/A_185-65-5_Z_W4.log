@@ -1,0 +1,12 @@
+# start 2026-11-10T14:00:27+01:00 host load: 2.27 3.13 4.53
+# cmd: bin/exactA inst/A/185-65-5_r1.hx inst/A/185-65-5_r1.hz --side Z --W 4 --group inst/A/185-65-5_r1.gens --mode anchor
+exactA: side Z, n=185, checks H_X: 60 rows (0 dropped: empty or repeated), dual H_Z: 60 rows (0 dropped)
+  check weights: 6^60; qubits in no check: 0
+  rank H_X=60, rank H_Z=60, k=65 (2 words per class), majority family 235 sets (level 2)
+  parity: all-ones vector not in rowsp H_X, so no parity reduction
+  group: 0 generators from inst/A/185-65-5_r1.gens, preserving the rows of H_X and H_Z
+  mode anchor (Lemma 2.4): 185 qubit orbits, order index
+  W=4, searching weights <= 4
+RESULT side=Z W=4 Weff=4 verdict=none nodes=517 leaves=0 wall=0.00 cpu=0.00 search=0.00 jobs=185 items=185 threads=1 mode=anchor
+CONCLUSION none of weight <= 4; d_Z >= 5
+# exit 0 end 2026-11-10T14:00:27+01:00

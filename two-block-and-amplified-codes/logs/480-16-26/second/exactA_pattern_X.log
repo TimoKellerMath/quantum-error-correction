@@ -1,0 +1,13 @@
+exactA: side X, n=480, checks H_Z: 240 rows (0 dropped: empty or repeated), dual H_X: 240 rows (0 dropped)
+  check weights: 6^240; qubits in no check: 0
+  rank H_Z=232, rank H_X=232, k=16 (1 words per class), majority family 1680 sets (level 2)
+  parity: all-ones vector in rowsp H_Z, so every logical of this side has even weight
+  group: 3 generators from inst/c480v.gensA, preserving the rows of H_X and H_Z
+  mode pattern (C1 item 2): 1 check orbits, 31 jobs, order index; classes per orbit: 31
+  W=24, searching weights <= 24
+RESULT side=X W=24 Weff=24 verdict=none nodes=28171810 leaves=0 wall=47.50 cpu=47.24 search=47.50 jobs=31 items=31 threads=1 mode=pattern
+CONCLUSION none of weight <= 24; d_X >= 26
+
+real	0m47,505s
+user	0m47,225s
+sys	0m0,018s
