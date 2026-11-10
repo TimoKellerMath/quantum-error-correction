@@ -1,0 +1,253 @@
+{
+ "864-434-6": {
+  "conder": "C217.22",
+  "variant": "mirror",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 864,
+  "genus": 217,
+  "petrie": 12,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "s^-1*r^3*s^-1*r^-2*s^-4*r",
+   "s^-1*r*s^-2*r^-3*s^2*r^-1*s^-1*r"
+  ],
+  "dropped": [],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "S*R^-3*S*R^2*S^4*R^-1",
+   "S*R^-1*S^2*R^3*S^-2*R*S*R^-1"
+  ]
+ },
+ "720-362-6": {
+  "conder": "C181.29",
+  "variant": "map",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 720,
+  "genus": 181,
+  "petrie": 60,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "s^-1*r^3*s^-1*r^-2*s^4*r",
+   "r*s^-1*r^-2*s*r^3*s^-1*r*s^-2*r*s^-1"
+  ],
+  "dropped": [
+   "s^-1*r^-1*s^2*r^3*s^2*r^-1*s^-1*r"
+  ],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "S^-1*R^3*S^-1*R^-2*S^4*R",
+   "S^-1*R^-1*S^2*R^3*S^2*R^-1*S^-1*R",
+   "R*S^-1*R^-2*S*R^3*S^-1*R*S^-2*R*S^-1"
+  ]
+ },
+ "936-470-6": {
+  "conder": "C235.23",
+  "variant": "mirror",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 936,
+  "genus": 235,
+  "petrie": 78,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "s*r*s^-2*r^-3*s^-2*r*s*r^-1",
+   "s^-1*r^-1*s*r^-1*s*r^-2*s^-1*r*s^-1*r*s^-1"
+  ],
+  "dropped": [
+   "s^-1*r^3*s^-1*r^-2*s^-4*r"
+  ],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "S*R^-3*S*R^2*S^4*R^-1",
+   "S^-1*R^-1*S^2*R^3*S^2*R^-1*S^-1*R",
+   "S*R*S^-1*R*S^-1*R^2*S*R^-1*S*R^-1*S"
+  ]
+ },
+ "648-326-6": {
+  "conder": "C163.13",
+  "variant": "map",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 648,
+  "genus": 163,
+  "petrie": 6,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "s^-1*r^-1*s^2*r^3*s^2*r^-1*s^-1*r",
+   "s^-1*r^-1*s*r*s^-1*r^2*s^-1*r*s^-2*r"
+  ],
+  "dropped": [
+   "s*r^-3*s*r^2*s^4*r^-1"
+  ],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "S*R^-3*S*R^2*S^4*R^-1",
+   "S^-1*R^-1*S^2*R^3*S^2*R^-1*S^-1*R",
+   "S^-1*R^-1*S*R*S^-1*R^2*S^-1*R*S^-2*R"
+  ]
+ },
+ "640-322-6": {
+  "conder": "C161.44",
+  "variant": "mirror",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 640,
+  "genus": 161,
+  "petrie": 10,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "s^-1*r^2*s^-1*r^-3*s^2*r^-1*s^-2",
+   "s^2*r^-2*s*r^-2*s*r^-1*s^2*r^-1"
+  ],
+  "dropped": [
+   "s*r^-3*s*r^2*s^-4*r^-1"
+  ],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "S^-1*R^3*S^-1*R^-2*S^4*R",
+   "S*R^-2*S*R^3*S^-2*R*S^2",
+   "S^-2*R^2*S^-1*R^2*S^-1*R*S^-2*R"
+  ]
+ },
+ "1000-502-6": {
+  "conder": "C251.45",
+  "variant": "mirror",
+  "kind": "C",
+  "p": 8,
+  "q": 8,
+  "E": 1000,
+  "genus": 251,
+  "petrie": 20,
+  "flags": "Self-dual",
+  "relators": [
+   "r^8",
+   "s^8",
+   "(r*s)^2",
+   "r^-1*s^3*r^-3*s^2*r^-1*s*r^-1",
+   "s^2*r^-2*s*r^-2*s*r^-1*s^2*r^-1"
+  ],
+  "dropped": [],
+  "conder_relators": [
+   "R^8",
+   "S^8",
+   "(R*S)^2",
+   "R*S^-3*R^3*S^-2*R*S^-1*R",
+   "S^-2*R^2*S^-1*R^2*S^-1*R*S^-2*R"
+  ]
+ },
+ "294-100-6": {
+  "conder": "C50.3",
+  "variant": "mirror",
+  "kind": "C",
+  "p": 6,
+  "q": 6,
+  "E": 294,
+  "genus": 50,
+  "petrie": 14,
+  "flags": "Self-dual",
+  "relators": [
+   "r^6",
+   "s^6",
+   "(r*s)^2",
+   "r^-1*s*r^-1*s*r^-3*s*r^-1*s^-3"
+  ],
+  "dropped": [],
+  "conder_relators": [
+   "(R*S)^2",
+   "R^6",
+   "S^6",
+   "R*S^-1*R*S^-1*R^3*S^-1*R*S^3"
+  ]
+ },
+ "486-164-6": {
+  "conder": "R82.22",
+  "variant": "map",
+  "kind": "R",
+  "p": 6,
+  "q": 6,
+  "E": 486,
+  "genus": 82,
+  "petrie": 6,
+  "flags": "Self-dual",
+  "relators": [
+   "r^6",
+   "s^6",
+   "(r*s)^2",
+   "s*r*s^-2*r^3*s^3*r^-2",
+   "r*s^-2*r*s^-1*r^2*s^-2*r*s^-1*r",
+   "s*r*s^-1*r^-1*s*r^2*s*r^-1*s^-1*r*s"
+  ],
+  "dropped": [],
+  "conder_relators": [
+   "T^2",
+   "(R*S)^2",
+   "(R*T)^2",
+   "(S*T)^2",
+   "R^6",
+   "S^6",
+   "S*R*S^-2*R^3*S^3*R^-2",
+   "(R*S^-2*R*S^-1*R)^2",
+   "S*R*S^-1*R^-1*S*R^2*S*R^-1*S^-1*R*S"
+  ]
+ },
+ "720-74-8": {
+  "conder": "R19.3",
+  "variant": "map",
+  "kind": "R",
+  "p": 4,
+  "q": 5,
+  "E": 360,
+  "genus": 19,
+  "petrie": 8,
+  "flags": "",
+  "relators": [
+   "r^4",
+   "s^5",
+   "(r*s)^2",
+   "s*r^-2*s^2*r*s^-1*r^2*s^-1*r*s*r^-1*s^-1*r*s"
+  ],
+  "dropped": [],
+  "conder_relators": [
+   "T^2",
+   "R^4",
+   "(R*S)^2",
+   "(R*T)^2",
+   "(S*T)^2",
+   "S^-5",
+   "S*R^-2*S^2*R*S^-1*R^2*S^-1*R*S*R^-1*S^-1*R*S"
+  ],
+  "note": "presentation of the base map R19.3; the cover is built from data/cover_voltage.txt"
+ }
+}

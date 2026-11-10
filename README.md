@@ -7,6 +7,10 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   codes with checks of weight six (a non-abelian two-block group algebra code `[[600,24,26]]` and four
   cyclic two-block codes, three of them entries of V. Russo on the qLDPC challenge board), with a short note containing the proofs, the programs of the computer-assisted
   part, their inputs and logs.
+- [`hyperbolic-map-codes/`](hyperbolic-map-codes/): nine quantum surface codes, eight from regular maps of type
+  {8,8} and {6,6} in M. Conder's lists and one from a double cover of a {4,5} map, with exact minimum distances
+  (three programs of ours with proofs of their methods, and tropidist), submitted to the qLDPC challenge board;
+  data, programs and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

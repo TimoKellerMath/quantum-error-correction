@@ -1,0 +1,76 @@
+{
+ "method": "ours_pipeline",
+ "version": null,
+ "config": {
+  "symmetry": 1,
+  "cover": 1,
+  "collapse": 1,
+  "lift": 1,
+  "window": 1,
+  "k_coll": 3,
+  "k_table": 2,
+  "kmax": 40,
+  "kmin": 1,
+  "table_gb": 0,
+  "dp": 2,
+  "dp_fast": 10,
+  "dp_head": -1,
+  "deepen": 1
+ },
+ "instance": "936-470-6.Z.H",
+ "variant": "full",
+ "rows": 234,
+ "cols": 936,
+ "obs": 470,
+ "threads": 1,
+ "time_limit": 600.0,
+ "status": "exact",
+ "lower_bound": 6,
+ "upper_bound": 6,
+ "witness": [
+  0,
+  1,
+  2,
+  6,
+  164,
+  217
+ ],
+ "witness_ok": true,
+ "seconds": 2.723,
+ "trace": [
+  {
+   "t": 0.13,
+   "lb": 1
+  },
+  {
+   "t": 2.634,
+   "lb": 2
+  },
+  {
+   "t": 2.64,
+   "lb": 3
+  },
+  {
+   "t": 2.65,
+   "lb": 4
+  },
+  {
+   "t": 2.667,
+   "lb": 5
+  },
+  {
+   "t": 2.679,
+   "lb": 6
+  },
+  {
+   "t": 2.687,
+   "ub": 6
+  }
+ ],
+ "peak_rss_mb": 75.0,
+ "truth": null,
+ "truth_kind": "unknown",
+ "notes": "{\"dp\": {\"main\": {\"columns\": 936, \"cut_rank\": 120, \"decision\": \"search (the DP does not fit or is too slow)\", \"estimate_seconds\": 2.288, \"fits\": false, \"peak_bits\": 120, \"predicted_seconds\": null, \"queries\": 470, \"work\": null}}, \"kernel_threads\": 1, \"mode\": \"code instance: plain weight-bounded search (as ours.py)\", \"stages\": {\"plain\": {\"cols\": 936, \"rows\": 234, \"runs\": [{\"K\": 1, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.005919218063354492, \"status\": \"exhausted\"}, {\"K\": 2, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.0059888362884521484, \"status\": \"exhausted\"}, {\"K\": 3, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.007635354995727539, \"status\": \"exhausted\"}, {\"K\": 4, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.016459226608276367, \"status\": \"exhausted\"}, {\"K\": 5, \"best\": null, \"nsol_recorded\": 0, \"seconds\": 0.011569499969482422, \"status\": \"exhausted\"}, {\"K\": 6, \"best\": 6, \"nsol_recorded\": 1, \"seconds\": 0.007348060607910156, \"status\": \"found\"}]}}, \"table_budget_gib\": 1.0}",
+ "value_only": false,
+ "agrees_with_truth": null
+}
