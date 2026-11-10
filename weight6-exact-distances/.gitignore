@@ -1,0 +1,8 @@
+bin/
+rerun/
+/exact_distances.aux
+/exact_distances.log
+/exact_distances.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls

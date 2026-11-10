@@ -1,0 +1,8 @@
+V144: n=144 k=12 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True
+V288: n=288 k=12 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True
+C600: n=600 k=24 CSS=True check weights=[6] odd column weights=True automorphisms ok=True orbits=[150, 150, 150, 150] block-preserving=True Z-witnesses 83/83 valid of weight 26 X-witnesses 70/70 valid of weight 26
+C504: n=504 k=12 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True Z-witnesses 1/1 valid of weight 28 X-witnesses 1/1 valid of weight 28
+B510: n=510 k=16 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True Z-witnesses 1/1 valid of weight 26 X-witnesses 1/1 valid of weight 26 equal to board 510-16-26: True
+B558: n=558 k=14 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True Z-witnesses 1/1 valid of weight 28 X-witnesses 1/1 valid of weight 28 equal to board 558-14-28: True
+B434: n=434 k=10 CSS=True check weights=[6] odd column weights=True X/Z exchange (Lemma 2.3)=True Z-witnesses 1/1 valid of weight 28 X-witnesses 1/1 valid of weight 28 equal to board 434-10-28: True
+ALL CHECKS PASSED

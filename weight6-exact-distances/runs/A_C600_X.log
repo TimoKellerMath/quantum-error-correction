@@ -1,0 +1,5 @@
+list job 0 anchor 0 excluded 0: nodes 63666525 found 0 390.0 s
+list job 1 anchor 1 excluded 150: nodes 481338 found 0 2.4 s
+list job 2 anchor 300 excluded 300: nodes 2604 found 0 0.0 s
+list job 3 anchor 301 excluded 450: nodes 0 found 0 0.0 s
+VRESULT inst=codes/vinst_C600_X.txt W=24 mode=list jobs=4 nodes=64150467 found=0 stop=0 time=392.44 maj=1 pack=1 tie=0

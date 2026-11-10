@@ -1,0 +1,2 @@
+instance codes/cinst_C600_Z.txt: n=600 mx=300 mz=300 k=24 N=300; W=24 anchor=301 rightonly=1 rule=1 excl=1 prop=1 majority=2 (2100 stabs) bound=2 enumerate=0 split=-1 P=1 I=0
+RESULT nodes=2156 generated=3322 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0

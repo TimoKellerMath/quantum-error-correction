@@ -1,0 +1,2 @@
+instance codes/cinst_C504_Z.txt: n=504 mx=252 mz=252 k=12 N=252; W=26 anchor=0 rightonly=0 rule=1 excl=1 prop=1 majority=2 (1764 stabs) bound=2 enumerate=0 split=-1 P=1 I=0
+RESULT nodes=1720961999 generated=5251774246 found=0 minw=-1 time=4873.27 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0

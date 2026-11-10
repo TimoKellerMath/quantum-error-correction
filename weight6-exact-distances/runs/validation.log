@@ -1,0 +1,20 @@
+== V144 W=10
+VRESULT inst=instances/vinst_V144_Z.txt W=10 mode=num jobs=31 nodes=537 found=0 stop=0 time=0.00 maj=1 pack=1 tie=0
+VRESULT inst=instances/vinst_V144_Z.txt W=10 mode=list jobs=2 nodes=1137 found=0 stop=0 time=0.00 maj=1 pack=1 tie=0
+RESULT nodes=1126 generated=3834 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+RESULT nodes=7 generated=11 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+== V144 W=12
+VRESULT inst=instances/vinst_V144_Z.txt W=12 mode=num jobs=4 nodes=125 found=1 stop=1 time=0.00 maj=1 pack=1 tie=0
+VRESULT inst=instances/vinst_V144_Z.txt W=12 mode=list jobs=1 nodes=46 found=1 stop=1 time=0.00 maj=1 pack=1 tie=0
+RESULT nodes=17 generated=47 found=1 minw=12 time=0.00 stop=1 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+RESULT nodes=4 generated=4 found=1 minw=12 time=0.00 stop=1 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+== V288 W=16
+VRESULT inst=instances/vinst_V288_Z.txt W=16 mode=num jobs=31 nodes=55184 found=0 stop=0 time=0.15 maj=1 pack=1 tie=0
+VRESULT inst=instances/vinst_V288_Z.txt W=16 mode=list jobs=2 nodes=160528 found=0 stop=0 time=0.43 maj=1 pack=1 tie=0
+RESULT nodes=160606 generated=529201 found=0 minw=-1 time=0.29 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+RESULT nodes=55 generated=88 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+== V288 W=18
+VRESULT inst=instances/vinst_V288_Z.txt W=18 mode=num jobs=17 nodes=58773 found=1 stop=1 time=0.17 maj=1 pack=1 tie=0
+VRESULT inst=instances/vinst_V288_Z.txt W=18 mode=list jobs=1 nodes=18 found=1 stop=1 time=0.00 maj=1 pack=1 tie=0
+RESULT nodes=47 generated=129 found=1 minw=18 time=0.00 stop=1 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
+RESULT nodes=8 generated=10 found=1 minw=18 time=0.00 stop=1 jobs_done=0 jobs_total_seen=0 jobs_skipped=0

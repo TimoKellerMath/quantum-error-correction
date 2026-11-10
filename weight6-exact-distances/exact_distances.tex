@@ -1,0 +1,246 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1.15in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[shortlabels]{enumitem}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalise,nameinlink]{cleveref}
+\usepackage{url}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\makeatletter
+\AtBeginDocument{\@for\cr@env:={proposition,lemma,corollary,definition,remark}\do{%
+  \edef\cr@tmp{\noexpand\AddToHook{env/\cr@env/begin}{\noexpand\crefalias{theorem}{\cr@env}}}\cr@tmp}}
+\makeatother
+
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\rowsp}{\operatorname{rowsp}}
+\newcommand{\rk}{\operatorname{rk}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\tp}{^{\mathsf T}}
+
+\title{Exact distances of five weight-six two-block codes}
+\author{Timo Keller}
+\date{10 November 2026}
+
+\begin{document}
+
+\begin{abstract}
+We determine the minimum distance of five quantum CSS codes with checks of weight six and qubit degree six: a two-block group algebra code $[[600,24,26]]$ over a non-abelian group of order $300$, a cyclic two-block code $[[504,12,28]]$, and the cyclic two-block codes $[[510,16,26]]$, $[[558,14,28]]$ and $[[434,10,28]]$ of the qLDPC challenge board, whose distances were known there only as upper bounds. The upper bounds are explicit logical operators. The lower bounds are computer-assisted: an exhaustive anchored search with exclusions, whose completeness we prove, run with two independently written programs. Programs, inputs and logs are in the directory \texttt{weight6-exact-distances} of \url{https://github.com/TimoKellerMath/quantum-error-correction}.
+\end{abstract}
+
+\maketitle
+
+\section{The codes}\label{sec:codes}
+
+Let $G$ be a finite group and $a,b\in\F[G]$. The two-block group algebra code $C(G;a,b)$ \cite{WLP23,LP24} has $n=2|G|$ qubits, two blocks indexed by $G$, and the parity-check matrices
+\[
+H_X=(L_a\mid R_b),\qquad H_Z=(R_b\tp\mid L_a\tp),
+\]
+where $L_a$ and $R_b$ are the matrices of left multiplication by $a$ and right multiplication by $b$ in the basis $G$. Explicitly, the $X$-check at $c\in G$ has support $\{s^{-1}c:s\in\supp a\}$ in the first block and $\{ct^{-1}:t\in\supp b\}$ in the second, and the $Z$-check at $c$ has support $\{ct:t\in\supp b\}$ in the first block and $\{sc:s\in\supp a\}$ in the second. Since left and right multiplications commute, $H_XH_Z\tp=L_aR_b+R_bL_a=0$. Every check has weight $|\supp a|+|\supp b|$, since left and right translations are injective, and every qubit lies in $|\supp a|+|\supp b|$ checks: a qubit of the first block in $|\supp a|$ $X$-checks and $|\supp b|$ $Z$-checks, a qubit of the second block in $|\supp b|$ $X$-checks and $|\supp a|$ $Z$-checks. The number of logical qubits is $k=n-\rk H_X-\rk H_Z$.
+
+For the cyclic codes we use the convention of the qLDPC challenge board \cite{Board}: for $a,b\in\F[x]/(x^m-1)$,
+\[
+H_X=(\operatorname{circ}(a)\mid\operatorname{circ}(b)),\qquad H_Z=(\operatorname{circ}(b)\tp\mid\operatorname{circ}(a)\tp),\qquad \operatorname{circ}(v)_{i,i+j}=v_j,
+\]
+so the $X$-check $i$ is $\{i+s:s\in\supp a\}\cup\{m+i+t:t\in\supp b\}$ and the $Z$-check $i$ is $\{i-t:t\in\supp b\}\cup\{m+i-s:s\in\supp a\}$, indices modulo $m$ within each block. This is $C(\mathbb Z/m;a^*,b^*)$ with $a^*(x)=a(x^{-1})$.
+
+\begin{center}
+\small
+\begin{tabular}{lllcc}
+\toprule
+name & group & $a$, $b$ & $[[n,k,d]]$ & $kd^2/n$\\
+\midrule
+C600 & $G_{300}\cong D_5\times C_{30}$ & $1+x^{24}y^8+x^{13}y^9$, $1+x^{22}y^4+x^{24}y^7$ & $[[600,24,26]]$ & $27.04$\\
+C504 & $\mathbb Z/252$ & $1+x+x^{58}$, $1+x^{48}+x^{166}$ & $[[504,12,28]]$ & $18.67$\\
+B510 & $\mathbb Z/255$ & $1+x^{26}+x^{76}$, $1+x^{30}+x^{66}$ & $[[510,16,26]]$ & $21.21$\\
+B558 & $\mathbb Z/279$ & $1+x^{37}+x^{140}$, $1+x^{61}+x^{197}$ & $[[558,14,28]]$ & $19.67$\\
+B434 & $\mathbb Z/217$ & $1+x^{29}+x^{117}$, $1+x^{19}+x^{111}$ & $[[434,10,28]]$ & $18.06$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Here $G_{300}=\langle x,y\mid x^{30},y^{10},yxy^{-1}=x^{19}\rangle$, and in C600 the element $x^iy^j$ is the qubit $10i+j$ of the first block and $300+10i+j$ of the second. C600 is a code of type $3+3$ over a group of order $300$ which we found in a search over $3$-fold voltage lifts, that is covers of codes in the sense of \cite{GZ25,HL26}, of a $[[200,16,12]]$ code over $D_5\times C_{10}$. That code has the parameters of the weight-six code over $C_{10}\times D_{10}$ (GAP notation for $D_5\times C_{10}$) in the census \cite[Table~9]{Lee26}, credited there to the code archive of \cite{LP24}; we have not checked that the two are equivalent. For a cyclic two-block code $k=2\deg\gcd(a,b,x^m-1)$ \cite[Eq.~(44)]{LP24}. The code C504 was found in a search for cyclic codes in which this gcd is the minimal polynomial of a root of unity of odd order $N$; for C504 it is the minimal polynomial of an element of order $63$, of degree $\operatorname{ord}_{63}(2)=6$ (computed with Sage; for B510, B558 and B434 the gcd has irreducible factors whose roots have orders $85$; $3$ and $31$; $31$). B510, B558 and B434 are the board entries \texttt{510-16-26}, \texttt{558-14-28} and \texttt{434-10-28}, submitted by V.~Russo with witness-backed upper bounds; \texttt{src/codes.py -{}-board DIR}, with \texttt{DIR} the directory \texttt{codes} of the board repository at the commit cited in \cite{Board}, checks that our matrices coincide with the board's files (output in \texttt{runs/codes\_check.log}). The values of $n$, $k$, the check weights and the column weights are computed by \texttt{src/codes.py}.
+
+\section{Minimum-weight logical operators}\label{sec:lemmas}
+
+Let $H_X\in\F^{m_X\times n}$ and $H_Z\in\F^{m_Z\times n}$ with $H_XH_Z\tp=0$. A $Z$-logical operator is a vector $z\in\ker H_X$; it is trivial if $z\in\rowsp H_Z$, and $d_Z$ is the least weight of a nontrivial one; $d_X$ is defined symmetrically and $d=\min(d_X,d_Z)$. We identify vectors with their supports. For a set $T$ of qubits put $\sigma(T)=H_X1_T$; an $X$-check $c$ is unsatisfied by $T$ if $\sigma(T)_c=1$. A vector $z\in\ker H_X$ is trivial if and only if $z$ is orthogonal to a basis of $\ker H_Z$ modulo $\rowsp H_X$, since $\rowsp H_Z=(\ker H_Z)^\perp$; this is the nontriviality test of both programs.
+
+\begin{lemma}\label{lem:minimal}
+Let $z$ be a nontrivial $Z$-logical operator with $|z|=d_Z$.
+\begin{enumerate}[(a)]
+\item If $\emptyset\ne T\subsetneq z$, then $\sigma(T)\ne0$.
+\item For every $s\in\rowsp H_Z$, $|z\cap s|\le|s|/2$.
+\item If $T\subseteq z$ and $E=z\setminus T$, then $|E\cap c|$ is odd for every $X$-check $c$ unsatisfied by $T$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(a) If $\sigma(T)=0$, then $T$ and $z\setminus T$ lie in $\ker H_X$ and add up to $z$, so one of them is nontrivial and lighter than $z$. (b) $z+s$ is nontrivial, so $d_Z\le|z+s|=|z|+|s|-2|z\cap s|$. (c) $H_X1_E=H_Xz+\sigma(T)=\sigma(T)$.
+\end{proof}
+
+Part (a) is \cite[Lemma~2]{RD26}, \cite[Lemma~2]{OK26} and \cite[Suppl.\ Inf., Lemma~5.1]{CGP26}, and for classical codes \cite[\S V, Lemma~3]{DKP17}; part (b) is the dominance bound of \cite[Suppl.\ Inf., eq.~(S42)]{CGP26}; the weaker form of (c), that $E$ meets every check unsatisfied by $T$, is the remark after \cite[Lemma~2]{RD26}, and (c) is used in the proofs of \cite[Thm.~2]{OK26} and \cite[Suppl.\ Inf., \S5.5.1]{CGP26}.
+
+\begin{lemma}\label{lem:parity}
+If every column of $H_X$ has odd weight, then every element of $\ker H_X$ has even weight. In particular $d_Z$ is even, and if there is no nontrivial $Z$-logical operator of weight at most $2w$, then $d_Z\ge2w+2$.
+\end{lemma}
+
+\begin{proof}
+The sum of the rows of $H_X$ is the all-ones vector, and $z\in\ker H_X$ is orthogonal to it.
+\end{proof}
+
+The same reduction is used in \cite[\S V-A]{OK26}, in \cite[App.~B.1]{LOMK26} and, for the code $[[360,12,\le24]]$ of \cite{B+24}, in the fieldnote \cite{Cro26}. In all five codes every column of $H_X$ and of $H_Z$ has weight $3$.
+
+\begin{lemma}\label{lem:exchange}
+Let $\pi$ be a permutation of the qubits that maps the set of $X$-check supports onto the set of $Z$-check supports and the set of $Z$-check supports onto the set of $X$-check supports. Then $d_X=d_Z$. For the cyclic codes of \cref{sec:codes}, $\pi(i)=m+(-i\bmod m)$ and $\pi(m+i)=-i\bmod m$ has this property.
+\end{lemma}
+
+\begin{proof}
+$\pi$ maps $\ker H_X$ onto $\ker H_Z$ and $\rowsp H_Z$ onto $\rowsp H_X$, preserving weights. For the cyclic codes, $\pi$ maps the $X$-check $i$, that is $\{i+s\}\cup\{m+i+t\}$, to $\{m-i-s\}\cup\{-i-t\}$, which is the $Z$-check $-i$; likewise it maps the $Z$-check $i$ to the $X$-check $-i$.
+\end{proof}
+
+For bivariate bicycle codes the analogous permutation is the $ZX$-duality of \cite{B+24}.
+
+\begin{lemma}\label{lem:anchors}
+Let $\Gamma$ be a group of qubit permutations that preserve $\rowsp H_X$ and $\rowsp H_Z$. Let $O_1,\dots,O_r$ be its orbits on the qubits, in any order, $q_i\in O_i$, and $X_i\subseteq O_1\cup\dots\cup O_{i-1}$. If $d_Z\le W$, then for some $i$ there is a nontrivial $Z$-logical operator $z$ with $|z|=d_Z$, $q_i\in z$ and $z\cap X_i=\emptyset$.
+\end{lemma}
+
+\begin{proof}
+Let $z_0$ be a nontrivial $Z$-logical operator of weight $d_Z$, $i$ minimal with $z_0\cap O_i\ne\emptyset$, $p\in z_0\cap O_i$ and $\gamma\in\Gamma$ with $\gamma p=q_i$. Then $z=\gamma z_0$ is a nontrivial $Z$-logical operator of weight $d_Z$ containing $q_i$, and $z\cap O_j=\gamma(z_0\cap O_j)=\emptyset$ for $j<i$.
+\end{proof}
+
+\begin{lemma}\label{lem:patterns}
+Let $\Gamma$ be as in \cref{lem:anchors}, acting simply transitively on the $X$-checks, all of weight $w$, and assume that every qubit lies in some $X$-check. Fix an $X$-check $c_0$ and a bijection $\rho_0\colon\{1,\dots,w\}\to c_0$, put $\rho_{\gamma c_0}=\gamma\circ\rho_0$, and call $\rho_c^{-1}(z\cap c)$ the pattern of $z$ at $c$. Let $\pi_1,\dots,\pi_M$ be the nonempty subsets of $\{1,\dots,w\}$ of even size, in any order. If $d_Z\le W$, then for some $j$ there is a nontrivial $Z$-logical operator $z$ with $|z|=d_Z$, pattern $\pi_j$ at $c_0$, and no pattern among $\pi_1,\dots,\pi_{j-1}$ at any check.
+\end{lemma}
+
+\begin{proof}
+A $Z$-logical operator meets every $X$-check in an even set, and a nonzero one meets some $X$-check, since every qubit lies in one; so every nontrivial $Z$-logical operator has a pattern among $\pi_1,\dots,\pi_M$. Take $z_0$ of weight $d_Z$, $j$ minimal such that $\pi_j$ occurs as a pattern of $z_0$, at the check $c$ say, and $\gamma$ with $\gamma c_0=c$. As $\rho_{\gamma c'}=\gamma\rho_{c'}$, the operator $z=\gamma^{-1}z_0$ has the same set of patterns and pattern $\pi_j$ at $c_0$.
+\end{proof}
+
+For the cyclic codes the translations $i\mapsto i+1$ (in both blocks and on both kinds of checks) satisfy the hypotheses of \cref{lem:anchors,lem:patterns}, with $w=6$ and $M=31$. For C600, \texttt{data/C600\_automorphisms.json} contains three permutations of the qubits, computed as automorphisms of the Tanner graph with Sage; \texttt{src/codes.py} checks that each maps the $X$-check supports onto themselves and the $Z$-check supports onto themselves, and computes the orbits of the group they generate: four orbits of size $150$, two in each block ($x^iy^j$ with $j$ even, resp.\ odd).
+
+\section{The search}\label{sec:search}
+
+\begin{algorithm}
+\caption{Anchored search with exclusions}\label{alg:search}
+\begin{algorithmic}[1]
+\Require $H_X$; a family $\mathcal S\subseteq\rowsp H_Z$; a bound $W$; disjoint sets $T_0\ne\emptyset$, $X_0$; for every $X$-check $c$ a family $\mathcal P_c$ of allowed intersections
+\State $T\gets T_0$, $X\gets X_0$; \textbf{if} \Call{Propagate}{} \textbf{then} \Call{Grow}{}
+\Procedure{Propagate}{}\Comment{returns \texttt{false} on a contradiction}
+  \Repeat
+    \State for every check $c$: if no $P\in\mathcal P_c$ satisfies $T\cap c\subseteq P\subseteq c\setminus X$, \Return \texttt{false}; otherwise put into $T$ the qubits lying in all such $P$ and into $X$ the qubits of $c\setminus(T\cup X)$ lying in none
+    \State for $s\in\mathcal S$ with $|T\cap s|>\lfloor|s|/2\rfloor$: \Return \texttt{false}
+    \State for $s\in\mathcal S$ with $|T\cap s|=\lfloor|s|/2\rfloor$: put $s\setminus T$ into $X$
+  \Until{nothing changes}
+  \State \Return $|T|+\beta(T,X)\le W$
+\EndProcedure
+\Procedure{Grow}{}
+  \If{$\sigma(T)=0$} report $T$ if it is nontrivial; \Return \EndIf
+  \State choose an unsatisfied check $c$; let $q_1,\dots,q_r$ be its free qubits (not in $T\cup X$)
+  \For{$i=1,\dots,r$}
+    \If{$q_i\in X$} \textbf{continue} \EndIf
+    \If{$q_i\in T$} \Call{Grow}{}; \textbf{break} \EndIf
+    \State save the state; put $q_i$ into $T$; \textbf{if} \Call{Propagate}{} \textbf{then} \Call{Grow}{}; restore the state
+    \State put $q_i$ into $X$; \textbf{if not} \Call{Propagate}{} \textbf{then} \textbf{break}
+  \EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+Here $\beta(T,X)$ is a lower bound for the size of every set $E$ of free qubits meeting every check unsatisfied by $T$; both programs use the maximum of $\lceil u/h\rceil$, where $u$ is the number of unsatisfied checks and $h$ the largest number of unsatisfied checks through one free qubit, and the size of a greedily chosen family of unsatisfied checks with pairwise disjoint sets of free qubits (option \texttt{-b 2} of \texttt{cluster2}). Both programs take for $\mathcal S$ the $Z$-checks and the sums of two overlapping $Z$-checks (option \texttt{-m 2} of \texttt{cluster2}). Both programs apply the rules of \textsc{Propagate} only to the checks and the members of $\mathcal S$ that contain a qubit whose state has changed, and \textsc{Grow} does not put the last free qubit $q_r$ into $X$; the proof of \cref{prop:exact} uses only that every rule which is applied preserves compatibility, so it applies to the programs as well.
+
+\begin{proposition}\label{prop:exact}
+Let $z$ be a nontrivial $Z$-logical operator with $|z|=d_Z\le W$, $T_0\subseteq z$, $X_0\cap z=\emptyset$ and $z\cap c\in\mathcal P_c$ for every check $c$, where every $\mathcal P_c$ consists of even sets and contains $\emptyset$. Then \cref{alg:search} reports a set. Every reported set is a nontrivial $Z$-logical operator of weight at most $W$.
+\end{proposition}
+
+\begin{proof}
+A reported $T$ has $\sigma(T)=0$, is nontrivial and passed $|T|\le W$. For the first assertion call a state $(T,X)$ compatible if $T\subseteq z$ and $X\cap z=\emptyset$.
+
+\emph{Propagation preserves compatibility and does not fail.} For a check $c$, $P=z\cap c$ is allowed and satisfies $T\cap c\subseteq P\subseteq c\setminus X$, so the first rule finds such a $P$, and the qubits it puts into $T$ (resp.\ $X$) lie in (resp.\ outside) $z\cap c$. The majority rules follow from \cref{lem:minimal}(b): if $|T\cap s|=\lfloor|s|/2\rfloor$, then $z\cap s=T\cap s$. The set $E=z\setminus T$ consists of free qubits and meets every unsatisfied check by \cref{lem:minimal}(c), so $|T|+\beta(T,X)\le|z|\le W$; both bounds in $\beta$ are lower bounds for $|E|$, since a free qubit lies in at most $h$ unsatisfied checks and checks with disjoint sets of free qubits need distinct elements of $E$.
+
+\emph{\textsc{Grow} called in a compatible state reports a set}, by induction on $|z\setminus T|$. If $\sigma(T)=0$, then $T=z$ by \cref{lem:minimal}(a), and $T$ is reported. Otherwise the chosen check $c$ is unsatisfied, so some free qubit of $c$ lies in $z$ by \cref{lem:minimal}(c); let $q_j$ be the first. For $i<j$, $q_i\notin z$, so the state stays compatible when $q_i$ is put into $X$, the loop is not left before $i=j$, and $q_j$ is not put into $X$ by a propagation. The state with $q_j\in T$ is compatible with a larger $T$, and the induction hypothesis applies.
+\end{proof}
+
+\begin{corollary}\label{cor:runs}
+Assume the hypotheses of \cref{lem:anchors} (resp.\ \cref{lem:patterns}). If \cref{alg:search} reports nothing for every $i$ with $T_0=\{q_i\}$, $X_0=X_i$ and $\mathcal P_c$ all even subsets of $c$ (resp.\ for every $j$ with $T_0=\rho_0(\pi_j)$, $X_0=c_0\setminus T_0$ and $\mathcal P_c=\{\rho_c(\pi):|\pi|\text{ even},\ \pi\ne\pi_1,\dots,\pi_{j-1}\}$), then $d_Z\ge W+1$.
+\end{corollary}
+
+\begin{proof}
+Otherwise \cref{lem:anchors} (resp.\ \cref{lem:patterns}) gives a minimum-weight $z$ satisfying the hypotheses of \cref{prop:exact} for one of the runs, which then reports a set.
+\end{proof}
+
+\emph{Relation to the literature.} Growing a candidate from one position through unsatisfied checks is the irreducible-cluster technique of \cite[\S V]{DKP17}. \Cref{alg:search} refines the complete search of Okada and Kasai \cite[\S V-A, Alg.~2, Lemma~2, Thm.~2]{OK26}, see also \cite[App.~B]{LOMK26} and \cite[App.~A]{Lee26b}: explored siblings enter a forbidden set as in \textsc{Grow}, the two bounds combined in $\beta$ prune, and a minimum-root convention restricts the anchors, which for a group of coordinate symmetries is \cref{lem:anchors} with $X_i=O_1\cup\dots\cup O_{i-1}$; this is also the anchor reduction of \cite[Suppl.\ Inf., \S5.3]{CGP26}, and \cite[App.~C.4]{Lee26} uses one root per orbit of the automorphism group of the Tanner graph. The fieldnote \cite{Cro26} on the qLDPC challenge board uses anchors at the two block origins, the exclusion of earlier candidates, a packing bound and the parity argument of \cref{lem:parity}, with two separately written programs. The canonical branching, the covering bound and the dominance bound are also in \cite[Suppl.\ Inf., eqs.~(S39), (S41), (S42)]{CGP26}, and the search without exclusions and with $\beta=\lceil u/3\rceil$ is \cite[Alg.~1, Thm.~4]{RD26}. We have not found in these sources the propagation through the families $\mathcal P_c$, the exclusion of $s\setminus T$ in the majority rule, the use of sums of two checks in $\mathcal S$, or the pattern anchoring of \cref{lem:patterns}.
+
+\section{Computations}\label{sec:computations}
+
+The two programs share no code: implementation B implements \cite[Alg.~1]{RD26} with the exclusions, the propagation, the majority rule and the bound $\beta$ of \cref{alg:search}, and implementation A was written separately, from a description of \cref{alg:search} and of the proof of \cref{prop:exact}. Both follow the same argument, which \cref{sec:search} proves, so their agreement tests the implementations, not the argument. \texttt{src/vsearch\_orb.c} (implementation A) supports the pattern anchoring of \cref{lem:patterns} (option \texttt{-K}, with $c_0$ the first check of the instance file and $\rho_c$ the order in which the file lists the qubits of $c$; \texttt{src/codes.py} lists the $X$-check $i$ of a cyclic code as $i+s_1,i+s_2,i+s_3,m+i+t_1,m+i+t_2,m+i+t_3$, where $\supp a=\{s_1,s_2,s_3\}$ and $\supp b=\{t_1,t_2,t_3\}$, so that $\rho_{\gamma c_0}=\gamma\circ\rho_0$ for every translation $\gamma$) and anchors with exclusions read from a file (option \texttt{-L}); \texttt{src/cluster2.c} (implementation B) runs one anchor at a time, either with nothing excluded or with the whole first block excluded (option \texttt{-R}), which is \cref{lem:anchors} with $X_i=\emptyset$ for the orbits in the first block and $X_i$ the first block for those in the second. Both read the instance files written by \texttt{src/codes.py}. Both were validated on the gross code $[[144,12,12]]$ and the two-gross code $[[288,12,18]]$ of \cite{B+24}, whose distances are proved in \cite{RD26} and certified in \cite{CGP26}: nothing at $W=d-2$, a logical operator of weight $d$ at $W=d$ (\texttt{runs/validation.log}).
+
+\begin{theorem}\label{thm:main}
+The codes C600, C504, B510, B558 and B434 have $d_X=d_Z=26$, $28$, $26$, $28$ and $28$, respectively.
+\end{theorem}
+
+\begin{proof}
+\emph{Upper bounds.} The files \texttt{data/*\_witnesses\_Z.json} and \texttt{data/*\_witnesses\_X.json} contain nontrivial logical operators of the stated weights ($83$ and $70$ for C600; one of each type for the board codes, taken from the board entries, where they were found by V.~Russo); \texttt{src/codes.py} checks them. For C504 the $Z$-witness was found by implementation A at $W=28$ (\texttt{runs/W\_C504.log}, \texttt{runs/found\_C504\_W28.txt}), and the $X$-witness is its image under the permutation $\pi$ of \cref{lem:exchange}.
+
+\emph{Lower bounds.} All columns of $H_X$ and $H_Z$ have weight $3$, so by \cref{lem:parity} it suffices to exclude nontrivial logical operators of weight at most $d-2$. For the cyclic codes $d_X=d_Z$ by \cref{lem:exchange}, so it suffices to treat $d_Z$; for C600 both sides were searched. The runs in the table below report nothing at $W=d-2$; by \cref{cor:runs} the runs of each implementation together prove $d_Z\ge d-1$, resp.\ $d_X\ge d-1$, hence $\ge d$ by \cref{lem:parity}. Here \cref{cor:runs} is applied as follows. Cyclic codes, implementation A: \cref{lem:patterns} for the translations. Cyclic codes, implementation B: \cref{lem:anchors} for the translations, whose orbits are the two blocks, with $q_1=0$, $X_1=\emptyset$ and $q_2=m$, $X_2$ the first block. C600: \cref{lem:anchors} for the group of \cref{sec:lemmas}, with $q_1,\dots,q_4$ equal to $0,1,300,301$ and $O_i$ the orbit of $q_i$; $X_i=O_1\cup\dots\cup O_{i-1}$ for implementation A (\texttt{instances/jobs\_C600.txt}), and $X_1=X_2=\emptyset$, $X_3=X_4$ the first block for implementation B.
+\end{proof}
+
+\begin{center}
+\small
+\begin{tabular}{lllll}
+\toprule
+code & side, $W$ & A: nodes, seconds & B: nodes, seconds & result\\
+\midrule
+C600 & $Z$, $W=24$ & $6.36\cdot10^{7}$, $345$ & $4.20\cdot10^{8}$, $412$ & nothing, $d_Z\ge26$\\
+C600 & $X$, $W=24$ & $6.42\cdot10^{7}$, $392$ & $4.42\cdot10^{8}$, $501$ & nothing, $d_X\ge26$\\
+C504 & $Z$, $W=26$ & $4.05\cdot10^{8}$, $1987$ & $5.25\cdot10^{9}$, $4873$ & nothing, $d_Z\ge28$\\
+B510 & $Z$, $W=24$ & $9.16\cdot10^{7}$, $429$ & $1.08\cdot10^{9}$, $1115$ & nothing, $d_Z\ge26$\\
+B558 & $Z$, $W=26$ & $3.29\cdot10^{8}$, $1594$ & $4.26\cdot10^{9}$, $4301$ & nothing, $d_Z\ge28$\\
+B434 & $Z$, $W=26$ & $3.93\cdot10^{8}$, $1942$ & $5.21\cdot10^{9}$, $4911$ & nothing, $d_Z\ge28$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+A and B are the two implementations. Node counts are calls of \textsc{Grow} for A and generated states for B; for B, nodes and seconds are summed over the runs of \texttt{src/jobs.txt} for that line (\texttt{-a 0} and \texttt{-R} for the cyclic codes; \texttt{-a 0}, \texttt{-a 1}, \texttt{-a 300 -R} and \texttt{-a 301 -R} for C600); times are single-thread wall-clock seconds on an x86-64 workstation (gcc 16.2.1, \texttt{-O2}), with up to seven jobs running in parallel. The logs are in \texttt{runs/}.
+
+\begin{remark}
+The lower bounds are computer-assisted. Their correctness rests on \cref{prop:exact,cor:runs,lem:parity,lem:exchange} and on the correctness of the two programs; that two independently written programs agree on every run, and on the validation codes, makes an undetected error unlikely but does not exclude it. In the terms of the qLDPC challenge board the result is a solver verdict, not a checkable proof object.
+\end{remark}
+
+\section{Reproduction}
+
+\texttt{make} builds both programs and the instances and runs all searches (about 6.5 CPU-hours); \texttt{make validate} runs the validation; \texttt{make check} rechecks codes and witnesses. Requirements: a C compiler, \texttt{make} and Python~3 (standard library only). \texttt{SHA256SUMS} lists the checksums of sources, instances and logs.
+
+\subsection*{Acknowledgment}
+The programs in \texttt{src/}, the computations and a first draft of this note were made with Claude Opus 5.5 (Anthropic) in Claude Code.
+
+\begin{thebibliography}{LOMK26}
+\bibitem[B+24]{B+24} S.~Bravyi, A.~W. Cross, J.~M. Gambetta, D.~Maslov, P.~Rall, and T.~J. Yoder, \emph{High-threshold and low-overhead fault-tolerant quantum memory}, Nature \textbf{627} (2024), 778--782, arXiv:2308.07915.
+\bibitem[Board]{Board} Unitary Foundation, \emph{qLDPC challenge}, \url{https://qecchallenge.com}, repository \url{https://github.com/unitaryfoundation/qldpc-challenge} (commit \texttt{8042f9da}, 9 November 2026).
+\bibitem[CGP26]{CGP26} B.~Cheng, N.~Guo, and F.~Pan, \emph{Certifying quantum code and circuit distances at scale}, arXiv:2611.08247, 2026.
+\bibitem[Cro26]{Cro26} C.~Crocker, \emph{360-12-24 is Bravyi et al.'s (30,6) BB code (explicit permutation), with uncertified exhaustive-search evidence for $d=24$}, fieldnote of 13 October 2026 in \cite{Board}, file \path{fieldnotes/2026-10-13-bb360-12-exhaustive-d24.md}.
+\bibitem[DKP17]{DKP17} I.~Dumer, A.~A. Kovalev, and L.~P. Pryadko, \emph{Distance verification for classical and quantum LDPC codes}, IEEE Trans. Inform. Theory \textbf{63} (2017), 4675--4686, arXiv:1611.07164.
+\bibitem[GZ25]{GZ25} V.~Gu\'emard and G.~Z\'emor, \emph{Moderate-length lifted quantum Tanner codes}, arXiv:2502.20297, 2025.
+\bibitem[HL26]{HL26} Y.~Hirasaki and J.~Y. Lee, \emph{Lifting lifted product codes}, arXiv:2607.28621, 2026.
+\bibitem[Lee26]{Lee26} G.~Lee, \emph{Bicycle Race: small two-block codes on the Pareto frontier}, arXiv:2610.13880, 2026.
+\bibitem[Lee26b]{Lee26b} J.~Y. Lee, \emph{Designing group-valued codes with full regular low-weight bases}, arXiv:2610.06820, 2026.
+\bibitem[LOMK26]{LOMK26} J.~Y. Lee, K.~Okada, N.~Maskara, K.~Kasai, and H.~Zhou, \emph{Design principles for ultra-high-rate quantum codes}, arXiv:2609.30069, 2026.
+\bibitem[LP24]{LP24} H.-K. Lin and L.~P. Pryadko, \emph{Quantum two-block group algebra codes}, Phys. Rev. A \textbf{109} (2024), 022407, arXiv:2306.16400.
+\bibitem[OK26]{OK26} K.~Okada and K.~Kasai, \emph{Pair-partition constructions for CPM-based quantum LDPC codes}, arXiv:2607.14091, 2026.
+\bibitem[RD26]{RD26} M.~Rowshan and S.~Devitt, \emph{Logical operator decomposition for distance analysis of bivariate bicycle codes}, arXiv:2609.39395, 2026.
+\bibitem[WLP23]{WLP23} R.~Wang, H.-K. Lin, and L.~P. Pryadko, \emph{Abelian and non-abelian quantum two-block codes}, in: 2023 12th International Symposium on Topics in Coding (ISTC), IEEE, 2023, arXiv:2305.06890.
+\end{thebibliography}
+
+\end{document}

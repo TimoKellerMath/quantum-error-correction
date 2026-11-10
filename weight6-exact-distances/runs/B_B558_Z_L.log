@@ -1,0 +1,2 @@
+instance codes/cinst_B558_Z.txt: n=558 mx=279 mz=279 k=14 N=279; W=26 anchor=0 rightonly=0 rule=1 excl=1 prop=1 majority=2 (1953 stabs) bound=2 enumerate=0 split=-1 P=1 I=0
+RESULT nodes=1423252146 generated=4260599864 found=0 minw=-1 time=4301.27 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0

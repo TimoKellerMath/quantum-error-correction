@@ -1,0 +1,23 @@
+B_B558_Z_L bin/cluster2 instances/cinst_B558_Z.txt -W 26 -a 0 -m 2 -b 2
+B_C504_Z_L bin/cluster2 instances/cinst_C504_Z.txt -W 26 -a 0 -m 2 -b 2
+B_B434_Z_L bin/cluster2 instances/cinst_B434_Z.txt -W 26 -a 0 -m 2 -b 2
+A_B558_Z bin/vsearch_orb instances/vinst_B558_Z.txt -K num -W 26
+A_C504_Z bin/vsearch_orb instances/vinst_C504_Z.txt -K num -W 26
+A_B434_Z bin/vsearch_orb instances/vinst_B434_Z.txt -K num -W 26
+B_B510_Z_L bin/cluster2 instances/cinst_B510_Z.txt -W 24 -a 0 -m 2 -b 2
+A_B510_Z bin/vsearch_orb instances/vinst_B510_Z.txt -K num -W 24
+W_C504 bin/vsearch_orb instances/vinst_C504_Z.txt -K num -W 28 -o rerun/found_C504_W28.txt
+A_C600_Z bin/vsearch_orb instances/vinst_C600_Z.txt -L instances/jobs_C600.txt -W 24
+A_C600_X bin/vsearch_orb instances/vinst_C600_X.txt -L instances/jobs_C600.txt -W 24
+B_C600_Z_a0 bin/cluster2 instances/cinst_C600_Z.txt -W 24 -a 0 -m 2 -b 2
+B_C600_Z_a1 bin/cluster2 instances/cinst_C600_Z.txt -W 24 -a 1 -m 2 -b 2
+B_C600_X_a0 bin/cluster2 instances/cinst_C600_X.txt -W 24 -a 0 -m 2 -b 2
+B_C600_X_a1 bin/cluster2 instances/cinst_C600_X.txt -W 24 -a 1 -m 2 -b 2
+B_C600_Z_R300 bin/cluster2 instances/cinst_C600_Z.txt -W 24 -a 300 -R -m 2 -b 2
+B_C600_Z_R301 bin/cluster2 instances/cinst_C600_Z.txt -W 24 -a 301 -R -m 2 -b 2
+B_C600_X_R300 bin/cluster2 instances/cinst_C600_X.txt -W 24 -a 300 -R -m 2 -b 2
+B_C600_X_R301 bin/cluster2 instances/cinst_C600_X.txt -W 24 -a 301 -R -m 2 -b 2
+B_B558_Z_R bin/cluster2 instances/cinst_B558_Z.txt -W 26 -R -m 2 -b 2
+B_C504_Z_R bin/cluster2 instances/cinst_C504_Z.txt -W 26 -R -m 2 -b 2
+B_B434_Z_R bin/cluster2 instances/cinst_B434_Z.txt -W 26 -R -m 2 -b 2
+B_B510_Z_R bin/cluster2 instances/cinst_B510_Z.txt -W 24 -R -m 2 -b 2

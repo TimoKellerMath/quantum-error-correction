@@ -1,0 +1,2 @@
+instance codes/cinst_B510_Z.txt: n=510 mx=255 mz=255 k=16 N=255; W=24 anchor=255 rightonly=1 rule=1 excl=1 prop=1 majority=2 (1785 stabs) bound=2 enumerate=0 split=-1 P=1 I=0
+RESULT nodes=159 generated=243 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0

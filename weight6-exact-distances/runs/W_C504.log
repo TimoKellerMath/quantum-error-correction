@@ -1,0 +1,4 @@
+job 0 pattern 3f: nodes 1167840 found 0 6.3 s
+job 1 pattern 0f: nodes 60106379 found 0 312.1 s
+job 2 pattern 17: nodes 25109317 found 1 133.7 s
+VRESULT inst=codes/vinst_C504_Z.txt W=28 mode=num jobs=3 nodes=86383536 found=1 stop=1 time=452.03 maj=1 pack=1 tie=0

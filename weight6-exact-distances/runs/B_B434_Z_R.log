@@ -1,0 +1,2 @@
+instance codes/cinst_B434_Z.txt: n=434 mx=217 mz=217 k=10 N=217; W=26 anchor=217 rightonly=1 rule=1 excl=1 prop=1 majority=2 (1519 stabs) bound=2 enumerate=0 split=-1 P=1 I=0
+RESULT nodes=224 generated=344 found=0 minw=-1 time=0.00 stop=0 jobs_done=0 jobs_total_seen=0 jobs_skipped=0
