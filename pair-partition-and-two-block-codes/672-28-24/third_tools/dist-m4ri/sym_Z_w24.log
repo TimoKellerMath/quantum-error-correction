@@ -1,0 +1,57 @@
+cmd: dist_m4ri method=2 finH=mtx/HX.mtx finG=mtx/HZ.mtx wmax=24 threads=1 start=0,168,336,504 start_scan=1 debug=59 timeout=1700
+Mi 11. Nov 07:43:08 CET 2026
+# input: quantum CSS code, n=672 (finH='mtx/HX.mtx', finG='mtx/HZ.mtx')
+#   H: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   G: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   L: 28 x 672 (from H and G), 3288 nonzeros, max row weight 190, max column weight 18
+# code parameters: n=672, rank(H)=322, dim ker(H)=350, rank(G)=322, k=n-rank(H)-rank(G)=28 (0.00594 s)
+# Warning: smax=0, confinement profile is not computed
+# WARNING: start=0,168,336,504 start_scan=1 (expert options): CC clusters are grown only from 4 listed column(s), each with
+#   the larger columns only; dmin is valid only if a code symmetry maps every minimum-weight codeword
+#   to one whose smallest column is listed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 672 nonzero columns (672 distinct) for the last two levels (2048 table slots), even weights only (1 in rowspan(H))
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=24 (cc_prune=1), timeout=1700s, seed=1795707068
+# searching w=2 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=2 work: 3.88e-06 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 4 nodes
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# searching w=4 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=4 work: 4.94e-06 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 14 nodes
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# searching w=6 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=6 work: 1.36e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 76 nodes
+# CC w=6 completed in 0.000s (1 CC threads): no codewords found -> dmin=8
+# searching w=8 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=8 work: 3.5e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 253 nodes
+# CC w=8 completed in 0.000s (1 CC threads): no codewords found -> dmin=10
+# searching w=10 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=10 work: 0.000218 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 1591 nodes
+# CC w=10 completed in 0.000s (1 CC threads): no codewords found -> dmin=12
+# searching w=12 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=12 work: 0.00141 thread-s measured, 0.00348 thread-s predicted (0.002s on 1 threads), 9669 nodes
+# CC w=12 completed in 0.002s (1 CC threads): no codewords found -> dmin=14
+# searching w=14 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=14 work: 0.00913 thread-s measured, 0.0091 thread-s predicted (0.009s on 1 threads), 63540 nodes
+# CC w=14 completed in 0.009s (1 CC threads): no codewords found -> dmin=16
+# searching w=16 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=16 work: 0.0643 thread-s measured, 0.0592 thread-s predicted (0.064s on 1 threads), 425894 nodes
+# CC w=16 completed in 0.064s (1 CC threads): no codewords found -> dmin=18
+# searching w=18 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=18 work: 0.495 thread-s measured, 0.452 thread-s predicted (0.496s on 1 threads), 2973132 nodes
+# CC w=18 completed in 0.496s (1 CC threads): no codewords found -> dmin=20
+# searching w=20 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=20 work: 3.89 thread-s measured, 3.82 thread-s predicted (3.886s on 1 threads), 21239896 nodes
+# CC w=20 completed in 3.886s (1 CC threads): no codewords found -> dmin=22
+# searching w=22 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=22 work: 29.4 thread-s measured, 30.5 thread-s predicted (29.434s on 1 threads), 155853568 nodes
+# CC w=22 completed in 29.434s (1 CC threads): no codewords found -> dmin=24
+# searching w=24 with 1 CC threads, start list (4 columns, start_scan=1)
+# [thread 0] CC codeword of weight 24 (1-based columns): 169 176 268 275 299 306 339 346 357 364 370 377 408 415 469 476 493 494 500 501 566 573 590 597
+# CC found min-weight codeword: d=24 (using 1 CC threads, total 1 cws)
+# stopped after 274.708s: CC found min-weight codeword: d=24
+# codewords accumulated: total=1, min_w=24: cws=1, total_hits=1, hits min=1, max=1, avg=1.00, stdev=0.00, <n>=1.00 over 1 cws of w=24..24 (min_hits=5, cov_cws=100)
+24 24 0
+
+real	4m34,722s
+user	4m38,728s
+sys	0m0,251s
+Mi 11. Nov 07:47:43 CET 2026

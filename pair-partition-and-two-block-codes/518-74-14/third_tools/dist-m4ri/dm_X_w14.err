@@ -1,0 +1,16 @@
+# input: quantum CSS code, n=518 (finH='HZ.mtx', finG='HX.mtx')
+#   H: 222 x 518, 1332 nonzeros, max row weight 6, max column weight 3
+#   G: 222 x 518, 1332 nonzeros, max row weight 6, max column weight 3
+#   L: 74 x 518 (from H and G), 8260 nonzeros, max row weight 144, max column weight 47
+# Warning: smax=0, confinement profile is not computed
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=14 (cc_prune=1), timeout=1800s, seed=1
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# CC w=6 completed in 0.001s (1 CC threads): no codewords found -> dmin=8
+# CC w=8 completed in 0.006s (1 CC threads): no codewords found -> dmin=10
+# CC w=10 completed in 0.061s (1 CC threads): no codewords found -> dmin=12
+# CC w=12 completed in 0.607s (1 CC threads): no codewords found -> dmin=14
+# CC found min-weight codeword: d=14 (using 1 CC threads, total 3182 cws)
+# stopped after 6.695s: CC enumerated all codewords of weight 14 (for outC)
+# codewords accumulated: total=3182, min_w=14: cws=3182, total_hits=3182, hits min=1, max=1, avg=1.00, stdev=0.00, <n>=1.00 over 3182 cws of w=14..14 (min_hits=5, cov_cws=100)
+# exported 3182 codewords to dm_X_w14.nz

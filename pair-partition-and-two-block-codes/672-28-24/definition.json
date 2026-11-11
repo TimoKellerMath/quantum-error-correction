@@ -1,0 +1,181 @@
+{
+ "slug": "672-28-24",
+ "name": "[[672,28,24]]",
+ "kind": "two-block",
+ "construction": "two-block group algebra code C(G; a, b) of Lin and Pryadko over G = C12 x|_5 C28",
+ "group": {
+  "presentation": "<x, y | x^12 = y^28 = 1, y x y^-1 = x^5>",
+  "m": 12,
+  "q": 28,
+  "r": 5,
+  "elements": "x^i y^j with 0 <= i < 12, 0 <= j < 28",
+  "product": "x^i y^j * x^k y^l = x^((i + 5^j k) mod 12) y^((j + l) mod 28)",
+  "index": "(j mod 2)*168 + 14*i + floor(j/2)",
+  "smallgroup": [
+   336,
+   81
+  ],
+  "structure": "C28 x Dic3 (README.md, Lemma 6)"
+ },
+ "a": {
+  "word": "1 + x^2 y^9 + x^10 y^11",
+  "exponents": [
+   [
+    0,
+    0
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "indices": [
+   0,
+   200,
+   313
+  ]
+ },
+ "b": {
+  "word": "1 + x^10 y^22 + x^7 y^27",
+  "exponents": [
+   [
+    0,
+    0
+   ],
+   [
+    10,
+    22
+   ],
+   [
+    7,
+    27
+   ]
+  ],
+  "indices": [
+   0,
+   151,
+   279
+  ]
+ },
+ "convention": "H_X = (L_a | R_b), H_Z = (R_b^T | L_a^T) with (L_a)[c, g] = 1 iff c g^-1 in a and (R_b)[c, h] = 1 iff h^-1 c in b; qubit g of block 0 has index index(g), of block 1 336 + index(g); the X-check at c (row index(c)) acts on s^-1 c (s in a) in block 0 and on c t^-1 (t in b) in block 1, the Z-check at c on c t (t in b) in block 0 and on s c (s in a) in block 1",
+ "parameters": {
+  "n": 672,
+  "k": 28,
+  "d": 24,
+  "d_X": 24,
+  "d_Z": 24,
+  "w": 6,
+  "qubit_degrees": {
+   "X": [
+    3
+   ],
+   "Z": [
+    3
+   ]
+  },
+  "all_one_in_rowspace": {
+   "X": true,
+   "Z": true
+  }
+ },
+ "job": {
+  "job": "f1 (lovelace, 2026-11-10)",
+  "candidate_id": "meta_12_28_5_3p3_764197f46c",
+  "group_id": "meta_12_28_5",
+  "type": "3+3"
+ },
+ "records": {
+  "instance": "meta_12_28_5_3p3_764197f46c",
+  "generator_files": [
+   "meta_12_28_5_3p3_764197f46c.gensA",
+   "meta_12_28_5_3p3_764197f46c.gensB",
+   "meta_12_28_5_3p3_764197f46c.gensM"
+  ],
+  "group_order": 168,
+  "orbit_sizes": [
+   168,
+   168,
+   168,
+   168
+  ],
+  "orbit_block": 168,
+  "searches": [
+   {
+    "impl": "A",
+    "side": "X",
+    "log": "A_X_W23.log",
+    "args": [
+     "meta_12_28_5_3p3_764197f46c.hx",
+     "meta_12_28_5_3p3_764197f46c.hz",
+     "--side",
+     "X",
+     "--W",
+     "23",
+     "--threads",
+     "1",
+     "--group",
+     "meta_12_28_5_3p3_764197f46c.gensA"
+    ],
+    "json": "A_X.json"
+   },
+   {
+    "impl": "A",
+    "side": "Z",
+    "log": "A_Z_W23.log",
+    "args": [
+     "meta_12_28_5_3p3_764197f46c.hx",
+     "meta_12_28_5_3p3_764197f46c.hz",
+     "--side",
+     "Z",
+     "--W",
+     "23",
+     "--threads",
+     "1",
+     "--group",
+     "meta_12_28_5_3p3_764197f46c.gensA"
+    ],
+    "json": "A_Z.json"
+   },
+   {
+    "impl": "B",
+    "side": "X",
+    "log": "B_X_W23.log",
+    "args": [
+     "meta_12_28_5_3p3_764197f46c.hx",
+     "meta_12_28_5_3p3_764197f46c.hz",
+     "--side",
+     "X",
+     "--W",
+     "23",
+     "--threads",
+     "1",
+     "--group",
+     "meta_12_28_5_3p3_764197f46c.gensB"
+    ],
+    "json": "B_X.json"
+   },
+   {
+    "impl": "B",
+    "side": "Z",
+    "log": "B_Z_W23.log",
+    "args": [
+     "meta_12_28_5_3p3_764197f46c.hx",
+     "meta_12_28_5_3p3_764197f46c.hz",
+     "--side",
+     "Z",
+     "--W",
+     "23",
+     "--threads",
+     "1",
+     "--group",
+     "meta_12_28_5_3p3_764197f46c.gensB"
+    ],
+    "json": "B_Z.json"
+   }
+  ]
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "inputs": {
+  "HX": "mtx/HX.mtx",
+  "HZ": "mtx/HZ.mtx",
+  "LX": "mtx/LX.mtx",
+  "LZ": "mtx/LZ.mtx"
+ },
+ "runs": [
+  {
+   "tool": "dist-m4ri",
+   "side": "X",
+   "files": [
+    "dist-m4ri/dm_X_w14.out",
+    "dist-m4ri/dm_X_w14.err"
+   ],
+   "lower_bound": 14,
+   "found_weight": 14,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 14,
+   "cc_prune": 1,
+   "input": "finH=HZ.mtx finG=HX.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=14 (cc_prune=1), timeout=1800s, seed=1",
+   "cmd": null,
+   "words": "dist-m4ri/dm_X_w14.nz",
+   "n_words": 3182
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/dm_Z_w10.out",
+    "dist-m4ri/dm_Z_w10.err"
+   ],
+   "lower_bound": 12,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 10,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=10 (cc_prune=1), timeout=1800s, seed=1",
+   "cmd": null
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/dm_Z_w11.out",
+    "dist-m4ri/dm_Z_w11.err"
+   ],
+   "lower_bound": 12,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 11,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=11 (cc_prune=1), timeout=1800s, seed=1",
+   "cmd": null
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/dm_Z_w12.out",
+    "dist-m4ri/dm_Z_w12.err"
+   ],
+   "lower_bound": 14,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 12,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=12 (cc_prune=1), timeout=1800s, seed=1",
+   "cmd": null
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/dm_Z_w14.out",
+    "dist-m4ri/dm_Z_w14.err"
+   ],
+   "lower_bound": 14,
+   "found_weight": 14,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 14,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=14 (cc_prune=1), timeout=1800s, seed=1",
+   "cmd": null,
+   "words": "dist-m4ri/dm_Z_w14.nz",
+   "n_words": 3182
+  },
+  {
+   "tool": "tropidist",
+   "side": "X",
+   "record": "tropidist/trop_X.json",
+   "files": [
+    "tropidist/trop_X.log"
+   ],
+   "lower_bound": 14,
+   "upper_bound": 14,
+   "status": "exact",
+   "seconds": 3.019,
+   "symmetry": false
+  },
+  {
+   "tool": "tropidist",
+   "side": "Z",
+   "record": "tropidist/trop_Z.json",
+   "files": [
+    "tropidist/trop_Z.log"
+   ],
+   "lower_bound": 14,
+   "upper_bound": 14,
+   "status": "exact",
+   "seconds": 3.331,
+   "symmetry": false
+  }
+ ],
+ "calibration": [],
+ "tools": {
+  "dist-m4ri": "dist-m4ri 0.16.1 (github.com/QEC-pages/dist-m4ri, commit 4cc9c126), method=2 (connected-cluster search), one thread",
+  "tropidist": "tropidist (github.com/Fanerst/tropidist, commit b03ec2d4077f), python -m cdist --matrices H L --threads 1"
+ }
+}

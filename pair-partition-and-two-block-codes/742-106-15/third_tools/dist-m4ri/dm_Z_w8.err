@@ -1,0 +1,24 @@
+# input: quantum CSS code, n=742 (finH='HX.mtx', finG='HZ.mtx')
+#   H: 318 x 742, 1908 nonzeros, max row weight 6, max column weight 3
+#   G: 318 x 742, 1908 nonzeros, max row weight 6, max column weight 3
+#   L: 106 x 742 (from H and G), 17927 nonzeros, max row weight 230, max column weight 63
+# Warning: smax=0, confinement profile is not computed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 742 nonzero columns (742 distinct) for the last two levels (2048 table slots)
+# searching w=1 with 1 CC threads, columns [0, 741]
+# CC round w=1 work: 2.18e-05 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 0 nodes
+# searching w=2 with 1 CC threads, columns [0, 740]
+# CC round w=2 work: 3.49e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 741 nodes
+# searching w=3 with 1 CC threads, columns [0, 739]
+# CC round w=3 work: 3.49e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 740 nodes
+# searching w=4 with 1 CC threads, columns [0, 738]
+# CC round w=4 work: 7.91e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 2064 nodes
+# searching w=5 with 1 CC threads, columns [0, 737]
+# CC round w=5 work: 0.000214 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 5422 nodes
+# searching w=6 with 1 CC threads, columns [0, 736]
+# CC round w=6 work: 0.000639 thread-s measured, 0.000857 thread-s predicted (0.001s on 1 threads), 13652 nodes
+# searching w=7 with 1 CC threads, columns [0, 735]
+# CC round w=7 work: 0.00204 thread-s measured, 0.00191 thread-s predicted (0.002s on 1 threads), 38035 nodes
+# searching w=8 with 1 CC threads, columns [0, 734]
+# CC round w=8 work: 0.00631 thread-s measured, 0.0065 thread-s predicted (0.006s on 1 threads), 101065 nodes
+# stopped after 0.011s: CC done up to w=8
+# codewords accumulated: total=0

@@ -1,0 +1,103 @@
+{
+ "code": "[[672,28,24]]",
+ "where": "lovelace, job f1 stage 5, 2026-11-10, one thread per run; generators: Magma's Tanner-graph group (order 168, SmallGroup(168,32)); the job's JSON records beside the logs; a local rerun on copies gave the same node counts",
+ "programs": {
+  "exactA.c": "2d1f0d1a55d9b9d71eff102eab6f131b4a6ff2da0e973518651877c3c3187856",
+  "exactB.c": "e793e5b34eb60098f9ff72d02f6608e4a7f5975fc8e4f02ada8b5213ad0ae1a1"
+ },
+ "note": "derived from the logs in this directory by make_package.py; src/rebuild.py checks it",
+ "runs": [
+  {
+   "impl": "A",
+   "side": "X",
+   "W": 23,
+   "searched": 22,
+   "verdict": "none",
+   "nodes": 7199307,
+   "cpu_s": 14.92,
+   "lower_bound": 24,
+   "log": "A_X_W23.log",
+   "args": [
+    "meta_12_28_5_3p3_764197f46c.hx",
+    "meta_12_28_5_3p3_764197f46c.hz",
+    "--side",
+    "X",
+    "--W",
+    "23",
+    "--threads",
+    "1",
+    "--group",
+    "meta_12_28_5_3p3_764197f46c.gensA"
+   ]
+  },
+  {
+   "impl": "A",
+   "side": "Z",
+   "W": 23,
+   "searched": 22,
+   "verdict": "none",
+   "nodes": 7345978,
+   "cpu_s": 15.29,
+   "lower_bound": 24,
+   "log": "A_Z_W23.log",
+   "args": [
+    "meta_12_28_5_3p3_764197f46c.hx",
+    "meta_12_28_5_3p3_764197f46c.hz",
+    "--side",
+    "Z",
+    "--W",
+    "23",
+    "--threads",
+    "1",
+    "--group",
+    "meta_12_28_5_3p3_764197f46c.gensA"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "X",
+   "W": 23,
+   "searched": 22,
+   "verdict": "none",
+   "nodes": 7370526,
+   "cpu_s": 17.04,
+   "lower_bound": 24,
+   "log": "B_X_W23.log",
+   "args": [
+    "meta_12_28_5_3p3_764197f46c.hx",
+    "meta_12_28_5_3p3_764197f46c.hz",
+    "--side",
+    "X",
+    "--W",
+    "23",
+    "--threads",
+    "1",
+    "--group",
+    "meta_12_28_5_3p3_764197f46c.gensB"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "Z",
+   "W": 23,
+   "searched": 22,
+   "verdict": "none",
+   "nodes": 7507311,
+   "cpu_s": 17.36,
+   "lower_bound": 24,
+   "log": "B_Z_W23.log",
+   "args": [
+    "meta_12_28_5_3p3_764197f46c.hx",
+    "meta_12_28_5_3p3_764197f46c.hz",
+    "--side",
+    "Z",
+    "--W",
+    "23",
+    "--threads",
+    "1",
+    "--group",
+    "meta_12_28_5_3p3_764197f46c.gensB"
+   ]
+  }
+ ]
+}

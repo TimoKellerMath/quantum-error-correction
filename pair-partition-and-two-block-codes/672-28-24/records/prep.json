@@ -1,0 +1,23 @@
+{
+ "cid": "meta_12_28_5_3p3_764197f46c",
+ "group": "meta_12_28_5",
+ "n": 672,
+ "a": [
+  0,
+  200,
+  313
+ ],
+ "b": [
+  0,
+  151,
+  279
+ ],
+ "witness_weights": {
+  "Z": 24,
+  "X": 24
+ },
+ "gens": "Tanner group (Magma): 3 generators, 4 qubit orbits",
+ "gensA": "meta_12_28_5_3p3_764197f46c.gensA",
+ "gensB": "meta_12_28_5_3p3_764197f46c.gensB",
+ "parity_types": true
+}

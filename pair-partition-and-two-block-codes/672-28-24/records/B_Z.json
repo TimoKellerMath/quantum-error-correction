@@ -1,0 +1,24 @@
+{
+ "cid": "meta_12_28_5_3p3_764197f46c",
+ "side": "Z",
+ "impl": "B",
+ "upper": 24,
+ "lower": 24,
+ "verdict": "none",
+ "rounds": [
+  {
+   "verdict": "none",
+   "weight": null,
+   "nodes": 7507311,
+   "cpu": 17.36,
+   "lower": 24,
+   "returncode": 0,
+   "W": 23,
+   "limit": 3600,
+   "wall": 17.4,
+   "log": "B_Z_W23.log"
+  }
+ ],
+ "exact": true,
+ "dcode": 24
+}

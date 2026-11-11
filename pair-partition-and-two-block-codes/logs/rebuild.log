@@ -1,0 +1,386 @@
+PASS 294-42-11: definition.json describes [[294,42,11]]
+PASS 294-42-11: template of 6 + 6 rows of weight 6 on 14 block columns
+PASS 294-42-11: T_X column degrees [2, 2, 3, 2, 3, 3, 2, 3, 2, 3, 3, 2, 3, 3], six of degree 2: [0, 1, 3, 6, 8, 11]
+PASS 294-42-11: degree-2 graph of T_X (6 edges on 6 rows) connected and unicyclic
+PASS 294-42-11: T_Z column degrees [3, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 2], six of degree 2: [1, 2, 9, 10, 11, 13]
+PASS 294-42-11: degree-2 graph of T_Z (6 edges on 6 rows) connected and unicyclic
+PASS 294-42-11: T_X T_Z^T = 0 (even overlaps)
+PASS 294-42-11: exponents (72 edges, values mod 21) equal the job's exponent string
+PASS 294-42-11: pairings given for exactly the 34 nonempty overlaps X_i & Z_j
+PASS 294-42-11: every overlap is partitioned into pairs (u, v) with e_iu - d_ju = e_iv - d_jv mod 21 
+PASS 294-42-11: girth rule of the pairing array (no pair twice in an array row or column) 
+PASS 294-42-11: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (126 + 126 rows)
+PASS 294-42-11: n = 294, rank H_X = 126, rank H_Z = 126, k = 42 (definition: n = 294, k = 42)
+PASS 294-42-11: H_X H_Z^T = 0
+PASS 294-42-11: every check has weight 6 (126 X-checks, 126 Z-checks)
+PASS 294-42-11: qubit X-degrees {2: 126, 3: 168} (expected values [2, 3])
+PASS 294-42-11: qubit Z-degrees {2: 126, 3: 168} (expected values [2, 3])
+PASS 294-42-11: Tanner graph connected
+PASS 294-42-11: no two rows of H_X share two qubits (no 4-cycle within H_X)
+PASS 294-42-11: no two rows of H_Z share two qubits (no 4-cycle within H_Z)
+PASS 294-42-11: all-one vector in rowsp H_X: False, in rowsp H_Z: False (so every logical of side Z, resp. X, has even weight iff True)
+PASS 294-42-11: witness_X.txt is a nontrivial X-logical: 11 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 11 (expected 11)
+PASS 294-42-11: witness_Z.txt is a nontrivial Z-logical: 11 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 11 (expected 11)
+PASS 294-42-11: records/6_14_6_80034041_43eebd_P21_50b05e33.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 294-42-11: records/6_14_6_80034041_43eebd_P21_50b05e33.wX is witness_X.txt
+PASS 294-42-11: records/6_14_6_80034041_43eebd_P21_50b05e33.wZ is witness_Z.txt
+PASS 294-42-11: 6_14_6_80034041_43eebd_P21_50b05e33.gensA announces 1 permutations and has 1
+PASS 294-42-11: the 1 permutations of records/6_14_6_80034041_43eebd_P21_50b05e33.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 294-42-11: the 1 permutations of records/6_14_6_80034041_43eebd_P21_50b05e33.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 294-42-11: the generator files 6_14_6_80034041_43eebd_P21_50b05e33.gensA, 6_14_6_80034041_43eebd_P21_50b05e33.gensB hold the same permutations
+PASS 294-42-11: the generated group has order 21 (expected 21) and 14 qubit orbits of sizes [21]
+PASS 294-42-11: the orbits are the 14 ranges of 21 consecutive qubits
+PASS 294-42-11: records/A_X_W10.log: exactA, side X, W = 10, searched 10 (parity: all logicals even: False), verdict none, d_X >= 11, 4284 nodes; n, k, ranks and generator file as computed here
+PASS 294-42-11: records/A_Z_W10.log: exactA, side Z, W = 10, searched 10 (parity: all logicals even: False), verdict none, d_Z >= 11, 4069 nodes; n, k, ranks and generator file as computed here
+PASS 294-42-11: records/B_X_W10.log: exactB, side X, W = 10, searched 10 (parity: all logicals even: False), verdict none, d_X >= 11, 4721 nodes; n, k, ranks and generator file as computed here
+PASS 294-42-11: records/B_Z_W10.log: exactB, side Z, W = 10, searched 10 (parity: all logicals even: False), verdict none, d_Z >= 11, 4873 nodes; n, k, ranks and generator file as computed here
+PASS 294-42-11: d_X >= 11 by exactA and by exactB, d_X <= 11 by witness_X.txt, so d_X = 11
+PASS 294-42-11: d_Z >= 11 by exactA and by exactB, d_Z <= 11 by witness_Z.txt, so d_Z = 11
+PASS 294-42-11: records/searches.json agrees with the four logs
+PASS 294-42-11: third_tools/mtx/HX.mtx is H_X (126 x 294, rows in the order of hx.txt/hz.txt)
+PASS 294-42-11: third_tools/mtx/HZ.mtx is H_Z (126 x 294, rows in the order of hx.txt/hz.txt)
+PASS 294-42-11: third_tools/mtx/LX.mtx is a basis of 42 X-logical classes (rows in ker H_Z, independent modulo rowsp H_X)
+PASS 294-42-11: third_tools/mtx/LZ.mtx is a basis of 42 Z-logical classes (rows in ker H_X, independent modulo rowsp H_Z)
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_X_w11.out (dist-m4ri, side X): result line (11, 11, 0) = (lower bound 11, found weight 11), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_X_w11.out (dist-m4ri, side X): 399 distinct words listed (runs.json: 399)
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_X_w11.out (dist-m4ri, side X): all 399 words are nontrivial X-logicals of weight 11
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_Z_w11.out (dist-m4ri, side Z): result line (11, 11, 0) = (lower bound 11, found weight 11), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_Z_w11.out (dist-m4ri, side Z): 399 distinct words listed (runs.json: 399)
+PASS 294-42-11: third_tools/dist-m4ri/dm0L_Z_w11.out (dist-m4ri, side Z): all 399 words are nontrivial Z-logicals of weight 11
+PASS 294-42-11: third_tools/dist-m4ri/dm0_Z_w9.out (dist-m4ri, side Z): result line (10, 0, 0) = (lower bound 10, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/dist-m4ri/dm_X_w11.out (dist-m4ri, side X): result line (11, 11, 0) = (lower bound 11, found weight 11), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/dist-m4ri/dm_X_w11.out (dist-m4ri, side X): 399 distinct words listed (runs.json: 399)
+PASS 294-42-11: third_tools/dist-m4ri/dm_X_w11.out (dist-m4ri, side X): all 399 words are nontrivial X-logicals of weight 11
+PASS 294-42-11: third_tools/dist-m4ri/dm_Z_w11.out (dist-m4ri, side Z): result line (11, 11, 0) = (lower bound 11, found weight 11), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/dist-m4ri/dm_Z_w11.out (dist-m4ri, side Z): 399 distinct words listed (runs.json: 399)
+PASS 294-42-11: third_tools/dist-m4ri/dm_Z_w11.out (dist-m4ri, side Z): all 399 words are nontrivial Z-logicals of weight 11
+PASS 294-42-11: third_tools/dist-m4ri/dm_Z_w9.out (dist-m4ri, side Z): result line (10, 0, 0) = (lower bound 10, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 294-42-11: third_tools/tropidist/rec_X.json (tropidist, side X): status exact, lower bound 11 = upper bound 11 (d = 11), instance HZ, one thread
+PASS 294-42-11: third_tools/tropidist/rec_X.json (tropidist, side X): its witness is a nontrivial X-logical: 11 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 11 (expected 11)
+PASS 294-42-11: third_tools/tropidist/rec_Z.json (tropidist, side Z): status exact, lower bound 11 = upper bound 11 (d = 11), instance HX, one thread
+PASS 294-42-11: third_tools/tropidist/rec_Z.json (tropidist, side Z): its witness is a nontrivial Z-logical: 11 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 11 (expected 11)
+PASS 294-42-11: dist-m4ri without any symmetry: d_X >= 11 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 11
+PASS 294-42-11: tropidist, without symmetry: d_X = 11 exactly
+PASS 294-42-11: dist-m4ri without any symmetry: d_Z >= 11 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 11
+PASS 294-42-11: tropidist, without symmetry: d_Z = 11 exactly
+INFO 294-42-11: [[294,42,11]], w = 6, d_X = 11, d_Z = 11, kd^2/n = 17.29
+PASS 322-46-12: definition.json describes [[322,46,12]]
+PASS 322-46-12: template of 6 + 6 rows of weight 6 on 14 block columns
+PASS 322-46-12: T_X column degrees [2, 2, 3, 2, 2, 3, 3, 3, 2, 3, 3, 3, 2, 3], six of degree 2: [0, 1, 3, 4, 8, 12]
+PASS 322-46-12: degree-2 graph of T_X (6 edges on 6 rows) connected and unicyclic
+PASS 322-46-12: T_Z column degrees [3, 2, 3, 2, 3, 2, 3, 2, 3, 3, 2, 2, 3, 3], six of degree 2: [1, 3, 5, 7, 10, 11]
+PASS 322-46-12: degree-2 graph of T_Z (6 edges on 6 rows) connected and unicyclic
+PASS 322-46-12: T_X T_Z^T = 0 (even overlaps)
+PASS 322-46-12: exponents (72 edges, values mod 23) equal the job's exponent string
+PASS 322-46-12: pairings given for exactly the 36 nonempty overlaps X_i & Z_j
+PASS 322-46-12: every overlap is partitioned into pairs (u, v) with e_iu - d_ju = e_iv - d_jv mod 23 
+PASS 322-46-12: girth rule of the pairing array (no pair twice in an array row or column) 
+PASS 322-46-12: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (138 + 138 rows)
+PASS 322-46-12: n = 322, rank H_X = 138, rank H_Z = 138, k = 46 (definition: n = 322, k = 46)
+PASS 322-46-12: H_X H_Z^T = 0
+PASS 322-46-12: every check has weight 6 (138 X-checks, 138 Z-checks)
+PASS 322-46-12: qubit X-degrees {2: 138, 3: 184} (expected values [2, 3])
+PASS 322-46-12: qubit Z-degrees {2: 138, 3: 184} (expected values [2, 3])
+PASS 322-46-12: Tanner graph connected
+PASS 322-46-12: no two rows of H_X share two qubits (no 4-cycle within H_X)
+PASS 322-46-12: no two rows of H_Z share two qubits (no 4-cycle within H_Z)
+PASS 322-46-12: all-one vector in rowsp H_X: False, in rowsp H_Z: False (so every logical of side Z, resp. X, has even weight iff True)
+PASS 322-46-12: witness_X.txt is a nontrivial X-logical: 12 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 12 (expected 12)
+PASS 322-46-12: witness_Z.txt is a nontrivial Z-logical: 12 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 12 (expected 12)
+PASS 322-46-12: records/6_14_6_6ae6cf45_05a4f2_P23_45c0758c.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 322-46-12: records/6_14_6_6ae6cf45_05a4f2_P23_45c0758c.wX is witness_X.txt
+PASS 322-46-12: records/6_14_6_6ae6cf45_05a4f2_P23_45c0758c.wZ is witness_Z.txt
+PASS 322-46-12: 6_14_6_6ae6cf45_05a4f2_P23_45c0758c.gensA announces 1 permutations and has 1
+PASS 322-46-12: the 1 permutations of records/6_14_6_6ae6cf45_05a4f2_P23_45c0758c.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 322-46-12: the 1 permutations of records/6_14_6_6ae6cf45_05a4f2_P23_45c0758c.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 322-46-12: the generator files 6_14_6_6ae6cf45_05a4f2_P23_45c0758c.gensA, 6_14_6_6ae6cf45_05a4f2_P23_45c0758c.gensB hold the same permutations
+PASS 322-46-12: the generated group has order 23 (expected 23) and 14 qubit orbits of sizes [23]
+PASS 322-46-12: the orbits are the 14 ranges of 23 consecutive qubits
+PASS 322-46-12: records/A_X_W11.log: exactA, side X, W = 11, searched 11 (parity: all logicals even: False), verdict none, d_X >= 12, 10045 nodes; n, k, ranks and generator file as computed here
+PASS 322-46-12: records/A_Z_W11.log: exactA, side Z, W = 11, searched 11 (parity: all logicals even: False), verdict none, d_Z >= 12, 13305 nodes; n, k, ranks and generator file as computed here
+PASS 322-46-12: records/B_X_W11.log: exactB, side X, W = 11, searched 11 (parity: all logicals even: False), verdict none, d_X >= 12, 11722 nodes; n, k, ranks and generator file as computed here
+PASS 322-46-12: records/B_Z_W11.log: exactB, side Z, W = 11, searched 11 (parity: all logicals even: False), verdict none, d_Z >= 12, 15797 nodes; n, k, ranks and generator file as computed here
+PASS 322-46-12: d_X >= 12 by exactA and by exactB, d_X <= 12 by witness_X.txt, so d_X = 12
+PASS 322-46-12: d_Z >= 12 by exactA and by exactB, d_Z <= 12 by witness_Z.txt, so d_Z = 12
+PASS 322-46-12: records/searches.json agrees with the four logs
+PASS 322-46-12: third_tools/mtx/HX.mtx is H_X (138 x 322, rows in the order of hx.txt/hz.txt)
+PASS 322-46-12: third_tools/mtx/HZ.mtx is H_Z (138 x 322, rows in the order of hx.txt/hz.txt)
+PASS 322-46-12: third_tools/mtx/LX.mtx is a basis of 46 X-logical classes (rows in ker H_Z, independent modulo rowsp H_X)
+PASS 322-46-12: third_tools/mtx/LZ.mtx is a basis of 46 Z-logical classes (rows in ker H_X, independent modulo rowsp H_Z)
+PASS 322-46-12: third_tools/dist-m4ri/dX_G.out (dist-m4ri, side X): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dX_G.out (dist-m4ri, side X): 1 distinct words listed (runs.json: 1)
+PASS 322-46-12: third_tools/dist-m4ri/dX_G.out (dist-m4ri, side X): all 1 words are nontrivial X-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dX_L.out (dist-m4ri, side X): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dX_L.out (dist-m4ri, side X): 1 distinct words listed (runs.json: 1)
+PASS 322-46-12: third_tools/dist-m4ri/dX_L.out (dist-m4ri, side X): all 1 words are nontrivial X-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dX_enum.out (dist-m4ri, side X): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dX_enum.out (dist-m4ri, side X): 322 distinct words listed (runs.json: 322)
+PASS 322-46-12: third_tools/dist-m4ri/dX_enum.out (dist-m4ri, side X): all 322 words are nontrivial X-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dZ_G.out (dist-m4ri, side Z): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dZ_G.out (dist-m4ri, side Z): 1 distinct words listed (runs.json: 1)
+PASS 322-46-12: third_tools/dist-m4ri/dZ_G.out (dist-m4ri, side Z): all 1 words are nontrivial Z-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dZ_L.out (dist-m4ri, side Z): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dZ_L.out (dist-m4ri, side Z): 1 distinct words listed (runs.json: 1)
+PASS 322-46-12: third_tools/dist-m4ri/dZ_L.out (dist-m4ri, side Z): all 1 words are nontrivial Z-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dZ_enum.out (dist-m4ri, side Z): result line (12, 12, 0) = (lower bound 12, found weight 12), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/dist-m4ri/dZ_enum.out (dist-m4ri, side Z): 322 distinct words listed (runs.json: 322)
+PASS 322-46-12: third_tools/dist-m4ri/dZ_enum.out (dist-m4ri, side Z): all 322 words are nontrivial Z-logicals of weight 12
+PASS 322-46-12: third_tools/dist-m4ri/dZ_wmax9.out (dist-m4ri, side Z): result line (10, 0, 0) = (lower bound 10, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 322-46-12: third_tools/tropidist/dX.json (tropidist, side X): status exact, lower bound 12 = upper bound 12 (d = 12), instance HZ, one thread
+PASS 322-46-12: third_tools/tropidist/dX.json (tropidist, side X): its witness is a nontrivial X-logical: 12 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 12 (expected 12)
+PASS 322-46-12: third_tools/tropidist/dZ.json (tropidist, side Z): status exact, lower bound 12 = upper bound 12 (d = 12), instance HX, one thread
+PASS 322-46-12: third_tools/tropidist/dZ.json (tropidist, side Z): its witness is a nontrivial Z-logical: 12 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 12 (expected 12)
+PASS 322-46-12: dist-m4ri without any symmetry: d_X >= 12 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 12
+PASS 322-46-12: tropidist, without symmetry: d_X = 12 exactly
+PASS 322-46-12: dist-m4ri without any symmetry: d_Z >= 12 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 12
+PASS 322-46-12: tropidist, without symmetry: d_Z = 12 exactly
+INFO 322-46-12: [[322,46,12]], w = 6, d_X = 12, d_Z = 12, kd^2/n = 20.57
+PASS 434-62-13: definition.json describes [[434,62,13]]
+PASS 434-62-13: template of 6 + 6 rows of weight 6 on 14 block columns
+PASS 434-62-13: T_X column degrees [2, 2, 3, 2, 2, 3, 3, 3, 2, 3, 3, 3, 2, 3], six of degree 2: [0, 1, 3, 4, 8, 12]
+PASS 434-62-13: degree-2 graph of T_X (6 edges on 6 rows) connected and unicyclic
+PASS 434-62-13: T_Z column degrees [3, 2, 3, 2, 3, 2, 3, 2, 3, 3, 2, 2, 3, 3], six of degree 2: [1, 3, 5, 7, 10, 11]
+PASS 434-62-13: degree-2 graph of T_Z (6 edges on 6 rows) connected and unicyclic
+PASS 434-62-13: T_X T_Z^T = 0 (even overlaps)
+PASS 434-62-13: exponents (72 edges, values mod 31) equal the job's exponent string
+PASS 434-62-13: pairings given for exactly the 36 nonempty overlaps X_i & Z_j
+PASS 434-62-13: every overlap is partitioned into pairs (u, v) with e_iu - d_ju = e_iv - d_jv mod 31 
+PASS 434-62-13: girth rule of the pairing array (no pair twice in an array row or column) 
+PASS 434-62-13: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (186 + 186 rows)
+PASS 434-62-13: n = 434, rank H_X = 186, rank H_Z = 186, k = 62 (definition: n = 434, k = 62)
+PASS 434-62-13: H_X H_Z^T = 0
+PASS 434-62-13: every check has weight 6 (186 X-checks, 186 Z-checks)
+PASS 434-62-13: qubit X-degrees {2: 186, 3: 248} (expected values [2, 3])
+PASS 434-62-13: qubit Z-degrees {2: 186, 3: 248} (expected values [2, 3])
+PASS 434-62-13: Tanner graph connected
+PASS 434-62-13: no two rows of H_X share two qubits (no 4-cycle within H_X)
+PASS 434-62-13: no two rows of H_Z share two qubits (no 4-cycle within H_Z)
+PASS 434-62-13: all-one vector in rowsp H_X: False, in rowsp H_Z: False (so every logical of side Z, resp. X, has even weight iff True)
+PASS 434-62-13: witness_X.txt is a nontrivial X-logical: 13 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 13 (expected 13)
+PASS 434-62-13: witness_Z.txt is a nontrivial Z-logical: 13 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 13 (expected 13)
+PASS 434-62-13: records/6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 434-62-13: records/6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.wX is witness_X.txt
+PASS 434-62-13: records/6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.wZ is witness_Z.txt
+PASS 434-62-13: 6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.gensA announces 1 permutations and has 1
+PASS 434-62-13: the 1 permutations of records/6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 434-62-13: the 1 permutations of records/6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 434-62-13: the generator files 6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.gensA, 6_14_6_6ae6cf45_05a4f2_P31_1e6c826b.gensB hold the same permutations
+PASS 434-62-13: the generated group has order 31 (expected 31) and 14 qubit orbits of sizes [31]
+PASS 434-62-13: the orbits are the 14 ranges of 31 consecutive qubits
+PASS 434-62-13: records/A_X_W12.log: exactA, side X, W = 12, searched 12 (parity: all logicals even: False), verdict none, d_X >= 13, 25003 nodes; n, k, ranks and generator file as computed here
+PASS 434-62-13: records/A_Z_W12.log: exactA, side Z, W = 12, searched 12 (parity: all logicals even: False), verdict none, d_Z >= 13, 32523 nodes; n, k, ranks and generator file as computed here
+PASS 434-62-13: records/B_X_W12.log: exactB, side X, W = 12, searched 12 (parity: all logicals even: False), verdict none, d_X >= 13, 28822 nodes; n, k, ranks and generator file as computed here
+PASS 434-62-13: records/B_Z_W12.log: exactB, side Z, W = 12, searched 12 (parity: all logicals even: False), verdict none, d_Z >= 13, 40114 nodes; n, k, ranks and generator file as computed here
+PASS 434-62-13: d_X >= 13 by exactA and by exactB, d_X <= 13 by witness_X.txt, so d_X = 13
+PASS 434-62-13: d_Z >= 13 by exactA and by exactB, d_Z <= 13 by witness_Z.txt, so d_Z = 13
+PASS 434-62-13: records/searches.json agrees with the four logs
+PASS 434-62-13: third_tools/mtx/HX.mtx is H_X (186 x 434, rows in the order of hx.txt/hz.txt)
+PASS 434-62-13: third_tools/mtx/HZ.mtx is H_Z (186 x 434, rows in the order of hx.txt/hz.txt)
+PASS 434-62-13: third_tools/mtx/LX.mtx is a basis of 62 X-logical classes (rows in ker H_Z, independent modulo rowsp H_X)
+PASS 434-62-13: third_tools/mtx/LZ.mtx is a basis of 62 Z-logical classes (rows in ker H_X, independent modulo rowsp H_Z)
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_X_w12.log (dist-m4ri, side X): result line (13, 0, 0) = (lower bound 13, found weight 0), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_X_w12_prune0.log (dist-m4ri, side X): result line (13, 0, 0) = (lower bound 13, found weight 0), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_X_w13.log (dist-m4ri, side X): result line (13, 13, 0) = (lower bound 13, found weight 13), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_X_w13.log (dist-m4ri, side X): 248 distinct words listed (runs.json: 248)
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_X_w13.log (dist-m4ri, side X): all 248 words are nontrivial X-logicals of weight 13
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_Z_w12.log (dist-m4ri, side Z): result line (13, 0, 0) = (lower bound 13, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_Z_w12_prune0.log (dist-m4ri, side Z): result line (13, 0, 0) = (lower bound 13, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_Z_w13.log (dist-m4ri, side Z): result line (13, 13, 0) = (lower bound 13, found weight 13), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_Z_w13.log (dist-m4ri, side Z): 248 distinct words listed (runs.json: 248)
+PASS 434-62-13: third_tools/dist-m4ri/m4ri_Z_w13.log (dist-m4ri, side Z): all 248 words are nontrivial Z-logicals of weight 13
+PASS 434-62-13: third_tools/dist-m4ri/probe_Z_w10.log (dist-m4ri, side Z): result line (11, 0, 0) = (lower bound 11, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/probe_Z_w11.log (dist-m4ri, side Z): result line (12, 0, 0) = (lower bound 12, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/dist-m4ri/probe_Z_w9.log (dist-m4ri, side Z): result line (10, 0, 0) = (lower bound 10, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 434-62-13: third_tools/tropidist/rec_X.json (tropidist, side X): status exact, lower bound 13 = upper bound 13 (d = 13), instance HZ, one thread
+PASS 434-62-13: third_tools/tropidist/rec_X.json (tropidist, side X): its witness is a nontrivial X-logical: 13 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 13 (expected 13)
+PASS 434-62-13: third_tools/tropidist/rec_Z.json (tropidist, side Z): status exact, lower bound 13 = upper bound 13 (d = 13), instance HX, one thread
+PASS 434-62-13: third_tools/tropidist/rec_Z.json (tropidist, side Z): its witness is a nontrivial Z-logical: 13 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 13 (expected 13)
+PASS 434-62-13: dist-m4ri without any symmetry: d_X >= 13 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 13
+PASS 434-62-13: tropidist, without symmetry: d_X = 13 exactly
+PASS 434-62-13: dist-m4ri without any symmetry: d_Z >= 13 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 13
+PASS 434-62-13: tropidist, without symmetry: d_Z = 13 exactly
+INFO 434-62-13: [[434,62,13]], w = 6, d_X = 13, d_Z = 13, kd^2/n = 24.14
+PASS 518-74-14: definition.json describes [[518,74,14]]
+PASS 518-74-14: template of 6 + 6 rows of weight 6 on 14 block columns
+PASS 518-74-14: T_X column degrees [2, 2, 3, 2, 3, 3, 2, 3, 2, 3, 3, 2, 3, 3], six of degree 2: [0, 1, 3, 6, 8, 11]
+PASS 518-74-14: degree-2 graph of T_X (6 edges on 6 rows) connected and unicyclic
+PASS 518-74-14: T_Z column degrees [2, 3, 3, 3, 2, 2, 3, 2, 3, 3, 3, 2, 2, 3], six of degree 2: [0, 4, 5, 7, 11, 12]
+PASS 518-74-14: degree-2 graph of T_Z (6 edges on 6 rows) connected and unicyclic
+PASS 518-74-14: T_X T_Z^T = 0 (even overlaps)
+PASS 518-74-14: exponents (72 edges, values mod 37) equal the job's exponent string
+PASS 518-74-14: pairings given for exactly the 36 nonempty overlaps X_i & Z_j
+PASS 518-74-14: every overlap is partitioned into pairs (u, v) with e_iu - d_ju = e_iv - d_jv mod 37 
+PASS 518-74-14: girth rule of the pairing array (no pair twice in an array row or column) 
+PASS 518-74-14: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (222 + 222 rows)
+PASS 518-74-14: n = 518, rank H_X = 222, rank H_Z = 222, k = 74 (definition: n = 518, k = 74)
+PASS 518-74-14: H_X H_Z^T = 0
+PASS 518-74-14: every check has weight 6 (222 X-checks, 222 Z-checks)
+PASS 518-74-14: qubit X-degrees {2: 222, 3: 296} (expected values [2, 3])
+PASS 518-74-14: qubit Z-degrees {2: 222, 3: 296} (expected values [2, 3])
+PASS 518-74-14: Tanner graph connected
+PASS 518-74-14: no two rows of H_X share two qubits (no 4-cycle within H_X)
+PASS 518-74-14: no two rows of H_Z share two qubits (no 4-cycle within H_Z)
+PASS 518-74-14: all-one vector in rowsp H_X: True, in rowsp H_Z: True (so every logical of side Z, resp. X, has even weight iff True)
+PASS 518-74-14: witness_X.txt is a nontrivial X-logical: 14 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 14 (expected 14)
+PASS 518-74-14: witness_Z.txt is a nontrivial Z-logical: 14 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 14 (expected 14)
+PASS 518-74-14: records/6_14_6_5543f74e_9457ad_P37_57c8bcfb.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 518-74-14: records/6_14_6_5543f74e_9457ad_P37_57c8bcfb.wX is witness_X.txt
+PASS 518-74-14: records/6_14_6_5543f74e_9457ad_P37_57c8bcfb.wZ is witness_Z.txt
+PASS 518-74-14: 6_14_6_5543f74e_9457ad_P37_57c8bcfb.gensA announces 1 permutations and has 1
+PASS 518-74-14: the 1 permutations of records/6_14_6_5543f74e_9457ad_P37_57c8bcfb.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 518-74-14: the 1 permutations of records/6_14_6_5543f74e_9457ad_P37_57c8bcfb.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 518-74-14: the generator files 6_14_6_5543f74e_9457ad_P37_57c8bcfb.gensA, 6_14_6_5543f74e_9457ad_P37_57c8bcfb.gensB hold the same permutations
+PASS 518-74-14: the generated group has order 37 (expected 37) and 14 qubit orbits of sizes [37]
+PASS 518-74-14: the orbits are the 14 ranges of 37 consecutive qubits
+PASS 518-74-14: records/A_X_W13.log: exactA, side X, W = 13, searched 12 (parity: all logicals even: True), verdict none, d_X >= 14, 30004 nodes; n, k, ranks and generator file as computed here
+PASS 518-74-14: records/A_Z_W13.log: exactA, side Z, W = 13, searched 12 (parity: all logicals even: True), verdict none, d_Z >= 14, 25174 nodes; n, k, ranks and generator file as computed here
+PASS 518-74-14: records/B_X_W13.log: exactB, side X, W = 13, searched 12 (parity: all logicals even: True), verdict none, d_X >= 14, 34536 nodes; n, k, ranks and generator file as computed here
+PASS 518-74-14: records/B_Z_W13.log: exactB, side Z, W = 13, searched 12 (parity: all logicals even: True), verdict none, d_Z >= 14, 31399 nodes; n, k, ranks and generator file as computed here
+PASS 518-74-14: d_X >= 14 by exactA and by exactB, d_X <= 14 by witness_X.txt, so d_X = 14
+PASS 518-74-14: d_Z >= 14 by exactA and by exactB, d_Z <= 14 by witness_Z.txt, so d_Z = 14
+PASS 518-74-14: records/searches.json agrees with the four logs
+PASS 518-74-14: third_tools/mtx/HX.mtx is H_X (222 x 518, rows in the order of hx.txt/hz.txt)
+PASS 518-74-14: third_tools/mtx/HZ.mtx is H_Z (222 x 518, rows in the order of hx.txt/hz.txt)
+PASS 518-74-14: third_tools/mtx/LX.mtx is a basis of 74 X-logical classes (rows in ker H_Z, independent modulo rowsp H_X)
+PASS 518-74-14: third_tools/mtx/LZ.mtx is a basis of 74 Z-logical classes (rows in ker H_X, independent modulo rowsp H_Z)
+PASS 518-74-14: third_tools/dist-m4ri/dm_X_w14.out (dist-m4ri, side X): result line (14, 14, 0) = (lower bound 14, found weight 14), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 518-74-14: third_tools/dist-m4ri/dm_X_w14.out (dist-m4ri, side X): 3182 distinct words listed (runs.json: 3182)
+PASS 518-74-14: third_tools/dist-m4ri/dm_X_w14.out (dist-m4ri, side X): all 3182 words are nontrivial X-logicals of weight 14
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w10.out (dist-m4ri, side Z): result line (12, 0, 0) = (lower bound 12, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w11.out (dist-m4ri, side Z): result line (12, 0, 0) = (lower bound 12, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w12.out (dist-m4ri, side Z): result line (14, 0, 0) = (lower bound 14, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w14.out (dist-m4ri, side Z): result line (14, 14, 0) = (lower bound 14, found weight 14), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w14.out (dist-m4ri, side Z): 3182 distinct words listed (runs.json: 3182)
+PASS 518-74-14: third_tools/dist-m4ri/dm_Z_w14.out (dist-m4ri, side Z): all 3182 words are nontrivial Z-logicals of weight 14
+PASS 518-74-14: third_tools/tropidist/trop_X.json (tropidist, side X): status exact, lower bound 14 = upper bound 14 (d = 14), instance HZ, one thread
+PASS 518-74-14: third_tools/tropidist/trop_X.json (tropidist, side X): its witness is a nontrivial X-logical: 14 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 14 (expected 14)
+PASS 518-74-14: third_tools/tropidist/trop_Z.json (tropidist, side Z): status exact, lower bound 14 = upper bound 14 (d = 14), instance HX, one thread
+PASS 518-74-14: third_tools/tropidist/trop_Z.json (tropidist, side Z): its witness is a nontrivial Z-logical: 14 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 14 (expected 14)
+PASS 518-74-14: dist-m4ri without any symmetry: d_X >= 14 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 14
+PASS 518-74-14: tropidist, without symmetry: d_X = 14 exactly
+PASS 518-74-14: dist-m4ri without any symmetry: d_Z >= 14 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 14
+PASS 518-74-14: tropidist, without symmetry: d_Z = 14 exactly
+INFO 518-74-14: [[518,74,14]], w = 6, d_X = 14, d_Z = 14, kd^2/n = 28.00
+PASS 742-106-15: definition.json describes [[742,106,15]]
+PASS 742-106-15: template of 6 + 6 rows of weight 6 on 14 block columns
+PASS 742-106-15: T_X column degrees [2, 2, 3, 2, 3, 2, 3, 3, 3, 2, 3, 2, 3, 3], six of degree 2: [0, 1, 3, 5, 9, 11]
+PASS 742-106-15: degree-2 graph of T_X (6 edges on 6 rows) connected and unicyclic
+PASS 742-106-15: T_Z column degrees [3, 3, 3, 2, 2, 3, 2, 2, 3, 2, 2, 3, 3, 3], six of degree 2: [3, 4, 6, 7, 9, 10]
+PASS 742-106-15: degree-2 graph of T_Z (6 edges on 6 rows) connected and unicyclic
+PASS 742-106-15: T_X T_Z^T = 0 (even overlaps)
+PASS 742-106-15: exponents (72 edges, values mod 53) equal the job's exponent string
+PASS 742-106-15: pairings given for exactly the 35 nonempty overlaps X_i & Z_j
+PASS 742-106-15: every overlap is partitioned into pairs (u, v) with e_iu - d_ju = e_iv - d_jv mod 53 
+PASS 742-106-15: girth rule of the pairing array (no pair twice in an array row or column) 
+PASS 742-106-15: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (318 + 318 rows)
+PASS 742-106-15: n = 742, rank H_X = 318, rank H_Z = 318, k = 106 (definition: n = 742, k = 106)
+PASS 742-106-15: H_X H_Z^T = 0
+PASS 742-106-15: every check has weight 6 (318 X-checks, 318 Z-checks)
+PASS 742-106-15: qubit X-degrees {2: 318, 3: 424} (expected values [2, 3])
+PASS 742-106-15: qubit Z-degrees {2: 318, 3: 424} (expected values [2, 3])
+PASS 742-106-15: Tanner graph connected
+PASS 742-106-15: no two rows of H_X share two qubits (no 4-cycle within H_X)
+PASS 742-106-15: no two rows of H_Z share two qubits (no 4-cycle within H_Z)
+PASS 742-106-15: all-one vector in rowsp H_X: False, in rowsp H_Z: False (so every logical of side Z, resp. X, has even weight iff True)
+PASS 742-106-15: witness_X.txt is a nontrivial X-logical: 15 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 15 (expected 15)
+PASS 742-106-15: witness_Z.txt is a nontrivial Z-logical: 15 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 15 (expected 15)
+PASS 742-106-15: records/6_14_6_a78d986a_66f39e_P53_29f473b2.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 742-106-15: records/6_14_6_a78d986a_66f39e_P53_29f473b2.wX is witness_X.txt
+PASS 742-106-15: records/6_14_6_a78d986a_66f39e_P53_29f473b2.wZ is witness_Z.txt
+PASS 742-106-15: 6_14_6_a78d986a_66f39e_P53_29f473b2.gensA announces 2 permutations and has 2
+PASS 742-106-15: the 2 permutations of records/6_14_6_a78d986a_66f39e_P53_29f473b2.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 742-106-15: the 2 permutations of records/6_14_6_a78d986a_66f39e_P53_29f473b2.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 742-106-15: the 1 permutations of records/6_14_6_a78d986a_66f39e_P53_29f473b2.gensM map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 742-106-15: the generator files 6_14_6_a78d986a_66f39e_P53_29f473b2.gensA, 6_14_6_a78d986a_66f39e_P53_29f473b2.gensB, 6_14_6_a78d986a_66f39e_P53_29f473b2.gensM hold the same permutations
+PASS 742-106-15: the generated group has order 53 (expected 53) and 14 qubit orbits of sizes [53]
+PASS 742-106-15: the orbits are the 14 ranges of 53 consecutive qubits
+PASS 742-106-15: records/A_X_W14.log: exactA, side X, W = 14, searched 14 (parity: all logicals even: False), verdict none, d_X >= 15, 156789 nodes; n, k, ranks and generator file as computed here
+PASS 742-106-15: records/A_X.json (the job's record) agrees with the log: one round at W = 14, none, lower = upper = 15
+PASS 742-106-15: records/A_Z_W14.log: exactA, side Z, W = 14, searched 14 (parity: all logicals even: False), verdict none, d_Z >= 15, 140548 nodes; n, k, ranks and generator file as computed here
+PASS 742-106-15: records/A_Z.json (the job's record) agrees with the log: one round at W = 14, none, lower = upper = 15
+PASS 742-106-15: records/B_X_W14.log: exactB, side X, W = 14, searched 14 (parity: all logicals even: False), verdict none, d_X >= 15, 175740 nodes; n, k, ranks and generator file as computed here
+PASS 742-106-15: records/B_X.json (the job's record) agrees with the log: one round at W = 14, none, lower = upper = 15
+PASS 742-106-15: records/B_Z_W14.log: exactB, side Z, W = 14, searched 14 (parity: all logicals even: False), verdict none, d_Z >= 15, 185616 nodes; n, k, ranks and generator file as computed here
+PASS 742-106-15: records/B_Z.json (the job's record) agrees with the log: one round at W = 14, none, lower = upper = 15
+PASS 742-106-15: d_X >= 15 by exactA and by exactB, d_X <= 15 by witness_X.txt, so d_X = 15
+PASS 742-106-15: d_Z >= 15 by exactA and by exactB, d_Z <= 15 by witness_Z.txt, so d_Z = 15
+PASS 742-106-15: records/searches.json agrees with the four logs
+PASS 742-106-15: third_tools/mtx/HX.mtx is H_X (318 x 742, rows in the order of hx.txt/hz.txt)
+PASS 742-106-15: third_tools/mtx/HZ.mtx is H_Z (318 x 742, rows in the order of hx.txt/hz.txt)
+PASS 742-106-15: third_tools/mtx/LX.mtx is a basis of 106 X-logical classes (rows in ker H_Z, independent modulo rowsp H_X)
+PASS 742-106-15: third_tools/mtx/LZ.mtx is a basis of 106 Z-logical classes (rows in ker H_X, independent modulo rowsp H_Z)
+PASS 742-106-15: third_tools/dist-m4ri/dm_X_w15.out (dist-m4ri, side X): result line (15, 15, 0) = (lower bound 15, found weight 15), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/dist-m4ri/dm_X_w15.out (dist-m4ri, side X): 371 distinct words listed (runs.json: 371)
+PASS 742-106-15: third_tools/dist-m4ri/dm_X_w15.out (dist-m4ri, side X): all 371 words are nontrivial X-logicals of weight 15
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w12.out (dist-m4ri, side Z): result line (13, 0, 0) = (lower bound 13, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w15.out (dist-m4ri, side Z): result line (15, 15, 0) = (lower bound 15, found weight 15), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w15.out (dist-m4ri, side Z): 371 distinct words listed (runs.json: 371)
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w15.out (dist-m4ri, side Z): all 371 words are nontrivial Z-logicals of weight 15
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w6.out (dist-m4ri, side Z): result line (7, 0, 0) = (lower bound 7, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w7.out (dist-m4ri, side Z): result line (8, 0, 0) = (lower bound 8, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/dist-m4ri/dm_Z_w8.out (dist-m4ri, side Z): result line (9, 0, 0) = (lower bound 9, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 742-106-15: third_tools/tropidist/trop_X.json (tropidist, side X): status exact, lower bound 15 = upper bound 15 (d = 15), instance HZ, one thread
+PASS 742-106-15: third_tools/tropidist/trop_X.json (tropidist, side X): its witness is a nontrivial X-logical: 15 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 15 (expected 15)
+PASS 742-106-15: third_tools/tropidist/trop_Z.json (tropidist, side Z): status exact, lower bound 15 = upper bound 15 (d = 15), instance HX, one thread
+PASS 742-106-15: third_tools/tropidist/trop_Z.json (tropidist, side Z): its witness is a nontrivial Z-logical: 15 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 15 (expected 15)
+PASS 742-106-15: dist-m4ri without any symmetry: d_X >= 15 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 15
+PASS 742-106-15: tropidist, without symmetry: d_X = 15 exactly
+PASS 742-106-15: dist-m4ri without any symmetry: d_Z >= 15 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 15
+PASS 742-106-15: tropidist, without symmetry: d_Z = 15 exactly
+INFO 742-106-15: [[742,106,15]], w = 6, d_X = 15, d_Z = 15, kd^2/n = 32.14
+PASS 672-28-24: definition.json describes [[672,28,24]]
+PASS 672-28-24: element index (j mod 2)*168 + 14*i + floor(j/2) is a bijection onto 0..335
+PASS 672-28-24: identity x^0 y^0 and two-sided inverses (every element has exactly one right inverse)
+PASS 672-28-24: associativity by Light's test on the generators x, y (225792 products)
+PASS 672-28-24: |x| = 12, |y| = 28, y x y^-1 = x^5 (and 5^2 = 1 mod 12, so the rule is a semidirect product); every element is x^i y^j, so x and y generate
+INFO 672-28-24: |G| = 336, centre of order 56
+PASS 672-28-24: a = 1 + x^2 y^9 + x^10 y^11 has indices [0, 200, 313], b = 1 + x^10 y^22 + x^7 y^27 has indices [0, 151, 279]
+PASS 672-28-24: H_X, H_Z built from definition.json equal hx.txt, hz.txt row by row (336 + 336 rows)
+PASS 672-28-24: n = 672, rank H_X = 322, rank H_Z = 322, k = 28 (definition: n = 672, k = 28)
+PASS 672-28-24: H_X H_Z^T = 0
+PASS 672-28-24: every check has weight 6 (336 X-checks, 336 Z-checks)
+PASS 672-28-24: qubit X-degrees {3: 672} (expected values [3])
+PASS 672-28-24: qubit Z-degrees {3: 672} (expected values [3])
+PASS 672-28-24: Tanner graph connected
+INFO 672-28-24: pairs of rows of H_X sharing at least two qubits: 0
+INFO 672-28-24: pairs of rows of H_Z sharing at least two qubits: 0
+PASS 672-28-24: all-one vector in rowsp H_X: True, in rowsp H_Z: True (so every logical of side Z, resp. X, has even weight iff True)
+PASS 672-28-24: witness_X.txt is a nontrivial X-logical: 24 distinct qubits, in ker H_Z: True, outside rowsp H_X: True, weight 24 (expected 24)
+PASS 672-28-24: witness_Z.txt is a nontrivial Z-logical: 24 distinct qubits, in ker H_X: True, outside rowsp H_Z: True, weight 24 (expected 24)
+PASS 672-28-24: records/meta_12_28_5_3p3_764197f46c.hx, .hz are hx.txt, hz.txt with the header 'n m' (the searched instance)
+PASS 672-28-24: records/meta_12_28_5_3p3_764197f46c.wX is witness_X.txt
+PASS 672-28-24: records/meta_12_28_5_3p3_764197f46c.wZ is witness_Z.txt
+PASS 672-28-24: meta_12_28_5_3p3_764197f46c.gensA announces 3 permutations and has 3
+PASS 672-28-24: the 3 permutations of records/meta_12_28_5_3p3_764197f46c.gensA map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 672-28-24: the 3 permutations of records/meta_12_28_5_3p3_764197f46c.gensB map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 672-28-24: the 3 permutations of records/meta_12_28_5_3p3_764197f46c.gensM map the rows of H_X onto rows of H_X and the rows of H_Z onto rows of H_Z
+PASS 672-28-24: the generator files meta_12_28_5_3p3_764197f46c.gensA, meta_12_28_5_3p3_764197f46c.gensB, meta_12_28_5_3p3_764197f46c.gensM hold the same permutations
+PASS 672-28-24: the generated group has order 168 (expected 168) and 4 qubit orbits of sizes [168]
+PASS 672-28-24: the orbits are the 4 ranges of 168 consecutive qubits
+PASS 672-28-24: records/A_X_W23.log: exactA, side X, W = 23, searched 22 (parity: all logicals even: True), verdict none, d_X >= 24, 7199307 nodes; n, k, ranks and generator file as computed here
+PASS 672-28-24: records/A_X.json (the job's record) agrees with the log: one round at W = 23, none, lower = upper = 24
+PASS 672-28-24: records/A_Z_W23.log: exactA, side Z, W = 23, searched 22 (parity: all logicals even: True), verdict none, d_Z >= 24, 7345978 nodes; n, k, ranks and generator file as computed here
+PASS 672-28-24: records/A_Z.json (the job's record) agrees with the log: one round at W = 23, none, lower = upper = 24
+PASS 672-28-24: records/B_X_W23.log: exactB, side X, W = 23, searched 22 (parity: all logicals even: True), verdict none, d_X >= 24, 7370526 nodes; n, k, ranks and generator file as computed here
+PASS 672-28-24: records/B_X.json (the job's record) agrees with the log: one round at W = 23, none, lower = upper = 24
+PASS 672-28-24: records/B_Z_W23.log: exactB, side Z, W = 23, searched 22 (parity: all logicals even: True), verdict none, d_Z >= 24, 7507311 nodes; n, k, ranks and generator file as computed here
+PASS 672-28-24: records/B_Z.json (the job's record) agrees with the log: one round at W = 23, none, lower = upper = 24
+PASS 672-28-24: d_X >= 24 by exactA and by exactB, d_X <= 24 by witness_X.txt, so d_X = 24
+PASS 672-28-24: d_Z >= 24 by exactA and by exactB, d_Z <= 24 by witness_Z.txt, so d_Z = 24
+PASS 672-28-24: records/searches.json agrees with the four logs
+PASS 672-28-24: third_tools/mtx/HX.mtx is H_X (336 x 672, rows in the order of hx.txt/hz.txt)
+PASS 672-28-24: third_tools/mtx/HZ.mtx is H_Z (336 x 672, rows in the order of hx.txt/hz.txt)
+PASS 672-28-24: third_tools/dist-m4ri/full_X_w20.log (dist-m4ri, side X): result line (22, 0, 0) = (lower bound 22, found weight 0), finH = HZ.mtx, no symmetry, rounds from w = 1
+PASS 672-28-24: third_tools/dist-m4ri/full_X_w22.log (dist-m4ri, side X): result line (24, 0, 0) = (lower bound 24, found weight 0), finH = HZ.mtx, no symmetry, rounds from w = 22
+PASS 672-28-24: third_tools/dist-m4ri/full_Z_w20.log (dist-m4ri, side Z): result line (22, 0, 0) = (lower bound 22, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 1
+PASS 672-28-24: third_tools/dist-m4ri/full_Z_w22.log (dist-m4ri, side Z): result line (24, 0, 0) = (lower bound 24, found weight 0), finH = HX.mtx, no symmetry, rounds from w = 22
+PASS 672-28-24: third_tools/dist-m4ri/sym_X_w24.log (dist-m4ri, side X): result line (24, 24, 0) = (lower bound 24, found weight 24), finH = HZ.mtx, anchored at orbit representatives, rounds from w = 1
+PASS 672-28-24: third_tools/dist-m4ri/sym_X_w24.log (dist-m4ri, side X): 1 distinct words listed (runs.json: 1)
+PASS 672-28-24: third_tools/dist-m4ri/sym_X_w24.log (dist-m4ri, side X): all 1 words are nontrivial X-logicals of weight 24
+PASS 672-28-24: third_tools/dist-m4ri/sym_Z_w24.log (dist-m4ri, side Z): result line (24, 24, 0) = (lower bound 24, found weight 24), finH = HX.mtx, anchored at orbit representatives, rounds from w = 1
+PASS 672-28-24: third_tools/dist-m4ri/sym_Z_w24.log (dist-m4ri, side Z): 1 distinct words listed (runs.json: 1)
+PASS 672-28-24: third_tools/dist-m4ri/sym_Z_w24.log (dist-m4ri, side Z): all 1 words are nontrivial Z-logicals of weight 24
+PASS 672-28-24: dist-m4ri without any symmetry: d_X >= 24 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_X >= s); d = 24
+PASS 672-28-24: dist-m4ri without any symmetry: d_Z >= 24 (a run whose rounds start at w = s counts only after a run from w = 1 proved d_Z >= s); d = 24
+INFO 672-28-24: [[672,28,24]], w = 6, d_X = 24, d_Z = 24, kd^2/n = 24.00
+RESULT: all checks passed

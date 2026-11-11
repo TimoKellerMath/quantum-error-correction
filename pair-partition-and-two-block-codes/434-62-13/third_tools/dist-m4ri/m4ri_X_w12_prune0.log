@@ -1,0 +1,22 @@
+# input: quantum CSS code, n=434 (finH='mtx/HZ.mtx', finG='mtx/HX.mtx')
+#   H: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   G: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   L: 62 x 434 (from H and G), 5711 nonzeros, max row weight 121, max column weight 42
+# Warning: smax=0, confinement profile is not computed
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=12 (cc_prune=0), no timeout, seed=1
+# CC w=1 completed in 0.000s (1 CC threads): no codewords found -> dmin=2
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=3
+# CC w=3 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=5
+# CC w=5 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# CC w=6 completed in 0.001s (1 CC threads): no codewords found -> dmin=7
+# CC w=7 completed in 0.002s (1 CC threads): no codewords found -> dmin=8
+# CC w=8 completed in 0.006s (1 CC threads): no codewords found -> dmin=9
+# CC w=9 completed in 0.021s (1 CC threads): no codewords found -> dmin=10
+# CC w=10 completed in 0.080s (1 CC threads): no codewords found -> dmin=11
+# CC w=11 completed in 0.289s (1 CC threads): no codewords found -> dmin=12
+# CC w=12 completed in 1.062s (1 CC threads): no codewords found -> dmin=13
+# stopped after 1.462s: CC done up to w=12
+# codewords accumulated: total=0
+13 0 0
+exit=0 wall=1.470217332

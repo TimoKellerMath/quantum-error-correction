@@ -1,0 +1,21 @@
+cmd: bin/exactB 6_14_6_a78d986a_66f39e_P53_29f473b2.hx 6_14_6_a78d986a_66f39e_P53_29f473b2.hz --side Z --W 14 --threads 1 --group 6_14_6_a78d986a_66f39e_P53_29f473b2.gensB
+exactB: 6_14_6_a78d986a_66f39e_P53_29f473b2.hx 6_14_6_a78d986a_66f39e_P53_29f473b2.hz side Z: n=742 k=106 | A (H_X): m=318 rank=318 weights 6..6, qubit degrees 2..3 | B (H_Z): m=318 rank=318 weights 6..6
+parity: all-ones vector not in rowsp H_X
+group: 2 generators from 6_14_6_a78d986a_66f39e_P53_29f473b2.gensB verified (each maps rowsp H_X and rowsp H_Z into themselves); 14 orbits, sizes 53 53 53 53 53 53 53 53 53 53 53 53 53 53
+search: W=14 (searched 14), bound 3, majority family 2 (1908 members, weight <= 12), threads 1, split depth -1, runs 14
+  run 0: anchor 0, excluded 0, nodes 126880, 0.198 s
+  run 1: anchor 53, excluded 53, nodes 42370, 0.059 s
+  run 2: anchor 106, excluded 106, nodes 6314, 0.008 s
+  run 3: anchor 159, excluded 159, nodes 8031, 0.009 s
+  run 4: anchor 212, excluded 212, nodes 898, 0.001 s
+  run 5: anchor 265, excluded 265, nodes 914, 0.001 s
+  run 6: anchor 318, excluded 318, nodes 182, 0.000 s
+  run 7: anchor 371, excluded 371, nodes 24, 0.000 s
+  run 8: anchor 424, excluded 424, nodes 0, 0.000 s
+  run 9: anchor 477, excluded 477, nodes 3, 0.000 s
+  run 10: anchor 530, excluded 530, nodes 0, 0.000 s
+  run 11: anchor 583, excluded 583, nodes 0, 0.000 s
+  run 12: anchor 636, excluded 636, nodes 0, 0.000 s
+  run 13: anchor 689, excluded 689, nodes 0, 0.000 s
+RESULT side=Z W=14 searched=14 found=none nodes=185616 generated=669140 leaves=0 wall=0.28 cpu=0.28 setup=0.01 threads=1
+CONCLUSION: no nontrivial Z-logical of weight <= 14, d_Z >= 15

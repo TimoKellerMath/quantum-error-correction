@@ -1,0 +1,11 @@
+cmd: bin/exactB meta_12_28_5_3p3_764197f46c.hx meta_12_28_5_3p3_764197f46c.hz --side Z --W 23 --threads 1 --group meta_12_28_5_3p3_764197f46c.gensB
+exactB: meta_12_28_5_3p3_764197f46c.hx meta_12_28_5_3p3_764197f46c.hz side Z: n=672 k=28 | A (H_X): m=336 rank=322 weights 6..6, qubit degrees 3..3 | B (H_Z): m=336 rank=322 weights 6..6
+parity: all-ones vector in rowsp H_X, so every logical of this side has even weight
+group: 3 generators from meta_12_28_5_3p3_764197f46c.gensB verified (each maps rowsp H_X and rowsp H_Z into themselves); 4 orbits, sizes 168 168 168 168
+search: W=23 (searched 22) by parity, bound 3, majority family 2 (2352 members, weight <= 12), threads 1, split depth -1, runs 4
+  run 0: anchor 0, excluded 0, nodes 7409402, 17.221 s
+  run 1: anchor 168, excluded 168, nodes 97131, 0.136 s
+  run 2: anchor 336, excluded 336, nodes 778, 0.002 s
+  run 3: anchor 504, excluded 504, nodes 0, 0.000 s
+RESULT side=Z W=23 searched=22 found=none nodes=7507311 generated=25494679 leaves=0 wall=17.36 cpu=17.36 setup=0.01 threads=1
+CONCLUSION: no nontrivial Z-logical of weight <= 23, d_Z >= 24 (parity)

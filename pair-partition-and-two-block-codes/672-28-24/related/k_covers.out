@@ -1,0 +1,9 @@
+Qian-Li A, B over Z84 x|_29 Z4, K = <x^42>, H_X = [L(A) | R(B)]: n = 336, k = 12
+Qian-Li A, B over Z84 x|_29 Z4, K trivial, H_X = [L(A) | R(B)]: n = 672, k = 12
+Qian-Li A, B over Z84 x|_29 Z4, K = <x^42>, H_X = [R(A) | L(B)]: n = 336, k = 12
+Qian-Li A, B over Z84 x|_29 Z4, K trivial, H_X = [R(A) | L(B)]: n = 672, k = 12
+G = Z12 x|_5 Z28: centre of order 56, central involutions y^14, x^6, x^6 y^14
+[[672,28,24]] = C(G; a, b): n = 672, k = 28
+C(G/<y^14>; a, b): n = 336, k = 20
+C(G/<x^6>; a, b): n = 336, k = 20
+C(G/<x^6 y^14>; a, b): n = 336, k = 20

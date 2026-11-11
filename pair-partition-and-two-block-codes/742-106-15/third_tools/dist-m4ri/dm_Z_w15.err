@@ -1,0 +1,39 @@
+# input: quantum CSS code, n=742 (finH='HX.mtx', finG='HZ.mtx')
+#   H: 318 x 742, 1908 nonzeros, max row weight 6, max column weight 3
+#   G: 318 x 742, 1908 nonzeros, max row weight 6, max column weight 3
+#   L: 106 x 742 (from H and G), 17927 nonzeros, max row weight 230, max column weight 63
+# Warning: smax=0, confinement profile is not computed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 742 nonzero columns (742 distinct) for the last two levels (2048 table slots)
+# searching w=1 with 1 CC threads, columns [0, 741]
+# CC round w=1 work: 2.12e-05 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 0 nodes
+# searching w=2 with 1 CC threads, columns [0, 740]
+# CC round w=2 work: 3.31e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 741 nodes
+# searching w=3 with 1 CC threads, columns [0, 739]
+# CC round w=3 work: 3.71e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 740 nodes
+# searching w=4 with 1 CC threads, columns [0, 738]
+# CC round w=4 work: 8.02e-05 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 2064 nodes
+# searching w=5 with 1 CC threads, columns [0, 737]
+# CC round w=5 work: 0.000209 thread-s measured, 0.0004 thread-s predicted (0.000s on 1 threads), 5422 nodes
+# searching w=6 with 1 CC threads, columns [0, 736]
+# CC round w=6 work: 0.000636 thread-s measured, 0.000834 thread-s predicted (0.001s on 1 threads), 13652 nodes
+# searching w=7 with 1 CC threads, columns [0, 735]
+# CC round w=7 work: 0.00196 thread-s measured, 0.00194 thread-s predicted (0.002s on 1 threads), 38035 nodes
+# searching w=8 with 1 CC threads, columns [0, 734]
+# CC round w=8 work: 0.00629 thread-s measured, 0.00603 thread-s predicted (0.006s on 1 threads), 101065 nodes
+# searching w=9 with 1 CC threads, columns [0, 733]
+# CC round w=9 work: 0.0202 thread-s measured, 0.0202 thread-s predicted (0.020s on 1 threads), 278168 nodes
+# searching w=10 with 1 CC threads, columns [0, 732]
+# CC round w=10 work: 0.065 thread-s measured, 0.065 thread-s predicted (0.065s on 1 threads), 769535 nodes
+# searching w=11 with 1 CC threads, columns [0, 731]
+# CC round w=11 work: 0.194 thread-s measured, 0.209 thread-s predicted (0.194s on 1 threads), 2174341 nodes
+# searching w=12 with 1 CC threads, columns [0, 730]
+# CC round w=12 work: 0.578 thread-s measured, 0.578 thread-s predicted (0.579s on 1 threads), 6245015 nodes
+# searching w=13 with 1 CC threads, columns [0, 729]
+# CC round w=13 work: 1.73 thread-s measured, 1.73 thread-s predicted (1.734s on 1 threads), 18124745 nodes
+# searching w=14 with 1 CC threads, columns [0, 728]
+# CC round w=14 work: 5.33 thread-s measured, 5.2 thread-s predicted (5.326s on 1 threads), 53156879 nodes
+# searching w=15 with 1 CC threads, columns [0, 727]
+# CC round w=15 work: 16.2 thread-s measured, 16.4 thread-s predicted (16.191s on 1 threads), 156974985 nodes
+# stopped after 24.121s: CC enumerated all codewords of weight 15 (for outC)
+# codewords accumulated: total=371, min_w=15: cws=371, total_hits=371, hits min=1, max=1, avg=1.00, stdev=0.00, <n>=1.00 over 371 cws of w=15..15 (min_hits=5, cov_cws=100)
+# exported 371 codewords to dm_Z_w15.nz

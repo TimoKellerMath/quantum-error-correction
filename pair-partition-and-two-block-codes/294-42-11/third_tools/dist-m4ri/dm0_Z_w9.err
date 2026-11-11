@@ -1,0 +1,17 @@
+# input: quantum CSS code, n=294 (finH='HX.mtx', finG='HZ.mtx')
+#   H: 126 x 294, 756 nonzeros, max row weight 6, max column weight 3
+#   G: 126 x 294, 756 nonzeros, max row weight 6, max column weight 3
+#   L: 42 x 294 (from H and G), 2271 nonzeros, max row weight 74, max column weight 28
+# Warning: smax=0, confinement profile is not computed
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=9 (cc_prune=0), timeout=300s, seed=1
+# CC w=1 completed in 0.000s (1 CC threads): no codewords found -> dmin=2
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=3
+# CC w=3 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=5
+# CC w=5 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# CC w=6 completed in 0.000s (1 CC threads): no codewords found -> dmin=7
+# CC w=7 completed in 0.001s (1 CC threads): no codewords found -> dmin=8
+# CC w=8 completed in 0.004s (1 CC threads): no codewords found -> dmin=9
+# CC w=9 completed in 0.014s (1 CC threads): no codewords found -> dmin=10
+# stopped after 0.021s: CC done up to w=9
+# codewords accumulated: total=0

@@ -1,0 +1,23 @@
+{
+ "dcode": 15,
+ "exact": true,
+ "impl": "A",
+ "lid": "6_14_6_a78d986a_66f39e_P53_29f473b2",
+ "lower": 15,
+ "rounds": [
+  {
+   "W": 14,
+   "cpu": 0.23,
+   "log": "A_X_W14.log",
+   "lower": 15,
+   "nodes": 156789,
+   "returncode": 0,
+   "verdict": "none",
+   "wall": 0.3,
+   "weight": null
+  }
+ ],
+ "side": "X",
+ "upper": 15,
+ "verdict": "none"
+}

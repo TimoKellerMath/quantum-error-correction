@@ -1,0 +1,107 @@
+{
+ "code": "[[294,42,11]]",
+ "where": "local, laptop (AMD Ryzen 7 PRO 6850U), 2026-11-11 06:07, one thread per run, by the analysis of the lovelace run (instances written from the lift record, translations of Z/P as the group)",
+ "programs": {
+  "exactA.c": "2d1f0d1a55d9b9d71eff102eab6f131b4a6ff2da0e973518651877c3c3187856",
+  "exactB.c": "e793e5b34eb60098f9ff72d02f6608e4a7f5975fc8e4f02ada8b5213ad0ae1a1"
+ },
+ "note": "derived from the logs in this directory by make_package.py; src/rebuild.py checks it",
+ "runs": [
+  {
+   "impl": "A",
+   "side": "X",
+   "W": 10,
+   "searched": 10,
+   "verdict": "none",
+   "nodes": 4284,
+   "cpu_s": 0.01,
+   "lower_bound": 11,
+   "log": "A_X_W10.log",
+   "args": [
+    "6_14_6_80034041_43eebd_P21_50b05e33.hx",
+    "6_14_6_80034041_43eebd_P21_50b05e33.hz",
+    "--side",
+    "X",
+    "--W",
+    "10",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_80034041_43eebd_P21_50b05e33.gensA",
+    "--mode",
+    "pattern"
+   ]
+  },
+  {
+   "impl": "A",
+   "side": "Z",
+   "W": 10,
+   "searched": 10,
+   "verdict": "none",
+   "nodes": 4069,
+   "cpu_s": 0.01,
+   "lower_bound": 11,
+   "log": "A_Z_W10.log",
+   "args": [
+    "6_14_6_80034041_43eebd_P21_50b05e33.hx",
+    "6_14_6_80034041_43eebd_P21_50b05e33.hz",
+    "--side",
+    "Z",
+    "--W",
+    "10",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_80034041_43eebd_P21_50b05e33.gensA",
+    "--mode",
+    "pattern"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "X",
+   "W": 10,
+   "searched": 10,
+   "verdict": "none",
+   "nodes": 4721,
+   "cpu_s": 0.0,
+   "lower_bound": 11,
+   "log": "B_X_W10.log",
+   "args": [
+    "6_14_6_80034041_43eebd_P21_50b05e33.hx",
+    "6_14_6_80034041_43eebd_P21_50b05e33.hz",
+    "--side",
+    "X",
+    "--W",
+    "10",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_80034041_43eebd_P21_50b05e33.gensB"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "Z",
+   "W": 10,
+   "searched": 10,
+   "verdict": "none",
+   "nodes": 4873,
+   "cpu_s": 0.01,
+   "lower_bound": 11,
+   "log": "B_Z_W10.log",
+   "args": [
+    "6_14_6_80034041_43eebd_P21_50b05e33.hx",
+    "6_14_6_80034041_43eebd_P21_50b05e33.hz",
+    "--side",
+    "Z",
+    "--W",
+    "10",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_80034041_43eebd_P21_50b05e33.gensB"
+   ]
+  }
+ ]
+}

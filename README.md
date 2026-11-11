@@ -27,6 +27,11 @@ with Claude Opus 5.5 (Anthropic) in Claude Code; the README of each directory sa
   entries of the qLDPC challenge board along ZX-dualities (mirror codes in the sense of Khesin and Lu), with
   exact distances (tropidist, a meet-in-the-middle search and Magma), submitted to the board; data, a rebuild
   script, the search program and logs.
+- [`pair-partition-and-two-block-codes/`](pair-partition-and-two-block-codes/): five quasi-cyclic CSS codes with
+  checks of weight six, lifted from sparse 6 x 14 pair-partition templates, and a weight-six two-block group
+  algebra code `[[672,28,24]]` over C28 x Dic3, with exact distances (two exhaustive search programs of ours on
+  both sides; dist-m4ri and, for the five pair-partition codes, tropidist agree), submitted to the qLDPC
+  challenge board; definitions, data, a rebuild script, the search records and logs.
 
 License: MIT (see `LICENSE`), except for files copied from other sources; the README of their directory names them
 and their license.

@@ -1,0 +1,13 @@
+# input: quantum CSS code, n=434 (finH='mtx/HX.mtx', finG='mtx/HZ.mtx')
+#   H: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   G: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   L: 62 x 434 (from H and G), 6713 nonzeros, max row weight 136, max column weight 40
+# Warning: smax=0, confinement profile is not computed
+# stopped after 0.069s: CC done up to w=10
+# codewords accumulated: total=0
+11 0 0
+
+real	0m0,075s
+user	0m0,107s
+sys	0m0,003s
+exit=0

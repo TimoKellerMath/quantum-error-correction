@@ -1,0 +1,29 @@
+exactA.c: OK
+exactB.c: OK
+exactA.c: OK
+exactB.c: OK
+same: 294-42-11 exactA side X: RESULT side=X W=10 Weff=10 verdict=none nodes=4284 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 294-42-11 exactA side Z: RESULT side=Z W=10 Weff=10 verdict=none nodes=4069 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 294-42-11 exactB side X: RESULT side=X W=10 searched=10 found=none nodes=4721 generated=16160 leaves=0 threads=1
+same: 294-42-11 exactB side Z: RESULT side=Z W=10 searched=10 found=none nodes=4873 generated=17183 leaves=0 threads=1
+same: 322-46-12 exactA side X: RESULT side=X W=11 Weff=11 verdict=none nodes=10045 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 322-46-12 exactA side Z: RESULT side=Z W=11 Weff=11 verdict=none nodes=13305 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 322-46-12 exactB side X: RESULT side=X W=11 searched=11 found=none nodes=11722 generated=37600 leaves=0 threads=1
+same: 322-46-12 exactB side Z: RESULT side=Z W=11 searched=11 found=none nodes=15797 generated=56173 leaves=0 threads=1
+same: 434-62-13 exactA side X: RESULT side=X W=12 Weff=12 verdict=none nodes=25003 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 434-62-13 exactA side Z: RESULT side=Z W=12 Weff=12 verdict=none nodes=32523 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 434-62-13 exactB side X: RESULT side=X W=12 searched=12 found=none nodes=28822 generated=92719 leaves=0 threads=1
+same: 434-62-13 exactB side Z: RESULT side=Z W=12 searched=12 found=none nodes=40114 generated=143756 leaves=0 threads=1
+same: 518-74-14 exactA side X: RESULT side=X W=13 Weff=12 verdict=none nodes=30004 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 518-74-14 exactA side Z: RESULT side=Z W=13 Weff=12 verdict=none nodes=25174 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 518-74-14 exactB side X: RESULT side=X W=13 searched=12 found=none nodes=34536 generated=119780 leaves=0 threads=1
+same: 518-74-14 exactB side Z: RESULT side=Z W=13 searched=12 found=none nodes=31399 generated=111338 leaves=0 threads=1
+same: 742-106-15 exactA side X: RESULT side=X W=14 Weff=14 verdict=none nodes=156789 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 742-106-15 exactA side Z: RESULT side=Z W=14 Weff=14 verdict=none nodes=140548 leaves=0 jobs=186 items=186 threads=1 mode=pattern
+same: 742-106-15 exactB side X: RESULT side=X W=14 searched=14 found=none nodes=175740 generated=572282 leaves=0 threads=1
+same: 742-106-15 exactB side Z: RESULT side=Z W=14 searched=14 found=none nodes=185616 generated=669140 leaves=0 threads=1
+same: 672-28-24 exactA side X: RESULT side=X W=23 Weff=22 verdict=none nodes=7199307 leaves=0 jobs=4 items=4 threads=1 mode=anchor
+same: 672-28-24 exactA side Z: RESULT side=Z W=23 Weff=22 verdict=none nodes=7345978 leaves=0 jobs=4 items=4 threads=1 mode=anchor
+same: 672-28-24 exactB side X: RESULT side=X W=23 searched=22 found=none nodes=7370526 generated=25196032 leaves=0 threads=1
+same: 672-28-24 exactB side Z: RESULT side=Z W=23 searched=22 found=none nodes=7507311 generated=25494679 leaves=0 threads=1
+rerun: all runs agree with our logs

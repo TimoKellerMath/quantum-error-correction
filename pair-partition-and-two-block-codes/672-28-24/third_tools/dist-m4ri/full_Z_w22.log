@@ -1,0 +1,21 @@
+cmd: dist_m4ri method=2 finH=mtx/HX.mtx finG=mtx/HZ.mtx dmin=22 wmax=22 threads=1 debug=59 timeout=1380 (full scan, no symmetry; dmin=22 from full_Z_w20.log)
+Mi 11. Nov 07:51:36 CET 2026
+# input: quantum CSS code, n=672 (finH='mtx/HX.mtx', finG='mtx/HZ.mtx')
+#   H: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   G: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   L: 28 x 672 (from H and G), 3288 nonzeros, max row weight 190, max column weight 18
+# code parameters: n=672, rank(H)=322, dim ker(H)=350, rank(G)=322, k=n-rank(H)-rank(G)=28 (0.017 s)
+# Warning: smax=0, confinement profile is not computed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 672 nonzero columns (672 distinct) for the last two levels (2048 table slots), even weights only (1 in rowspan(H))
+# run plan: method=2 (CC), 1 threads, CC from w=22 to wmax=22 (cc_prune=1), timeout=1380s, seed=1795842926
+# searching w=22 with 1 CC threads, columns [0, 650]
+# CC round w=22 work: 1.09e+03 thread-s measured, unknown predicted (1087.702s on 1 threads), 5283323984 nodes
+# CC w=22 completed in 1087.702s (1 CC threads): no codewords found -> dmin=24
+# stopped after 1087.703s: CC done up to w=22
+# codewords accumulated: total=0
+24 0 0
+
+real	18m7,726s
+user	18m25,362s
+sys	0m0,975s
+Mi 11. Nov 08:09:44 CET 2026

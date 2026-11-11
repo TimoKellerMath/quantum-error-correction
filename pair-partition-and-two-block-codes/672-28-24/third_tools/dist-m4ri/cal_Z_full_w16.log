@@ -1,0 +1,22 @@
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 672 nonzero columns (672 distinct) for the last two levels (2048 table slots), even weights only (1 in rowspan(H))
+# searching w=2 with 1 CC threads, columns [0, 670]
+# CC round w=2 work: 3.76e-05 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 671 nodes
+# searching w=4 with 1 CC threads, columns [0, 668]
+# CC round w=4 work: 8.93e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 2097 nodes
+# searching w=6 with 1 CC threads, columns [0, 666]
+# CC round w=6 work: 0.000535 thread-s measured, 0.0016 thread-s predicted (0.001s on 1 threads), 8559 nodes
+# searching w=8 with 1 CC threads, columns [0, 664]
+# CC round w=8 work: 0.00211 thread-s measured, 0.00856 thread-s predicted (0.002s on 1 threads), 28349 nodes
+# searching w=10 with 1 CC threads, columns [0, 662]
+# CC round w=10 work: 0.0149 thread-s measured, 0.00843 thread-s predicted (0.015s on 1 threads), 133453 nodes
+# searching w=12 with 1 CC threads, columns [0, 660]
+# CC round w=12 work: 0.0781 thread-s measured, 0.105 thread-s predicted (0.078s on 1 threads), 644539 nodes
+# searching w=14 with 1 CC threads, columns [0, 658]
+# CC round w=14 work: 0.491 thread-s measured, 0.409 thread-s predicted (0.491s on 1 threads), 3575057 nodes
+# searching w=16 with 1 CC threads, columns [0, 656]
+# CC round w=16 work: 3.07 thread-s measured, 3.08 thread-s predicted (3.068s on 1 threads), 20592874 nodes
+18 0 0
+
+real	0m3,665s
+user	0m3,761s
+sys	0m0,006s

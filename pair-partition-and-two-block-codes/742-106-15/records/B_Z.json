@@ -1,0 +1,23 @@
+{
+ "dcode": 15,
+ "exact": true,
+ "impl": "B",
+ "lid": "6_14_6_a78d986a_66f39e_P53_29f473b2",
+ "lower": 15,
+ "rounds": [
+  {
+   "W": 14,
+   "cpu": 0.28,
+   "log": "B_Z_W14.log",
+   "lower": 15,
+   "nodes": 185616,
+   "returncode": 0,
+   "verdict": "none",
+   "wall": 0.3,
+   "weight": null
+  }
+ ],
+ "side": "Z",
+ "upper": 15,
+ "verdict": "none"
+}

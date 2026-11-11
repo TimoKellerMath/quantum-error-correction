@@ -1,0 +1,24 @@
+# input: quantum CSS code, n=434 (finH='mtx/HX.mtx', finG='mtx/HZ.mtx')
+#   H: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   G: 186 x 434, 1116 nonzeros, max row weight 6, max column weight 3
+#   L: 62 x 434 (from H and G), 6713 nonzeros, max row weight 136, max column weight 40
+# Warning: smax=0, confinement profile is not computed
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=13 (cc_prune=1), no timeout, seed=1
+# CC w=1 completed in 0.000s (1 CC threads): no codewords found -> dmin=2
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=3
+# CC w=3 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=5
+# CC w=5 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# CC w=6 completed in 0.001s (1 CC threads): no codewords found -> dmin=7
+# CC w=7 completed in 0.001s (1 CC threads): no codewords found -> dmin=8
+# CC w=8 completed in 0.004s (1 CC threads): no codewords found -> dmin=9
+# CC w=9 completed in 0.014s (1 CC threads): no codewords found -> dmin=10
+# CC w=10 completed in 0.046s (1 CC threads): no codewords found -> dmin=11
+# CC w=11 completed in 0.147s (1 CC threads): no codewords found -> dmin=12
+# CC w=12 completed in 0.462s (1 CC threads): no codewords found -> dmin=13
+# CC found min-weight codeword: d=13 (using 1 CC threads, total 248 cws)
+# stopped after 2.132s: CC enumerated all codewords of weight 13 (for outC)
+# codewords accumulated: total=248, min_w=13: cws=248, total_hits=248, hits min=1, max=1, avg=1.00, stdev=0.00, <n>=1.00 over 248 cws of w=13..13 (min_hits=5, cov_cws=100)
+13 13 0
+# exported 248 codewords to m4ri/cw_Z_w13.nz
+exit=0 wall=2.141171106

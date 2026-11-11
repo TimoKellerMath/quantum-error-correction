@@ -1,0 +1,48 @@
+cmd: dist_m4ri method=2 finH=mtx/HZ.mtx finG=mtx/HX.mtx wmax=20 threads=1 debug=59 timeout=900 (full scan, no symmetry)
+Mi 11. Nov 07:47:59 CET 2026
+# input: quantum CSS code, n=672 (finH='mtx/HZ.mtx', finG='mtx/HX.mtx')
+#   H: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   G: 336 x 672, 2016 nonzeros, max row weight 6, max column weight 3
+#   L: 28 x 672 (from H and G), 3556 nonzeros, max row weight 184, max column weight 18
+# code parameters: n=672, rank(H)=322, dim ker(H)=350, rank(G)=322, k=n-rank(H)-rank(G)=28 (0.00551 s)
+# Warning: smax=0, confinement profile is not computed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 672 nonzero columns (672 distinct) for the last two levels (2048 table slots), even weights only (1 in rowspan(H))
+# run plan: method=2 (CC), 1 threads, CC from w=1 to wmax=20 (cc_prune=1), timeout=900s, seed=1795785669
+# searching w=2 with 1 CC threads, columns [0, 670]
+# CC round w=2 work: 3.35e-05 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 671 nodes
+# CC w=2 completed in 0.000s (1 CC threads): no codewords found -> dmin=4
+# searching w=4 with 1 CC threads, columns [0, 668]
+# CC round w=4 work: 9.12e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 2097 nodes
+# CC w=4 completed in 0.000s (1 CC threads): no codewords found -> dmin=6
+# searching w=6 with 1 CC threads, columns [0, 666]
+# CC round w=6 work: 0.00059 thread-s measured, 0.0016 thread-s predicted (0.001s on 1 threads), 8581 nodes
+# CC w=6 completed in 0.001s (1 CC threads): no codewords found -> dmin=8
+# searching w=8 with 1 CC threads, columns [0, 664]
+# CC round w=8 work: 0.00211 thread-s measured, 0.00944 thread-s predicted (0.002s on 1 threads), 27515 nodes
+# CC w=8 completed in 0.002s (1 CC threads): no codewords found -> dmin=10
+# searching w=10 with 1 CC threads, columns [0, 662]
+# CC round w=10 work: 0.0152 thread-s measured, 0.00843 thread-s predicted (0.015s on 1 threads), 138857 nodes
+# CC w=10 completed in 0.015s (1 CC threads): no codewords found -> dmin=12
+# searching w=12 with 1 CC threads, columns [0, 660]
+# CC round w=12 work: 0.0894 thread-s measured, 0.11 thread-s predicted (0.089s on 1 threads), 700243 nodes
+# CC w=12 completed in 0.089s (1 CC threads): no codewords found -> dmin=14
+# searching w=14 with 1 CC threads, columns [0, 658]
+# CC round w=14 work: 0.563 thread-s measured, 0.526 thread-s predicted (0.563s on 1 threads), 3903744 nodes
+# CC w=14 completed in 0.563s (1 CC threads): no codewords found -> dmin=16
+# searching w=16 with 1 CC threads, columns [0, 656]
+# CC round w=16 work: 3.64 thread-s measured, 3.55 thread-s predicted (3.641s on 1 threads), 22844891 nodes
+# CC w=16 completed in 3.641s (1 CC threads): no codewords found -> dmin=18
+# searching w=18 with 1 CC threads, columns [0, 654]
+# CC round w=18 work: 24.2 thread-s measured, 23.5 thread-s predicted (24.190s on 1 threads), 140071219 nodes
+# CC w=18 completed in 24.190s (1 CC threads): no codewords found -> dmin=20
+# searching w=20 with 1 CC threads, columns [0, 652]
+# CC round w=20 work: 167 thread-s measured, 161 thread-s predicted (166.892s on 1 threads), 889376219 nodes
+# CC w=20 completed in 166.892s (1 CC threads): no codewords found -> dmin=22
+# stopped after 195.396s: CC done up to w=20
+# codewords accumulated: total=0
+22 0 0
+
+real	3m15,409s
+user	3m18,769s
+sys	0m0,204s
+Mi 11. Nov 07:51:14 CET 2026

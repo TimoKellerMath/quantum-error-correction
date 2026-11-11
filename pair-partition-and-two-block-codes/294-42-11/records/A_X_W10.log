@@ -1,0 +1,10 @@
+exactA: side X, n=294, checks H_Z: 126 rows (0 dropped: empty or repeated), dual H_X: 126 rows (0 dropped)
+  check weights: 6^126; qubits in no check: 0
+  rank H_Z=126, rank H_X=126, k=42 (1 words per class), majority family 756 sets (level 2)
+  parity: all-ones vector not in rowsp H_Z, so no parity reduction
+  group: 1 generators from 6_14_6_80034041_43eebd_P21_50b05e33.gensA, preserving the rows of H_X and H_Z
+  mode pattern (C1 item 2): 6 check orbits, 186 jobs, order index; classes per orbit: 31 31 31 31 31 31
+  W=10, searching weights <= 10
+RESULT side=X W=10 Weff=10 verdict=none nodes=4284 leaves=0 wall=0.01 cpu=0.01 search=0.00 jobs=186 items=186 threads=1 mode=pattern
+CONCLUSION none of weight <= 10; d_X >= 11
+exit=0

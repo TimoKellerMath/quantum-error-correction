@@ -1,0 +1,107 @@
+{
+ "code": "[[742,106,15]]",
+ "where": "lovelace, job l3_templates stage 2, 2026-11-10, one thread per run; generators: Magma's Tanner-graph group (order 53) and the translations of Z/P; the job's JSON records beside the logs; a local rerun on byte-identical copies gave the same node counts",
+ "programs": {
+  "exactA.c": "2d1f0d1a55d9b9d71eff102eab6f131b4a6ff2da0e973518651877c3c3187856",
+  "exactB.c": "e793e5b34eb60098f9ff72d02f6608e4a7f5975fc8e4f02ada8b5213ad0ae1a1"
+ },
+ "note": "derived from the logs in this directory by make_package.py; src/rebuild.py checks it",
+ "runs": [
+  {
+   "impl": "A",
+   "side": "X",
+   "W": 14,
+   "searched": 14,
+   "verdict": "none",
+   "nodes": 156789,
+   "cpu_s": 0.23,
+   "lower_bound": 15,
+   "log": "A_X_W14.log",
+   "args": [
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hx",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hz",
+    "--side",
+    "X",
+    "--W",
+    "14",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.gensA",
+    "--mode",
+    "pattern"
+   ]
+  },
+  {
+   "impl": "A",
+   "side": "Z",
+   "W": 14,
+   "searched": 14,
+   "verdict": "none",
+   "nodes": 140548,
+   "cpu_s": 0.21,
+   "lower_bound": 15,
+   "log": "A_Z_W14.log",
+   "args": [
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hx",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hz",
+    "--side",
+    "Z",
+    "--W",
+    "14",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.gensA",
+    "--mode",
+    "pattern"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "X",
+   "W": 14,
+   "searched": 14,
+   "verdict": "none",
+   "nodes": 175740,
+   "cpu_s": 0.23,
+   "lower_bound": 15,
+   "log": "B_X_W14.log",
+   "args": [
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hx",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hz",
+    "--side",
+    "X",
+    "--W",
+    "14",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.gensB"
+   ]
+  },
+  {
+   "impl": "B",
+   "side": "Z",
+   "W": 14,
+   "searched": 14,
+   "verdict": "none",
+   "nodes": 185616,
+   "cpu_s": 0.28,
+   "lower_bound": 15,
+   "log": "B_Z_W14.log",
+   "args": [
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hx",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.hz",
+    "--side",
+    "Z",
+    "--W",
+    "14",
+    "--threads",
+    "1",
+    "--group",
+    "6_14_6_a78d986a_66f39e_P53_29f473b2.gensB"
+   ]
+  }
+ ]
+}

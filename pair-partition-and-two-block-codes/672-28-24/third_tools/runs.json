@@ -1,0 +1,124 @@
+{
+ "inputs": {
+  "HX": "mtx/HX.mtx",
+  "HZ": "mtx/HZ.mtx"
+ },
+ "runs": [
+  {
+   "tool": "dist-m4ri",
+   "side": "X",
+   "files": [
+    "dist-m4ri/full_X_w20.log"
+   ],
+   "lower_bound": 22,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 20,
+   "cc_prune": 1,
+   "input": "finH=HZ.mtx finG=HX.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=20 (cc_prune=1), timeout=900s, seed=1795785669",
+   "cmd": "dist_m4ri method=2 finH=mtx/HZ.mtx finG=mtx/HX.mtx wmax=20 threads=1 debug=59 timeout=900 (full scan, no symmetry)"
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "X",
+   "files": [
+    "dist-m4ri/full_X_w22.log"
+   ],
+   "lower_bound": 24,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 22,
+   "max_weight_searched": 22,
+   "cc_prune": 1,
+   "input": "finH=HZ.mtx finG=HX.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=22 to wmax=22 (cc_prune=1), timeout=1380s, seed=1795842916",
+   "cmd": "dist_m4ri method=2 finH=mtx/HZ.mtx finG=mtx/HX.mtx dmin=22 wmax=22 threads=1 debug=59 timeout=1380 (full scan, no symmetry; dmin=22 from full_X_w20.log)"
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/full_Z_w20.log"
+   ],
+   "lower_bound": 22,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 1,
+   "max_weight_searched": 20,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=20 (cc_prune=1), timeout=900s, seed=1795785679",
+   "cmd": "dist_m4ri method=2 finH=mtx/HX.mtx finG=mtx/HZ.mtx wmax=20 threads=1 debug=59 timeout=900 (full scan, no symmetry)"
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/full_Z_w22.log"
+   ],
+   "lower_bound": 24,
+   "found_weight": 0,
+   "symmetry": false,
+   "start_weight": 22,
+   "max_weight_searched": 22,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": null,
+   "run_plan": "method=2 (CC), 1 threads, CC from w=22 to wmax=22 (cc_prune=1), timeout=1380s, seed=1795842926",
+   "cmd": "dist_m4ri method=2 finH=mtx/HX.mtx finG=mtx/HZ.mtx dmin=22 wmax=22 threads=1 debug=59 timeout=1380 (full scan, no symmetry; dmin=22 from full_Z_w20.log)"
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "X",
+   "files": [
+    "dist-m4ri/sym_X_w24.log"
+   ],
+   "lower_bound": 24,
+   "found_weight": 24,
+   "symmetry": true,
+   "start_weight": 1,
+   "max_weight_searched": 24,
+   "cc_prune": 1,
+   "input": "finH=HZ.mtx finG=HX.mtx",
+   "start_columns": "0,168,336,504",
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=24 (cc_prune=1), timeout=1700s, seed=1795707058",
+   "cmd": "dist_m4ri method=2 finH=mtx/HZ.mtx finG=mtx/HX.mtx wmax=24 threads=1 start=0,168,336,504 start_scan=1 debug=59 timeout=1700",
+   "n_words": 1
+  },
+  {
+   "tool": "dist-m4ri",
+   "side": "Z",
+   "files": [
+    "dist-m4ri/sym_Z_w24.log"
+   ],
+   "lower_bound": 24,
+   "found_weight": 24,
+   "symmetry": true,
+   "start_weight": 1,
+   "max_weight_searched": 24,
+   "cc_prune": 1,
+   "input": "finH=HX.mtx finG=HZ.mtx",
+   "start_columns": "0,168,336,504",
+   "run_plan": "method=2 (CC), 1 threads, CC from w=1 to wmax=24 (cc_prune=1), timeout=1700s, seed=1795707068",
+   "cmd": "dist_m4ri method=2 finH=mtx/HX.mtx finG=mtx/HZ.mtx wmax=24 threads=1 start=0,168,336,504 start_scan=1 debug=59 timeout=1700",
+   "n_words": 1
+  }
+ ],
+ "calibration": [
+  "dist-m4ri/cal_X_w18.log",
+  "dist-m4ri/cal_Z_full_w16.log",
+  "dist-m4ri/cal_Z_w10.log",
+  "dist-m4ri/cal_Z_w12.log",
+  "dist-m4ri/cal_Z_w14.log",
+  "dist-m4ri/cal_Z_w18.log"
+ ],
+ "tools": {
+  "dist-m4ri": "dist-m4ri 0.16.1 (github.com/QEC-pages/dist-m4ri, commit 4cc9c126), method=2 (connected-cluster search), one thread",
+  "tropidist": "tropidist (github.com/Fanerst/tropidist, commit b03ec2d4077f), python -m cdist --matrices H L --threads 1"
+ }
+}

@@ -1,0 +1,27 @@
+# WARNING: start=0,168,336,504 start_scan=1 (expert options): CC clusters are grown only from 4 listed column(s), each with
+#   the larger columns only; dmin is valid only if a code symmetry maps every minimum-weight codeword
+#   to one whose smallest column is listed
+# CC: branch and bound (cc_prune=1), bitset syndromes, hash of 672 nonzero columns (672 distinct) for the last two levels (2048 table slots), even weights only (1 in rowspan(H))
+# searching w=2 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=2 work: 4.56e-06 thread-s measured, 0.0001 thread-s predicted (0.000s on 1 threads), 4 nodes
+# searching w=4 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=4 work: 5.33e-06 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 14 nodes
+# searching w=6 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=6 work: 1.41e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 76 nodes
+# searching w=8 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=8 work: 3.69e-05 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 268 nodes
+# searching w=10 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=10 work: 0.000244 thread-s measured, 0.0016 thread-s predicted (0.000s on 1 threads), 1709 nodes
+# searching w=12 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=12 work: 0.00159 thread-s measured, 0.0039 thread-s predicted (0.002s on 1 threads), 10431 nodes
+# searching w=14 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=14 work: 0.00957 thread-s measured, 0.0103 thread-s predicted (0.010s on 1 threads), 66721 nodes
+# searching w=16 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=16 work: 0.0657 thread-s measured, 0.0577 thread-s predicted (0.066s on 1 threads), 453045 nodes
+# searching w=18 with 1 CC threads, start list (4 columns, start_scan=1)
+# CC round w=18 work: 0.503 thread-s measured, 0.451 thread-s predicted (0.503s on 1 threads), 3143674 nodes
+20 0 0
+
+real	0m0,589s
+user	0m0,631s
+sys	0m0,003s
